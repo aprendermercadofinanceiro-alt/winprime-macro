@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WINPRIME — Painel Macro (Sentimento de Mercado)</title>
+<style>
+  :root{
+    --brand:#173404; --green:#1f9d3a; --red:#c62828; --gray:#8a887f;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{background:radial-gradient(1200px 600px at 50% -10%, #1b2416, #0f120d 60%);
+    color:#f2f2ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    display:flex;align-items:flex-start;justify-content:center;min-height:100%;padding:24px}
+  .app{width:100%;max-width:600px}
+  .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+  .brand{font-weight:800;letter-spacing:1px;font-size:20px;color:#eaf3de}
+  .brand small{display:block;font-weight:500;letter-spacing:.4px;font-size:11px;color:#9fb08f;margin-top:2px}
+  .clock{font-size:12px;color:#9fb08f;text-align:right}
+
+  .panel{background:#161a12;border:1px solid #2a3222;border-radius:22px;padding:28px 26px;text-align:center;
+    box-shadow:0 20px 60px rgba(0,0,0,.4)}
+  .dot{width:20px;height:20px;border-radius:50%;margin:0 auto 12px;background:#3a3a3a}
+  .estado-label{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#9fb08f;margin-bottom:6px}
+  .estado{font-size:38px;font-weight:800;line-height:1.05;margin:0 0 6px}
+  .frase{font-size:15px;color:#c9c9c0;margin:0 0 16px;min-height:20px}
+
+  .placar{display:flex;gap:10px;justify-content:center;margin:0 0 6px}
+  .chip{flex:1;background:#11150e;border:1px solid #2a3222;border-radius:12px;padding:12px 6px}
+  .chip .n{font-size:28px;font-weight:800;line-height:1}
+  .chip .l{font-size:11px;color:#9fb08f;letter-spacing:.5px;margin-top:4px}
+  .n.up{color:#69c47a}.n.mid{color:#cfcb92}.n.dn{color:#e57373}
+  .total{font-size:12px;color:#8a9a7c;margin-top:8px}
+  .total b{color:#eaf3de}
+
+  .lists{margin-top:14px;text-align:left;display:none}
+  .lists.open{display:block}
+  .lgrp{margin-bottom:10px}
+  .lgrp h4{margin:0 0 4px;font-size:12px;letter-spacing:.5px}
+  .lgrp.up h4{color:#69c47a}.lgrp.mid h4{color:#cfcb92}.lgrp.dn h4{color:#e57373}
+  .lgrp p{margin:0;font-size:12.5px;color:#b9b9b0;line-height:1.5}
+  .toggle{font-size:12px;color:#9fb08f;background:none;border:none;cursor:pointer;margin-top:6px;text-decoration:underline}
+
+  .status{font-size:12px;color:#8a9a7c;margin-top:14px}
+  .status.err{color:#e0a03a}
+
+  .controls{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:16px}
+  button.act{font:inherit;font-size:14px;font-weight:600;color:#eaf3de;background:#23301a;border:1px solid #3a4a2c;
+    border-radius:10px;padding:11px 16px;cursor:pointer}
+  button.act:hover{background:#2c3c20}
+  button.primary{background:#2e7d32;border-color:#2e7d32}
+  button.primary:hover{background:#36913b}
+  button.ghost{background:transparent}
+  .demo{margin-top:20px;border-top:1px dashed #2a3222;padding-top:14px}
+  .demo .t{font-size:11px;color:#7f8f72;letter-spacing:.5px;text-transform:uppercase;margin-bottom:8px}
+  .demo .row{display:flex;gap:8px;justify-content:center}
+  .demo button{padding:8px 12px;font-size:12.5px;color:#eaf3de;background:#1b2414;border:1px solid #34432a;border-radius:9px;cursor:pointer}
+  .foot{text-align:center;font-size:11px;color:#6f7c64;margin-top:16px}
+
+  body.pos .dot{background:var(--green);box-shadow:0 0 22px 4px rgba(31,157,58,.6)}
+  body.neg .dot{background:var(--red);box-shadow:0 0 22px 4px rgba(198,40,40,.55)}
+  body.neu .dot{background:var(--gray);box-shadow:0 0 18px 3px rgba(120,120,110,.4)}
+  body.pos .estado{color:#69c47a}
+  body.neg .estado{color:#e57373}
+  body.neu .estado{color:#cfcfc4}
+</style>
+</head>
+<body class="neu">
+<div class="app">
+  <div class="topbar">
+    <div class="brand">WINPRIME<small>Área do aluno · Painel Macro</small></div>
+    <div class="clock" id="clock">—</div>
+  </div>
+
+  <div class="panel">
+    <div class="dot"></div>
+    <div class="estado-label">Sentimento de mercado</div>
+    <h1 class="estado" id="estado">AGUARDANDO</h1>
+    <p class="frase" id="frase">Clique em iniciar para começar o monitoramento com voz.</p>
+
+    <div class="placar">
+      <div class="chip"><div class="n up"  id="cAlt">–</div><div class="l">ALTISTAS</div></div>
+      <div class="chip"><div class="n mid" id="cNeu">–</div><div class="l">NEUTROS</div></div>
+      <div class="chip"><div class="n dn"  id="cBai">–</div><div class="l">BAIXISTAS</div></div>
+    </div>
+    <div class="total">Total analisado: <b id="cTot">–</b> ativos da carteira de sentimento</div>
+
+    <button class="toggle" id="btnLista">ver ativos por grupo ▾</button>
+    <div class="lists" id="lists">
+      <div class="lgrp up"><h4>Altistas</h4><p id="lAlt">—</p></div>
+      <div class="lgrp mid"><h4>Neutros</h4><p id="lNeu">—</p></div>
+      <div class="lgrp dn"><h4>Baixistas</h4><p id="lBai">—</p></div>
+    </div>
+
+    <div class="status" id="status">Parado.</div>
+
+    <div class="controls">
+      <button class="act primary" id="btnStart">▶ Iniciar monitoramento</button>
+      <button class="act ghost" id="btnVoz">🔊 Voz: ligada</button>
+      <button class="act ghost" id="btnRepetir">↻ Repetir leitura</button>
+    </div>
+
+    <div class="demo">
+      <div class="t">Modo demonstração (teste com dados completos)</div>
+      <div class="row">
+        <button data-e="2">Simular ALTA</button>
+        <button data-e="1">Simular NEUTRO</button>
+        <button data-e="0">Simular BAIXA</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">Atualiza automaticamente no pré-abertura e pregão · leitura calculada pelo WINPRIME</div>
+</div>
+
+<script>
+// ================== CONFIG ==================
+// Arquivo publicado pelo WINPRIME com o estado atual. Formato:
+// {"estado":2,"altistas":15,"neutros":7,"baixistas":3,
+//  "lista_altistas":["Prata","Ouro",...],"lista_neutros":[...],"lista_baixistas":[...],
+//  "atualizado":"2026-07-05T09:00:00-03:00"}
+const ESTADO_URL = "estado.json";
+const INTERVALO_MS = 60000;
+// ============================================
+
+const MAP = {
+  2: {cls:"pos", nome:"POSITIVO",          voz:"Querido aluno, o mercado macro está em tendência de alta",
+      frase:"Mercado macro em tendência de alta"},
+  1: {cls:"neu", nome:"DESCORRELACIONADO", voz:"Querido aluno, o mercado macro está descorrelacionado, sem definição de tendência",
+      frase:"Mercado descorrelacionado — sem definição de alta ou baixa"},
+  0: {cls:"neg", nome:"NEGATIVO",          voz:"Querido aluno, o mercado macro está em tendência de baixa",
+      frase:"Mercado macro em tendência de baixa"}
+};
+
+let vozAtiva = true, rodando = false, timer = null, ultimoEstado = null, vozSel = null;
+
+function escolherVoz(){
+  const vs = speechSynthesis.getVoices();
+  const pt = vs.filter(v=>/^pt/i.test(v.lang));
+  const fem = /(maria|luciana|francisca|helo?[ií]sa|helena|fernanda|vit[oó]ria|joana|cati|female|mulher|google português do brasil)/i;
+  vozSel = pt.find(v=>fem.test(v.name)) || pt.find(v=>/pt.?BR/i.test(v.lang)) || pt[0]
+        || vs.find(v=>fem.test(v.name)) || null;
+}
+speechSynthesis.onvoiceschanged = escolherVoz; escolherVoz();
+
+function falar(txt){
+  if(!vozAtiva) return;
+  try{
+    speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(txt);
+    u.lang="pt-BR"; if(vozSel) u.voice=vozSel;
+    u.rate=0.98; u.pitch=1.15;   // pitch levemente mais alto reforça o timbre feminino
+    speechSynthesis.speak(u);
+  }catch(e){}
+}
+
+function fmtLista(a){ return (a && a.length) ? a.join(" · ") : "—"; }
+
+function aplicar(estado, d, falarSempre){
+  const m = MAP[estado]; if(!m) return;
+  document.body.className = m.cls;
+  document.getElementById("estado").textContent = m.nome;
+  document.getElementById("frase").textContent = m.frase;
+
+  const alt = d?.altistas ?? 0, neu = d?.neutros ?? 0, bai = d?.baixistas ?? 0;
+  const tot = d?.total ?? (alt + neu + bai);
+  document.getElementById("cAlt").textContent = alt;
+  document.getElementById("cNeu").textContent = neu;
+  document.getElementById("cBai").textContent = bai;
+  document.getElementById("cTot").textContent = tot;
+  document.getElementById("lAlt").textContent = fmtLista(d?.lista_altistas);
+  document.getElementById("lNeu").textContent = fmtLista(d?.lista_neutros);
+  document.getElementById("lBai").textContent = fmtLista(d?.lista_baixistas);
+
+  if(falarSempre || estado !== ultimoEstado) falar(m.voz);
+  ultimoEstado = estado;
+}
+
+async function consultar(){
+  try{
+    const r =

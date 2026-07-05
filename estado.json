@@ -1,0 +1,13 @@
+{
+  "estado": 1,
+  "aberto": false,
+  "altistas": 0,
+  "neutros": 0,
+  "baixistas": 0,
+  "total": 0,
+  "lista_altistas": [],
+  "lista_neutros": [],
+  "lista_baixistas": [],
+  "atualizado": "2026-07-05T08:00:00-03:00",
+  "obs": "Aguardando a primeira leitura do motor."
+}
