@@ -1,13 +1,13 @@
 {
-  "estado": 0,
+  "estado": 2,
   "aberto": true,
-  "altistas": 2,
-  "neutros": 6,
-  "baixistas": 16,
+  "altistas": 15,
+  "neutros": 7,
+  "baixistas": 2,
   "total": 24,
-  "lista_altistas": ["Ouro","VIX (inv.)"],
-  "lista_neutros": ["Prata","DAX","China H-Shares","Euro Stoxx 50","FTSE 100","Topix 100"],
-  "lista_baixistas": ["S&P 500","Nasdaq 100","Dow Jones","EWZ","Ibovespa","Mini Ibov","Hang Seng","Nikkei 225","KOSPI 200","IBEX 35","ASX 200","Brent","WTI","Morgan Stanley","TOPIX Fut","Euro Stoxx"],
-  "atualizado": "2026-07-05T11:35:00-03:00",
-  "obs": "DEMONSTRACAO - mudanca de estado para teste."
+  "lista_altistas": ["Mini Ibov (WINc1)","Ibovespa","IBEX 35","DAX","Topix 100","Euro Stoxx 50","Morgan Stanley","Hang Seng","EWZ","Ouro","Prata","Brent","TOPIX Fut","VIX (inv.)","Mini VIX (inv.)"],
+  "lista_neutros": ["FTSE 100","ASX 200","KOSPI 200","WTI","Nasdaq 100","S&P 500","Dow Jones"],
+  "lista_baixistas": ["China H-Shares","Nikkei 225"],
+  "atualizado": "2026-07-05T11:37:00-03:00",
+  "obs": "Leitura da carteira Investing - fechamento de 03/07 (fim de semana)."
 }
