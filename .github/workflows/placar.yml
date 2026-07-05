@@ -1,0 +1,31 @@
+name: Placar Macro WINPRIME
+
+on:
+  schedule:
+    - cron: "*/5 11-21 * * 1-5"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: placar-macro
+  cancel-in-progress: false
+
+jobs:
+  atualizar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Calcular placar
+        run: node motor.js
+      - name: Publicar estado.json
+        run: |
+          git config user.name "winprime-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add estado.json
+          git commit -m "atualiza placar macro" || echo "sem mudanca"
+          git push
