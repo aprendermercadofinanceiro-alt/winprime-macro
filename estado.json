@@ -1,40 +1,40 @@
 {
-  "estado": 1,
+  "estado": 0,
   "aberto": true,
+  "soma": -6,
   "altistas": 7,
-  "neutros": 8,
-  "baixistas": 9,
+  "neutros": 4,
+  "baixistas": 13,
   "total": 24,
   "lista_altistas": [
-    "EWZ",
-    "Mini VIX (inv.)",
-    "FTSE 100",
-    "TOPIX Fut",
-    "Brent",
     "WTI",
-    "Morgan Stanley"
+    "FTSE 100",
+    "IBEX 35",
+    "Morgan Stanley",
+    "Brent",
+    "EWZ (Brasil NY)",
+    "Dow fut"
   ],
   "lista_neutros": [
-    "VIX (inv.)",
-    "IBEX 35",
-    "DAX",
-    "ASX 200",
-    "China H-Shares",
-    "S&P 500",
-    "Dow Jones",
-    "Ouro"
+    "Ouro",
+    "TOPIX (s/dado)",
+    "S&P 500 fut",
+    "DXY (dolar)"
   ],
   "lista_baixistas": [
     "Euro Stoxx 50",
+    "Mini Ibov (WIN)",
+    "S&P/ASX 200",
     "KOSPI 200",
+    "Nasdaq 100 fut",
+    "China H-Shares",
+    "Ibovespa",
+    "DAX",
     "Hang Seng",
-    "Topix 100",
-    "Nasdaq 100",
-    "Mini Ibov (WINc1)",
+    "VIX",
     "Nikkei 225",
-    "Prata",
-    "Ibovespa"
+    "Mini VIX",
+    "Prata"
   ],
-  "atualizado": "2026-07-07T09:09:53-03:00",
-  "obs": "Leitura ao vivo da carteira Investing."
+  "atualizado": "2026-07-07T09:53:16.000Z"
 }
