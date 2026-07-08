@@ -191,6 +191,7 @@ function aplicar(estado, d, falarSempre){
   ultimoEstado = estado; ultimoAlt = alt; ultimoNeu = neu; ultimoBai = bai;
 }
 
+function timerBackground(fn, ms){ try{ var w=new Worker(URL.createObjectURL(new Blob(["setInterval(function(){postMessage(0);},"+ms+");"],{type:"text/javascript"}))); w.onmessage=fn; return w; }catch(e){ return setInterval(fn, ms); } }
 function consultar(){
   fetch(ESTADO_URL + "?t=" + Date.now(), {cache:"no-store"})
     .then(function(r){ if(!r.ok) throw 0; return r.json(); })
@@ -217,7 +218,7 @@ function iniciar(){
   if(rodando) return; rodando=true;
   document.getElementById("btnStart").textContent="● Monitorando";
   falar("Painel macro WINPRIME iniciado.");
-  consultar(); timer=setInterval(consultar, INTERVALO_MS);
+  consultar(); timer=timerBackground(consultar, INTERVALO_MS);
 }
 document.getElementById("btnStart").onclick=iniciar;
 document.getElementById("btnVoz").onclick=function(e){ vozAtiva=!vozAtiva;
