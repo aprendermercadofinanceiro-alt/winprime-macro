@@ -1,42 +1,42 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -13,
+  "soma": -14,
   "altistas": 3,
-  "neutros": 6,
-  "baixistas": 16,
+  "neutros": 5,
+  "baixistas": 17,
   "total": 25,
   "lista_altistas": [
     "Hang Seng Futuros",
-    "Petróleo Brent LCO",
-    "Petróleo WTI CL"
+    "Petróleo Brent",
+    "Petróleo WTI"
   ],
   "lista_neutros": [
-    "China H-Shares Futuros",
-    "Mini S&P 500",
-    "DAX Futuros FDXc3",
+    "DAX Futuros",
     "Nasdaq 100 Futuros",
+    "China H-Shares Futuros",
     "Nikkei 225 Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "S&P 500 VIX",
-    "iShares MSCI Brazil",
-    "Prata SI 58,978",
-    "Morgan Stanley MS",
+    "iShares MSCI Brazil Capped",
+    "Euro Stoxx 50 Futuros",
     "KOSPI 200 Futuros",
-    "TOPIX Futuros JTIc2",
-    "S&P 500 Futuros",
-    "S&P/ASX 200 Futuros",
-    "Topix 100 TOPX100",
-    "Ouro GC 4.095,67",
-    "Euro Stoxx 50",
-    "FTSE 100 UK100",
+    "Mini S&P 500 VIX Futuros",
+    "S&P 500 VIX Futuros",
     "IBEX 35 Futuros",
+    "Topix 100",
+    "S&P/ASX 200 Futuros",
+    "FTSE 100",
+    "TOPIX Futuros",
+    "S&P 500 Futuros",
     "Dow Jones Futuros",
     "Mini Ibovespa Futuros",
-    "Ibovespa IBOV 170.788"
+    "Prata",
+    "Ibovespa",
+    "Ouro",
+    "Morgan Stanley"
   ],
-  "atualizado": "2026-07-08T18:47:04.004Z",
+  "atualizado": "2026-07-08T18:48:04.758Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
