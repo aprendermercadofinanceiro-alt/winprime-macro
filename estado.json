@@ -12,31 +12,31 @@
     "Petróleo WTI CL"
   ],
   "lista_neutros": [
+    "China H-Shares Futuros",
     "Mini S&P 500",
     "DAX Futuros FDXc3",
     "Nasdaq 100 Futuros",
-    "China H-Shares Futuros",
     "Nikkei 225 Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "iShares MSCI Brazil",
-    "Euro Stoxx 50",
-    "KOSPI 200 Futuros",
     "S&P 500 VIX",
-    "IBEX 35 Futuros",
-    "Topix 100 TOPX100",
-    "S&P/ASX 200 Futuros",
-    "FTSE 100 UK100",
+    "iShares MSCI Brazil",
+    "Prata SI 58,770",
+    "Morgan Stanley MS",
+    "KOSPI 200 Futuros",
     "TOPIX Futuros JTIc2",
     "S&P 500 Futuros",
+    "S&P/ASX 200 Futuros",
+    "Topix 100 TOPX100",
+    "Ouro GC 4.081,42",
+    "Euro Stoxx 50",
+    "FTSE 100 UK100",
+    "IBEX 35 Futuros",
     "Dow Jones Futuros",
     "Mini Ibovespa Futuros",
-    "Prata SI 58,718",
-    "Ibovespa IBOV 170.483",
-    "Ouro GC 4.080,10",
-    "Morgan Stanley MS"
+    "Ibovespa IBOV 170.476"
   ],
-  "atualizado": "2026-07-08T18:10:31.781Z",
+  "atualizado": "2026-07-08T18:11:00.768Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
