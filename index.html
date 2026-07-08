@@ -78,7 +78,7 @@
       <div class="chip"><div class="n mid" id="cNeu">–</div><div class="l">NEUTROS</div></div>
       <div class="chip"><div class="n dn"  id="cBai">–</div><div class="l">BAIXISTAS</div></div>
     </div>
-    <div class="total">Total analisado: <b id="cTot">–</b> ativos da carteira de sentimento</div>
+    <div class="total">Total analisado: <b id="cTot">–</b> ativos abertos<span id="cFech" style="color:#8a9a7c"></span></div>
     <div class="mudanca" id="mudanca"></div>
     <button class="toggle" id="btnLista">ver ativos por grupo ▾</button>
     <div class="lists" id="lists">
@@ -175,6 +175,7 @@ function aplicar(estado, d, falarSempre){
   document.getElementById("cNeu").textContent = neu;
   document.getElementById("cBai").textContent = bai;
   document.getElementById("cTot").textContent = tot;
+  var _fe=document.getElementById("cFech"); if(_fe) _fe.textContent = (d && d.fechados) ? " · " + d.fechados + " fechados (fora do placar)" : "";
   document.getElementById("lAlt").textContent = fmtLista(d && d.lista_altistas);
   document.getElementById("lNeu").textContent = fmtLista(d && d.lista_neutros);
   document.getElementById("lBai").textContent = fmtLista(d && d.lista_baixistas);
