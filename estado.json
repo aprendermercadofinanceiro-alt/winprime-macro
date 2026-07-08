@@ -1,10 +1,10 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -11,
+  "soma": -10,
   "altistas": 3,
-  "neutros": 8,
-  "baixistas": 14,
+  "neutros": 9,
+  "baixistas": 13,
   "total": 25,
   "lista_altistas": [
     "Petróleo Brent",
@@ -17,13 +17,13 @@
     "Nasdaq 100 Futuros",
     "DAX Futuros",
     "Nikkei 225 Futuros",
+    "S&P 500 Futuros",
     "Ouro",
     "Prata",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "Mini S&P 500 VIX Futuros",
-    "S&P 500 Futuros",
     "Mini Ibovespa Futuros",
     "S&P/ASX 200 Futuros",
     "TOPIX Futuros",
@@ -37,6 +37,6 @@
     "Morgan Stanley",
     "IBEX 35 Futuros"
   ],
-  "atualizado": "2026-07-08T22:24:29.923Z",
+  "atualizado": "2026-07-08T22:24:59.926Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
