@@ -20,22 +20,22 @@
   "lista_baixistas": [
     "S&P 500 VIX",
     "Mini S&P 500",
-    "Prata SI 59,015",
+    "Prata SI 59,013",
     "Morgan Stanley MS",
     "KOSPI 200 Futuros",
     "TOPIX Futuros JTIc2",
     "S&P 500 Futuros",
     "Topix 100 TOPX100",
     "S&P/ASX 200 Futuros",
-    "Ouro GC 4.086,87",
+    "Ouro GC 4.088,50",
     "Euro Stoxx 50",
     "FTSE 100 UK100",
     "Nasdaq 100 Futuros",
     "IBEX 35 Futuros",
     "Dow Jones Futuros",
     "Mini Ibovespa Futuros",
-    "Ibovespa IBOV 170.751"
+    "Ibovespa IBOV 170.714"
   ],
-  "atualizado": "2026-07-08T13:32:41.747Z",
+  "atualizado": "2026-07-08T13:33:41.748Z",
   "obs": "Leitura ao vivo da carteira do Investing (WINPRIME)."
 }
