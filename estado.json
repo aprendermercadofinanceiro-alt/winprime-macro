@@ -1,14 +1,15 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -9,
-  "altistas": 3,
-  "neutros": 10,
+  "soma": -8,
+  "altistas": 4,
+  "neutros": 9,
   "baixistas": 12,
   "total": 25,
   "lista_altistas": [
     "Hang Seng Futuros",
     "Petróleo Brent",
+    "Prata",
     "Petróleo WTI"
   ],
   "lista_neutros": [
@@ -19,7 +20,6 @@
     "S&P 500 Futuros",
     "Dow Jones Futuros",
     "Nikkei 225 Futuros",
-    "Prata",
     "Ouro",
     "DXY (dolar)"
   ],
@@ -37,6 +37,6 @@
     "Ibovespa",
     "Morgan Stanley"
   ],
-  "atualizado": "2026-07-08T23:21:17.790Z",
+  "atualizado": "2026-07-08T23:21:47.792Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
