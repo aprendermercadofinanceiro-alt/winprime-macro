@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         WINPRIME - Leitor de Sentimento (Investing + DXY TradingView)
 // @namespace    winprime
-// @version      2.6
-// @description  Le a SUA carteira de sentimento no Investing + o DXY no TradingView a cada 30s (mesmo em segundo plano). Altista > +0,30%, Baixista < -0,30%, Neutro entre -0,30% e +0,30% (inclusive). VIX e DXY invertidos. Publica no painel dos alunos.
+// @version      2.7
+// @description  Le a SUA carteira de sentimento no Investing + o DXY no TradingView a cada 30s (mesmo em segundo plano). So conta ativos ABERTOS (relogio verde); ignora fechados (relogio vermelho). Altista > +0,30%, Baixista < -0,30%, Neutro entre -0,30% e +0,30% (inclusive). VIX e DXY invertidos. Publica no painel dos alunos.
 // @match        https://br.investing.com/portfolio/*
 // @match        https://www.investing.com/portfolio/*
 // @match        https://br.tradingview.com/symbols/TVC-DXY/*
@@ -98,7 +98,7 @@
     const tables = Array.from(document.querySelectorAll("table"));
     let best = null, bestn = 0;
     tables.forEach(tb => { const n = tb.querySelectorAll("tbody tr").length; if (/%/.test(tb.innerText) && n > bestn) { best = tb; bestn = n; } });
-    let ativos = [];
+    let ativos = [], fechados = 0;
     if (best) {
       const hr = best.querySelector("thead tr") || best.querySelector("tr");
       const heads = Array.from(hr.querySelectorAll("th,td")).map(c => c.innerText.trim());
@@ -108,6 +108,8 @@
         Array.from(best.querySelectorAll("tbody tr")).forEach(tr => {
           const tds = tr.querySelectorAll("td");
           if (!tds[varIdx]) return;
+          const clock = tr.querySelector('[class*="ClockIcon"]');
+          if (clock && /red/i.test(clock.className)) { fechados++; return; } // relogio vermelho = ativo fechado -> nao conta
           const cell = tds[varIdx].innerText.trim().replace(/[−–]/g, "-");
           const m = cell.match(/(-?\d+,\d+)%/);
           if (!m) return;
@@ -124,6 +126,7 @@
     const dxy = lerDXYArmazenado();
     if (dxy) ativos.push({ nome: "DXY (dolar)", v: dxy.v, linha: "DXY Dollar Index" });
     ativos._dxy = dxy;
+    ativos._fechados = fechados;
     return ativos;
   }
 
@@ -142,9 +145,10 @@
       estado, aberto: true, soma,
       altistas: alt.length, neutros: neu.length, baixistas: bai.length,
       total: ativos.length,
+      fechados: ativos._fechados || 0,
       lista_altistas: alt, lista_neutros: neu, lista_baixistas: bai,
       atualizado: new Date().toISOString(),
-      obs: "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
+      obs: "So ativos abertos (relogio verde). Fechados ignorados: " + (ativos._fechados || 0) + ". Carteira do Investing + DXY do TradingView (WINPRIME)."
     };
   }
 
@@ -196,7 +200,7 @@
       "<span style='font-size:22px;font-weight:800;color:" + cor + "'>" + rot + "</span><br>" +
       "<span style='color:#69c47a'>" + p.altistas + " alt</span> · " +
       "<span style='color:#cfcb92'>" + p.neutros + " neu</span> · " +
-      "<span style='color:#e57373'>" + p.baixistas + " bai</span> (" + p.total + ")<br>" +
+      "<span style='color:#e57373'>" + p.baixistas + " bai</span> <span style='color:#9fb08f'>(" + p.total + " abertos · " + (p.fechados || 0) + " fechados fora)</span><br>" +
       dxyLinha + "<br>" +
       "<small style='color:#9fb08f'>" + new Date().toLocaleTimeString("pt-BR") + " · " + status + "</small>";
   }
