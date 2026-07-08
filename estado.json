@@ -1,10 +1,10 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -14,
+  "soma": -15,
   "altistas": 3,
-  "neutros": 4,
-  "baixistas": 17,
+  "neutros": 3,
+  "baixistas": 18,
   "total": 24,
   "lista_altistas": [
     "Hang Seng Futuros",
@@ -14,28 +14,28 @@
   "lista_neutros": [
     "China H-Shares Futuros",
     "DAX Futuros FDXc3",
-    "Nikkei 225 Futuros",
-    "Nasdaq 100 Futuros"
+    "Nikkei 225 Futuros"
   ],
   "lista_baixistas": [
     "S&P 500 VIX",
     "Mini S&P 500",
     "iShares MSCI Brazil",
     "Morgan Stanley MS",
-    "Prata SI 58,595",
+    "Prata SI 58,673",
     "KOSPI 200 Futuros",
     "TOPIX Futuros JTIc2",
     "Topix 100 TOPX100",
     "S&P 500 Futuros",
     "S&P/ASX 200 Futuros",
-    "Ouro GC 4.066,22",
+    "Ouro GC 4.069,40",
     "Euro Stoxx 50",
     "FTSE 100 UK100",
+    "Nasdaq 100 Futuros",
     "IBEX 35 Futuros",
     "Dow Jones Futuros",
     "Mini Ibovespa Futuros",
-    "Ibovespa IBOV 170.614"
+    "Ibovespa IBOV 170.612"
   ],
-  "atualizado": "2026-07-08T14:19:41.744Z",
+  "atualizado": "2026-07-08T14:21:31.775Z",
   "obs": "Leitura ao vivo da carteira do Investing (WINPRIME)."
 }
