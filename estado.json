@@ -32,11 +32,11 @@
     "S&P 500 Futuros",
     "Dow Jones Futuros",
     "Mini Ibovespa Futuros",
-    "Prata SI 57,980",
-    "Ibovespa IBOV 170.314",
-    "Ouro GC 4.050,92",
+    "Prata SI 57,900",
+    "Ibovespa IBOV 170.249",
+    "Ouro GC 4.048,97",
     "Morgan Stanley MS"
   ],
-  "atualizado": "2026-07-08T16:14:31.774Z",
+  "atualizado": "2026-07-08T16:15:31.774Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
