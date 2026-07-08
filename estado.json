@@ -1,13 +1,41 @@
 {
   "estado": 0,
   "aberto": true,
+  "soma": -13,
   "altistas": 3,
-  "neutros": 6,
-  "baixistas": 15,
+  "neutros": 5,
+  "baixistas": 16,
   "total": 24,
-  "lista_altistas": ["TOPIX Fut","Petróleo Brent","Petróleo WTI"],
-  "lista_neutros": ["Mini VIX","DAX","FTSE 100","China H-Shares","Ouro","Morgan Stanley"],
-  "lista_baixistas": ["EWZ","Euro Stoxx 50","KOSPI 200","Hang Seng","S&P 500 VIX","IBEX 35","Topix 100","ASX 200","Nasdaq 100","S&P 500","Dow Jones","Mini Ibov","Nikkei 225","Prata","Ibovespa"],
-  "atualizado": "2026-07-07T10:05:00-03:00",
+  "lista_altistas": [
+    "Hang Seng Futuros",
+    "Petróleo Brent LCO",
+    "Petróleo WTI CL"
+  ],
+  "lista_neutros": [
+    "DAX Futuros FDXc3",
+    "China H-Shares Futuros",
+    "Nikkei 225 Futuros",
+    "Ibovespa IBOV 172.021",
+    "Morgan Stanley MS"
+  ],
+  "lista_baixistas": [
+    "iShares MSCI Brazil",
+    "Euro Stoxx 50",
+    "KOSPI 200 Futuros",
+    "Mini S&P 500",
+    "S&P 500 VIX",
+    "IBEX 35 Futuros",
+    "Topix 100 TOPX100",
+    "S&P/ASX 200 Futuros",
+    "FTSE 100 UK100",
+    "TOPIX Futuros JTIc2",
+    "Nasdaq 100 Futuros",
+    "S&P 500 Futuros",
+    "Dow Jones Futuros",
+    "Mini Ibovespa Futuros",
+    "Prata SI 59,115",
+    "Ouro GC 4.082,10"
+  ],
+  "atualizado": "2026-07-08T12:21:58.165Z",
   "obs": "Leitura ao vivo da carteira do Investing (WINPRIME)."
 }
