@@ -22,13 +22,13 @@
     "S&P 500 VIX",
     "Mini S&P 500",
     "iShares MSCI Brazil",
-    "Prata SI 58,983",
+    "Prata SI 58,970",
     "KOSPI 200 Futuros",
     "TOPIX Futuros JTIc2",
     "S&P 500 Futuros",
     "Topix 100 TOPX100",
     "S&P/ASX 200 Futuros",
-    "Ouro GC 4.086,60",
+    "Ouro GC 4.081,87",
     "FTSE 100 UK100",
     "Euro Stoxx 50",
     "Nasdaq 100 Futuros",
@@ -36,6 +36,6 @@
     "IBEX 35 Futuros",
     "Mini Ibovespa Futuros"
   ],
-  "atualizado": "2026-07-08T12:58:57.756Z",
+  "atualizado": "2026-07-08T12:59:56.750Z",
   "obs": "Leitura ao vivo da carteira do Investing (WINPRIME)."
 }
