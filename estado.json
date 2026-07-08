@@ -1,10 +1,10 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -14,
+  "soma": -13,
   "altistas": 3,
-  "neutros": 5,
-  "baixistas": 17,
+  "neutros": 6,
+  "baixistas": 16,
   "total": 25,
   "lista_altistas": [
     "Hang Seng Futuros",
@@ -14,6 +14,7 @@
   "lista_neutros": [
     "Mini S&P 500",
     "DAX Futuros FDXc3",
+    "Nasdaq 100 Futuros",
     "China H-Shares Futuros",
     "Nikkei 225 Futuros",
     "DXY (dolar)"
@@ -28,15 +29,14 @@
     "S&P/ASX 200 Futuros",
     "FTSE 100 UK100",
     "TOPIX Futuros JTIc2",
-    "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
     "Dow Jones Futuros",
     "Mini Ibovespa Futuros",
-    "Prata SI 58,018",
-    "Ibovespa IBOV 170.187",
-    "Ouro GC 4.055,80",
+    "Prata SI 58,078",
+    "Ibovespa IBOV 170.200",
+    "Ouro GC 4.058,32",
     "Morgan Stanley MS"
   ],
-  "atualizado": "2026-07-08T16:40:31.782Z",
+  "atualizado": "2026-07-08T16:41:31.766Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
