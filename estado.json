@@ -22,7 +22,7 @@
   "lista_baixistas": [
     "S&P 500 VIX",
     "iShares MSCI Brazil",
-    "Prata SI 58,840",
+    "Prata SI 58,883",
     "Morgan Stanley MS",
     "KOSPI 200 Futuros",
     "TOPIX Futuros JTIc2",
@@ -35,8 +35,8 @@
     "IBEX 35 Futuros",
     "Dow Jones Futuros",
     "Mini Ibovespa Futuros",
-    "Ibovespa IBOV 170.467"
+    "Ibovespa IBOV 170.491"
   ],
-  "atualizado": "2026-07-08T18:14:01.763Z",
+  "atualizado": "2026-07-08T18:15:01.763Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
