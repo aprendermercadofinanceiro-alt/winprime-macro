@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         WINPRIME - Leitor de Sentimento (Investing + DXY TradingView)
 // @namespace    winprime
-// @version      2.5
-// @description  Le a SUA carteira de sentimento no Investing + o DXY no TradingView a cada 30s (mesmo em segundo plano), calcula o placar (regra +/-0,30%, VIX e DXY invertidos) e publica no painel dos alunos.
+// @version      2.6
+// @description  Le a SUA carteira de sentimento no Investing + o DXY no TradingView a cada 30s (mesmo em segundo plano). Altista > +0,30%, Baixista < -0,30%, Neutro entre -0,30% e +0,30% (inclusive). VIX e DXY invertidos. Publica no painel dos alunos.
 // @match        https://br.investing.com/portfolio/*
 // @match        https://www.investing.com/portfolio/*
 // @match        https://br.tradingview.com/symbols/TVC-DXY/*
@@ -130,7 +130,7 @@
   function computar(ativos) {
     let soma = 0; const alt = [], neu = [], bai = [];
     ativos.forEach(a => {
-      let voto = a.v >= LIMIAR ? 1 : (a.v <= -LIMIAR ? -1 : 0);
+      let voto = a.v > LIMIAR ? 1 : (a.v < -LIMIAR ? -1 : 0);
       if (INVERTIDO.test(a.linha)) voto = -voto;
       soma += voto;
       if (voto > 0) alt.push(a.nome);
