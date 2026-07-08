@@ -1,12 +1,13 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -14,
-  "altistas": 1,
+  "soma": -12,
+  "altistas": 2,
   "neutros": 9,
-  "baixistas": 15,
+  "baixistas": 14,
   "total": 25,
   "lista_altistas": [
+    "S&P 500 VIX Futuros",
     "Hang Seng Futuros"
   ],
   "lista_neutros": [
@@ -21,7 +22,6 @@
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "S&P 500 VIX Futuros",
     "Mini S&P 500 VIX Futuros",
     "S&P 500 Futuros",
     "Mini Ibovespa Futuros",
@@ -37,6 +37,6 @@
     "Morgan Stanley",
     "IBEX 35 Futuros"
   ],
-  "atualizado": "2026-07-08T22:01:59.944Z",
+  "atualizado": "2026-07-08T22:02:29.951Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
