@@ -1,17 +1,17 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -12,
-  "altistas": 2,
-  "neutros": 9,
+  "soma": -11,
+  "altistas": 3,
+  "neutros": 8,
   "baixistas": 14,
   "total": 25,
   "lista_altistas": [
+    "Petróleo Brent",
     "S&P 500 VIX Futuros",
     "Hang Seng Futuros"
   ],
   "lista_neutros": [
-    "Petróleo Brent",
     "Petróleo WTI",
     "China H-Shares Futuros",
     "Nasdaq 100 Futuros",
@@ -37,6 +37,6 @@
     "Morgan Stanley",
     "IBEX 35 Futuros"
   ],
-  "atualizado": "2026-07-08T22:08:59.946Z",
+  "atualizado": "2026-07-08T22:24:29.923Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
