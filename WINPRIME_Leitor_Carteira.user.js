@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         WINPRIME - Leitor de Sentimento (Investing + DXY TradingView)
 // @namespace    winprime
-// @version      2.4
-// @description  Le a SUA carteira de sentimento no Investing + o DXY no TradingView a cada 30s, calcula o placar (regra +/-0,30%, VIX e DXY invertidos) e publica no painel dos alunos.
+// @version      2.5
+// @description  Le a SUA carteira de sentimento no Investing + o DXY no TradingView a cada 30s (mesmo em segundo plano), calcula o placar (regra +/-0,30%, VIX e DXY invertidos) e publica no painel dos alunos.
 // @match        https://br.investing.com/portfolio/*
 // @match        https://www.investing.com/portfolio/*
 // @match        https://br.tradingview.com/symbols/TVC-DXY/*
@@ -19,8 +19,20 @@
 (function () {
   "use strict";
 
+  // Timer que NAO e desacelerado quando a aba fica em segundo plano (roda num Web Worker).
+  function timerBackground(fn, ms) {
+    try {
+      const w = new Worker(URL.createObjectURL(new Blob(["setInterval(function(){postMessage(0);}," + ms + ");"], { type: "text/javascript" })));
+      w.onmessage = fn;
+      return w;
+    } catch (e) { return setInterval(fn, ms); }
+  }
+
   const NO_TRADINGVIEW = /tradingview\.com/i.test(location.hostname);
 
+  // ==================================================================
+  //  MODO TRADINGVIEW  -> le o DXY e envia para o leitor da carteira
+  // ==================================================================
   if (NO_TRADINGVIEW) {
     function lerDXY() {
       const pt = document.querySelector(".js-symbol-change-pt");
@@ -46,15 +58,18 @@
         "<small style='color:#9fb08f'>enviado ao placar · " + new Date().toLocaleTimeString("pt-BR") + "</small>";
     }
     setTimeout(ciclo, 2500);
-    setInterval(ciclo, 20000);
+    timerBackground(ciclo, 15000);
     return;
   }
 
+  // ==================================================================
+  //  MODO INVESTING  -> leitor da carteira (inclui o DXY do TradingView)
+  // ==================================================================
   const OWNER = "aprendermercadofinanceiro-alt";
   const REPO  = "winprime-macro";
   const PATH  = "estado.json";
   const INTERVALO_MS = 30000;
-  const DXY_VALIDADE_MS = 15 * 60 * 1000;
+  const DXY_VALIDADE_MS = 60 * 60 * 1000; // aceita DXY lido na ultima 1h (nunca some enquanto a aba do TradingView estiver aberta)
 
   const LIMIAR = 0.30, CORTE_POS = 3, CORTE_NEG = -3;
   const INVERTIDO = /VIX|DXY|USDX|Índice Dólar|Dollar Index/i;
@@ -107,7 +122,7 @@
       ativos = linhas.map(t => { const m = t.replace(/[−–]/g, "-").match(/(-?\d+,\d+)%/g); if (!m) return null; return { nome: t.split(" ").slice(0, 3).join(" "), v: parseFloat(m[m.length - 1].replace(",", ".")), linha: t }; }).filter(Boolean);
     }
     const dxy = lerDXYArmazenado();
-    if (dxy && !dxy.velho) ativos.push({ nome: "DXY (dolar)", v: dxy.v, linha: "DXY Dollar Index" });
+    if (dxy) ativos.push({ nome: "DXY (dolar)", v: dxy.v, linha: "DXY Dollar Index" });
     ativos._dxy = dxy;
     return ativos;
   }
@@ -175,7 +190,7 @@
     else status = "erro ao publicar (" + res.status + ")";
     let dxyLinha;
     if (!dxy) dxyLinha = "<span style='color:#e0a03a'>DXY: abra a aba do TradingView</span>";
-    else if (dxy.velho) dxyLinha = "<span style='color:#e0a03a'>DXY desatualizado (reabra o TradingView)</span>";
+    else if (dxy.velho) dxyLinha = "<span style='color:#e0a03a'>DXY (reabra o TradingView): " + (dxy.v >= 0 ? "+" : "") + dxy.v.toFixed(2) + "%</span>";
     else dxyLinha = "<span style='color:#9fb08f'>DXY incluido: " + (dxy.v >= 0 ? "+" : "") + dxy.v.toFixed(2) + "%</span>";
     box.innerHTML = "<b style='color:#b7e08c'>WINPRIME · Placar</b><br>" +
       "<span style='font-size:22px;font-weight:800;color:" + cor + "'>" + rot + "</span><br>" +
@@ -198,7 +213,7 @@
   function iniciar() {
     if (timer) return;
     ciclo();
-    timer = setInterval(ciclo, INTERVALO_MS);
+    timer = timerBackground(ciclo, INTERVALO_MS);
   }
 
   function pedirToken() {
