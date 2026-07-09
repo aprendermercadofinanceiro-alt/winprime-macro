@@ -1,14 +1,13 @@
 {
-  "estado": 2,
+  "estado": 1,
   "aberto": true,
-  "soma": 3,
-  "altistas": 10,
-  "neutros": 8,
+  "soma": 2,
+  "altistas": 9,
+  "neutros": 9,
   "baixistas": 7,
   "total": 25,
   "lista_altistas": [
     "Euro Stoxx 50 Futuros",
-    "S&P 500 VIX Futuros",
     "IBEX 35 Futuros",
     "S&P/ASX 200 Futuros",
     "Nasdaq 100 Futuros",
@@ -21,6 +20,7 @@
   "lista_neutros": [
     "iShares MSCI Brazil Capped",
     "Hang Seng Futuros",
+    "S&P 500 VIX Futuros",
     "DAX Futuros",
     "China H-Shares Futuros",
     "S&P 500 Futuros",
@@ -37,6 +37,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-07-09T13:35:47.761Z",
+  "atualizado": "2026-07-09T13:36:17.765Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
