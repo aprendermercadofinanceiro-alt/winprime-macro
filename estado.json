@@ -20,11 +20,11 @@
     "IBEX 35 Futuros",
     "S&P 500 Futuros",
     "S&P/ASX 200 Futuros",
-    "Hang Seng Futuros",
+    "Dow Jones Futuros",
     "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
-    "Dow Jones Futuros",
+    "Hang Seng Futuros",
     "Mini S&P 500 VIX Futuros",
     "DAX Futuros",
     "DXY (dolar)"
@@ -33,6 +33,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-07-09T16:10:59.749Z",
+  "atualizado": "2026-07-09T16:11:29.737Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
