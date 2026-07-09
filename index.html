@@ -164,6 +164,16 @@ function marcarMudanca(dAlt, dNeu, dBai){
   if(msgs.length) el.innerHTML = "<b>Alteração " + hora + ":</b> " + msgs.join(" · ");
 }
 
+function fraseVoz(estado){
+  var pre = new Date().getHours() < 9;
+  var ctx = estado===2 ? "altista" : (estado===0 ? "baixista" : "descorrelacionado");
+  var comp;
+  if(estado===2) comp = pre ? "Abertura de mercado com sentimento de alta." : "Mercado com sentimento de alta.";
+  else if(estado===0) comp = pre ? "Abertura de mercado com sentimento de baixa." : "Mercado com sentimento de baixa.";
+  else comp = pre ? "Abertura de mercado sem definição de tendência." : "Mercado sem definição de tendência.";
+  return "Querido aluno, o contexto está " + ctx + ". " + comp;
+}
+
 function aplicar(estado, d, falarSempre){
   var m = MAP[estado]; if(!m) return;
   document.body.className = m.cls;
@@ -183,12 +193,8 @@ function aplicar(estado, d, falarSempre){
   var dAlt = (ultimoAlt === null) ? 0 : (alt - ultimoAlt);
   var dNeu = (ultimoNeu === null) ? 0 : (neu - ultimoNeu);
   var dBai = (ultimoBai === null) ? 0 : (bai - ultimoBai);
-  var mudouContagem = !!(dAlt || dNeu || dBai);
   marcarMudanca(dAlt, dNeu, dBai);
-  var vozTxt;
-  if(mudouEstado) vozTxt = m.voz + ". " + alt + " altistas, " + neu + " neutros, e " + bai + " baixistas.";
-  else vozTxt = "Atenção aluno: " + descreverMudanca(dAlt, dNeu, dBai) + " Agora " + alt + " altistas, " + neu + " neutros, e " + bai + " baixistas.";
-  if(falarSempre || mudouEstado || mudouContagem) falar(vozTxt);
+  if(falarSempre || mudouEstado) falar(fraseVoz(estado));
   ultimoEstado = estado; ultimoAlt = alt; ultimoNeu = neu; ultimoBai = bai;
 }
 
@@ -226,7 +232,7 @@ document.getElementById("btnVoz").onclick=function(e){ vozAtiva=!vozAtiva;
   e.target.textContent=vozAtiva?"🔊 Voz: ligada":"🔇 Voz: desligada"; if(!vozAtiva) speechSynthesis.cancel(); };
 document.getElementById("btnModo").onclick=function(e){ falarSempreModo=!falarSempreModo;
   e.target.textContent=falarSempreModo?"🗣 Fala: toda leitura":"🗣 Fala: só quando muda"; };
-document.getElementById("btnRepetir").onclick=function(){ if(ultimoEstado!=null) falar(MAP[ultimoEstado].voz); };
+document.getElementById("btnRepetir").onclick=function(){ if(ultimoEstado!=null) falar(fraseVoz(ultimoEstado)); };
 document.getElementById("btnLista").onclick=function(e){ var l=document.getElementById("lists");
   var open=l.classList.toggle("open"); e.target.textContent = open ? "ocultar ativos ▴" : "ver ativos por grupo ▾"; };
 
