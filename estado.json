@@ -7,36 +7,36 @@
   "baixistas": 7,
   "total": 25,
   "lista_altistas": [
+    "Prata",
+    "Morgan Stanley",
     "Euro Stoxx 50 Futuros",
-    "S&P 500 VIX Futuros",
+    "Nasdaq 100 Futuros",
+    "Ouro",
     "IBEX 35 Futuros",
     "S&P/ASX 200 Futuros",
-    "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
-    "Prata",
-    "Ouro",
-    "Morgan Stanley"
+    "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
+    "Mini Ibovespa Futuros",
+    "Ibovespa",
+    "China H-Shares Futuros",
     "iShares MSCI Brazil Capped",
     "Hang Seng Futuros",
     "DAX Futuros",
-    "China H-Shares Futuros",
     "Dow Jones Futuros",
-    "Mini Ibovespa Futuros",
     "Nikkei 225 Futuros",
-    "Ibovespa",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "KOSPI 200 Futuros",
     "Mini S&P 500 VIX Futuros",
-    "Topix 100",
     "FTSE 100",
-    "TOPIX Futuros",
     "Petróleo Brent",
-    "Petróleo WTI"
+    "TOPIX Futuros",
+    "KOSPI 200 Futuros",
+    "Petróleo WTI",
+    "Topix 100"
   ],
-  "atualizado": "2026-07-09T13:49:47.760Z",
+  "atualizado": "2026-07-09T13:50:17.761Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
