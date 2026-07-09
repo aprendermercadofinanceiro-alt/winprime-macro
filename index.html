@@ -166,14 +166,15 @@ function marcarMudanca(dAlt, dNeu, dBai){
 
 function fraseVoz(estado){
   var pre = new Date().getHours() < 9;
+  var frase;
   if(pre){
     var ctx = estado===2 ? "altista" : (estado===0 ? "baixista" : "descorrelacionado");
     var comp = estado===2 ? "Abertura de mercado com sentimento de alta." : (estado===0 ? "Abertura de mercado com sentimento de baixa." : "Abertura de mercado sem definição de tendência.");
-    return "Querido aluno, o contexto está " + ctx + ". " + comp;
-  }
-  if(estado===2) return "Querido aluno, o mercado ainda está em alta.";
-  if(estado===0) return "Querido aluno, o mercado ainda está em baixa.";
-  return "Querido aluno, o mercado está descorrelacionado.";
+    frase = "Querido aluno, o contexto está " + ctx + ". " + comp;
+  } else if(estado===2){ frase = "Querido aluno, o mercado ainda está em alta."; }
+  else if(estado===0){ frase = "Querido aluno, o mercado ainda está em baixa."; }
+  else { frase = "Querido aluno, o mercado está descorrelacionado."; }
+  return frase + " Lembre-se aluno, paciência recompensa.";
 }
 
 function aplicar(estado, d, falarSempre){
