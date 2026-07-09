@@ -12,7 +12,7 @@
     "IBEX 35 Futuros",
     "S&P/ASX 200 Futuros",
     "Nasdaq 100 Futuros",
-    "Mini Ibovespa Futuros",
+    "S&P 500 Futuros",
     "Prata",
     "Ibovespa",
     "Ouro",
@@ -23,8 +23,8 @@
     "Hang Seng Futuros",
     "DAX Futuros",
     "China H-Shares Futuros",
-    "S&P 500 Futuros",
     "Dow Jones Futuros",
+    "Mini Ibovespa Futuros",
     "Nikkei 225 Futuros",
     "DXY (dolar)"
   ],
@@ -37,6 +37,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-07-09T13:45:17.757Z",
+  "atualizado": "2026-07-09T13:45:47.757Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
