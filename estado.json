@@ -1,42 +1,39 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 4,
-  "altistas": 11,
-  "neutros": 7,
-  "baixistas": 7,
-  "total": 25,
+  "soma": 7,
+  "altistas": 10,
+  "neutros": 8,
+  "baixistas": 3,
+  "total": 21,
+  "fechados": 4,
   "lista_altistas": [
-    "Prata",
-    "Morgan Stanley",
     "Euro Stoxx 50 Futuros",
-    "Nasdaq 100 Futuros",
-    "Ouro",
+    "KOSPI 200 Futuros",
+    "S&P 500 VIX Futuros",
     "IBEX 35 Futuros",
     "S&P/ASX 200 Futuros",
+    "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
-    "Mini Ibovespa Futuros",
-    "Ibovespa",
-    "S&P 500 VIX Futuros"
+    "Prata",
+    "Ouro",
+    "Morgan Stanley"
   ],
   "lista_neutros": [
-    "China H-Shares Futuros",
     "iShares MSCI Brazil Capped",
     "Hang Seng Futuros",
+    "Mini S&P 500 VIX Futuros",
     "DAX Futuros",
     "Dow Jones Futuros",
-    "Nikkei 225 Futuros",
+    "Mini Ibovespa Futuros",
+    "Ibovespa",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Mini S&P 500 VIX Futuros",
     "FTSE 100",
     "Petróleo Brent",
-    "TOPIX Futuros",
-    "KOSPI 200 Futuros",
-    "Petróleo WTI",
-    "Topix 100"
+    "Petróleo WTI"
   ],
-  "atualizado": "2026-07-09T13:53:47.764Z",
-  "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-07-09T13:53:59.707Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
