@@ -15,8 +15,8 @@
     "S&P/ASX 200 Futuros",
     "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
-    "Mini Ibovespa Futuros",
     "Prata",
+    "Ibovespa",
     "Ouro",
     "Morgan Stanley"
   ],
@@ -26,7 +26,7 @@
     "Mini S&P 500 VIX Futuros",
     "DAX Futuros",
     "Dow Jones Futuros",
-    "Ibovespa",
+    "Mini Ibovespa Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
@@ -34,6 +34,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-07-09T13:57:59.745Z",
+  "atualizado": "2026-07-09T13:58:29.737Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
