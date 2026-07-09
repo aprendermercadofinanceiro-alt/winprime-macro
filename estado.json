@@ -1,10 +1,10 @@
 {
-  "estado": 2,
+  "estado": 1,
   "aberto": true,
-  "soma": 3,
+  "soma": 2,
   "altistas": 9,
-  "neutros": 10,
-  "baixistas": 6,
+  "neutros": 9,
+  "baixistas": 7,
   "total": 25,
   "lista_altistas": [
     "Euro Stoxx 50 Futuros",
@@ -26,7 +26,6 @@
     "S&P 500 Futuros",
     "Dow Jones Futuros",
     "Nikkei 225 Futuros",
-    "Petróleo Brent",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
@@ -35,8 +34,9 @@
     "Topix 100",
     "FTSE 100",
     "TOPIX Futuros",
+    "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-07-09T13:37:17.768Z",
+  "atualizado": "2026-07-09T13:37:47.764Z",
   "obs": "Leitura ao vivo da carteira do Investing + DXY do TradingView (WINPRIME)."
 }
