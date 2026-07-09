@@ -80,8 +80,8 @@
     </div>
     <div class="total">Total analisado: <b id="cTot">–</b> ativos abertos<span id="cFech" style="color:#8a9a7c"></span></div>
     <div class="mudanca" id="mudanca"></div>
-    <button class="toggle" id="btnLista">ver ativos por grupo ▾</button>
-    <div class="lists" id="lists">
+    <button class="toggle" id="btnLista" style="display:none">ver ativos por grupo ▾</button>
+    <div class="lists" id="lists" style="display:none">
       <div class="lgrp up"><h4>Altistas</h4><p id="lAlt">—</p></div>
       <div class="lgrp mid"><h4>Neutros</h4><p id="lNeu">—</p></div>
       <div class="lgrp dn"><h4>Baixistas</h4><p id="lBai">—</p></div>
@@ -166,12 +166,14 @@ function marcarMudanca(dAlt, dNeu, dBai){
 
 function fraseVoz(estado){
   var pre = new Date().getHours() < 9;
-  var ctx = estado===2 ? "altista" : (estado===0 ? "baixista" : "descorrelacionado");
-  var comp;
-  if(estado===2) comp = pre ? "Abertura de mercado com sentimento de alta." : "Mercado com sentimento de alta.";
-  else if(estado===0) comp = pre ? "Abertura de mercado com sentimento de baixa." : "Mercado com sentimento de baixa.";
-  else comp = pre ? "Abertura de mercado sem definição de tendência." : "Mercado sem definição de tendência.";
-  return "Querido aluno, o contexto está " + ctx + ". " + comp;
+  if(pre){
+    var ctx = estado===2 ? "altista" : (estado===0 ? "baixista" : "descorrelacionado");
+    var comp = estado===2 ? "Abertura de mercado com sentimento de alta." : (estado===0 ? "Abertura de mercado com sentimento de baixa." : "Abertura de mercado sem definição de tendência.");
+    return "Querido aluno, o contexto está " + ctx + ". " + comp;
+  }
+  if(estado===2) return "Querido aluno, o mercado ainda está em alta.";
+  if(estado===0) return "Querido aluno, o mercado ainda está em baixa.";
+  return "Querido aluno, o mercado está descorrelacionado.";
 }
 
 function aplicar(estado, d, falarSempre){
