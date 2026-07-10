@@ -17,9 +17,9 @@
   "lista_neutros": [
     "Dow Jones Futuros",
     "S&P 500 VIX Futuros",
-    "DAX Futuros",
     "FTSE 100",
     "IBEX 35 Futuros",
+    "DAX Futuros",
     "S&P 500 Futuros",
     "Euro Stoxx 50 Futuros",
     "DXY (dolar)"
@@ -29,6 +29,6 @@
     "Ouro",
     "Prata"
   ],
-  "atualizado": "2026-07-10T12:01:17.785Z",
+  "atualizado": "2026-07-10T12:01:47.790Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
