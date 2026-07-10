@@ -246,5 +246,34 @@ document.querySelectorAll(".demo button").forEach(function(b){
 
 setInterval(function(){ document.getElementById("clock").textContent=new Date().toLocaleTimeString("pt-BR"); },1000);
 </script>
+
+<style>
+.wp-live{position:fixed;left:0;right:0;bottom:16px;text-align:center;font:700 15px Rajdhani,Arial,sans-serif;letter-spacing:.5px;z-index:99999}
+.wp-live.viva{color:#69c47a}
+.wp-live.pausada{color:#ffcf4d}
+body.pausado #estado{opacity:.30;filter:grayscale(.65)}
+body.pausado #frase{opacity:.35}
+body.pausado::after{content:"";position:fixed;inset:0;border:5px solid #e0b64d;pointer-events:none;z-index:99998;animation:wppulse 1.4s infinite}
+@keyframes wppulse{0%,100%{opacity:.30}50%{opacity:.95}}
+</style>
+<div id="wpLive" class="wp-live viva"></div>
+<script>
+(function(){
+  var LIM=150;
+  function tick(){
+    try{
+      var t=window.__WPST&&window.__WPST.ultAt;
+      var el=document.getElementById("wpLive");
+      if(!t||!el){return;}
+      var s=Math.floor((Date.now()-t)/1000);
+      var pausado=s>LIM;
+      document.body.classList.toggle("pausado",pausado);
+      el.className="wp-live "+(pausado?"pausada":"viva");
+      el.textContent=pausado?("\u23F8 PAUSADO h\u00e1 "+Math.floor(s/60)+" min \u2014 reative o leitor"):("\u25CF AO VIVO \u00b7 atualizado h\u00e1 "+s+"s");
+    }catch(e){}
+  }
+  setInterval(tick,3000); tick();
+})();
+</script>
 </body>
 </html>
