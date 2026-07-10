@@ -17,10 +17,10 @@
     "IBEX 35 Futuros",
     "FTSE 100",
     "Dow Jones Futuros",
-    "Euro Stoxx 50 Futuros",
     "DAX Futuros",
-    "S&P 500 Futuros",
     "Petróleo Brent",
+    "Euro Stoxx 50 Futuros",
+    "S&P 500 Futuros",
     "Petróleo WTI",
     "DXY (dolar)"
   ],
@@ -29,6 +29,6 @@
     "Nasdaq 100 Futuros",
     "Prata"
   ],
-  "atualizado": "2026-07-10T12:17:54.681Z",
+  "atualizado": "2026-07-10T12:18:24.676Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
