@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         WINPRIME - Leitor de Sentimento (Investing + DXY TradingView)
 // @namespace    winprime
-// @version      2.7
-// @description  Le a SUA carteira de sentimento no Investing + o DXY no TradingView a cada 30s (mesmo em segundo plano). So conta ativos ABERTOS (relogio verde); ignora fechados (relogio vermelho). Altista > +0,30%, Baixista < -0,30%, Neutro entre -0,30% e +0,30% (inclusive). VIX e DXY invertidos. Publica no painel dos alunos.
+// @version      2.8
+// @description  Le a SUA carteira de sentimento no Investing + o DXY no TradingView a cada 30s (mesmo em segundo plano). So conta ativos ABERTOS (relogio verde); ignora fechados. Altista > +0,30%, Baixista < -0,30%, Neutro entre -0,30% e +0,30%. VIX e DXY invertidos. Veredito por MAIORIA: mais altistas = ALTA, mais baixistas = BAIXA, empate = descorrelacionado. Publica no painel dos alunos.
 // @match        https://br.investing.com/portfolio/*
 // @match        https://www.investing.com/portfolio/*
 // @match        https://br.tradingview.com/symbols/TVC-DXY/*
@@ -140,7 +140,7 @@
       else if (voto < 0) bai.push(a.nome);
       else neu.push(a.nome);
     });
-    const estado = soma >= CORTE_POS ? 2 : (soma <= CORTE_NEG ? 0 : 1);
+    const estado = soma > 0 ? 2 : (soma < 0 ? 0 : 1); // veredito por maioria: mais altistas=ALTA, mais baixistas=BAIXA, empate=descorrelacionado
     return {
       estado, aberto: true, soma,
       altistas: alt.length, neutros: neu.length, baixistas: bai.length,
