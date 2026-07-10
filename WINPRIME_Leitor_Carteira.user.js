@@ -201,6 +201,7 @@
 
   async function ciclo() {
     try {
+      try{box.setAttribute("data-wp-ciclo",String((+box.getAttribute("data-wp-ciclo")||0)+1));}catch(_){}
       const ativos = lerCarteira();
       if (!ativos.length) { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>aguardando a carteira carregar…</small>"; return; }
       const p = computar(ativos);
@@ -246,7 +247,8 @@
   }
 
   setTimeout(function () {
-    if (TOKEN && TOKEN.length >= 20) iniciar();
-    else pedirToken();
+    try{box.setAttribute("data-wp-token",(TOKEN&&TOKEN.length>=20)?("ok:"+TOKEN.length):("vazio:"+((TOKEN&&TOKEN.length)||0)));}catch(_){}
+    if (TOKEN && TOKEN.length >= 20) { try{box.setAttribute("data-wp","iniciar");}catch(_){} iniciar(); }
+    else { try{box.setAttribute("data-wp","pedirToken");}catch(_){} pedirToken(); }
   }, 2500);
 })();
