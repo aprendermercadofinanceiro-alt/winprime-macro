@@ -204,7 +204,7 @@ function consultar(){
     var at = new Date(d.atualizado).getTime();
     if(at && at <= W.ultAt) return;
     W.ultAt = at || W.ultAt;
-    aplicar(d.estado, d, false);
+    aplicar(d.estado, d, false); if(typeof setStatus === "function") setStatus("Atualizado \u2022 " + new Date().toLocaleTimeString("pt-BR"), false);
   });
 }
 function setStatus(t, err){ var s=document.getElementById("status"); s.textContent=t; s.className="status"+(err?" err":""); }
