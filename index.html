@@ -181,25 +181,32 @@ function aplicar(estado, d, falarSempre){
 
 function timerBackground(fn, ms){ try{ var w=new Worker(URL.createObjectURL(new Blob(["setInterval(function(){postMessage(0);},"+ms+");"],{type:"text/javascript"}))); w.onmessage=fn; return w; }catch(e){ return setInterval(fn, ms); } }
 function consultar(){
-  fetch(ESTADO_URL + "?t=" + Date.now(), {cache:"no-store"})
-    .then(function(r){ if(!r.ok) throw 0; return r.json(); })
-    .then(function(d){
-      if(d.aberto === false){
-        document.body.className = "neu";
-        document.getElementById("estado").textContent = "FORA DO PREGÃO";
-        document.getElementById("frase").textContent = d.obs || "Aguardando a abertura (08:50 às 17:55).";
-        ["cAlt","cNeu","cBai","cTot"].forEach(function(id){ document.getElementById(id).textContent="–"; });
-        ultimoEstado = null;
-        setStatus("Conectado · fora do horário de pregão", false);
-        return;
-      }
-      aplicar(Number(d.estado), d, falarSempreModo);
-      var q = d.atualizado ? new Date(d.atualizado).toLocaleTimeString("pt-BR") : "";
-      setStatus("Conectado · última leitura do WINPRIME " + q, false);
-    })
-    .catch(function(e){ setStatus("Sem conexão com estado.json — use o modo demonstração abaixo.", true); });
+  var RAW = ESTADO_URL;
+  var API = "https://api.github.com/repos/aprendermercadofinanceiro-alt/winprime-macro/contents/estado.json?ref=main";
+  var W = window.__WPST || (window.__WPST = {apiNext:0, cooldown:0, ultAt:0});
+  function fRaw(){ return fetch(RAW + "?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }); }
+  function fApi(){
+    var now = Date.now();
+    if(now < W.cooldown || now < W.apiNext) return Promise.resolve(null);
+    W.apiNext = now + 55000;
+    return fetch(API, {cache:"no-store", headers:{Accept:"application/vnd.github.raw"}}).then(function(r){
+      var rem = parseInt(r.headers.get("x-ratelimit-remaining") || "60", 10);
+      var rst = parseInt(r.headers.get("x-ratelimit-reset") || "0", 10) * 1000;
+      if(r.status === 403 || rem <= 6){ W.cooldown = rst > now ? rst : now + 900000; }
+      return r.ok ? r.json() : null;
+    }).catch(function(){ return null; });
+  }
+  Promise.all([fRaw(), fApi()]).then(function(res){
+    var arr = res.filter(Boolean);
+    if(!arr.length){ if(typeof setStatus === "function") setStatus("reconectando…", true); return; }
+    arr.sort(function(a,b){ return new Date(b.atualizado) - new Date(a.atualizado); });
+    var d = arr[0];
+    var at = new Date(d.atualizado).getTime();
+    if(at && at <= W.ultAt) return;
+    W.ultAt = at || W.ultAt;
+    aplicar(d.estado, d, false);
+  });
 }
-
 function setStatus(t, err){ var s=document.getElementById("status"); s.textContent=t; s.className="status"+(err?" err":""); }
 
 function iniciar(){
