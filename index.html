@@ -4,88 +4,66 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WINPRIME — Painel Macro (Sentimento de Mercado)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
 <style>
-  :root{ --brand:#173404; --green:#1f9d3a; --red:#c62828; --gray:#8a887f; }
+  :root{ --gold:#E8C15A; --gold2:#F6DE8B; --green:#57e08d; --red:#ff5d5d; }
   *{box-sizing:border-box}
   html,body{margin:0;height:100%}
-  body{background:radial-gradient(1200px 600px at 50% -10%, #1b2416, #0f120d 60%);
-    color:#f2f2ec;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
-    display:flex;align-items:flex-start;justify-content:center;min-height:100%;padding:24px}
-  .app{width:100%;max-width:600px}
-  .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
-  .brand{font-weight:800;letter-spacing:1px;font-size:20px;color:#eaf3de}
-  .brand small{display:block;font-weight:500;letter-spacing:.4px;font-size:11px;color:#9fb08f;margin-top:2px}
-  .clock{font-size:12px;color:#9fb08f;text-align:right}
-  .panel{background:#161a12;border:1px solid #2a3222;border-radius:22px;padding:28px 26px;text-align:center;
-    box-shadow:0 20px 60px rgba(0,0,0,.4)}
-  .dot{width:20px;height:20px;border-radius:50%;margin:0 auto 12px;background:#3a3a3a}
-  .estado-label{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#9fb08f;margin-bottom:6px}
-  .estado{font-size:38px;font-weight:800;line-height:1.05;margin:0 0 6px}
-  .frase{font-size:15px;color:#c9c9c0;margin:0 0 16px;min-height:20px}
-  .placar{display:flex;gap:10px;justify-content:center;margin:0 0 6px}
-  .chip{flex:1;background:#11150e;border:1px solid #2a3222;border-radius:12px;padding:12px 6px}
-  .chip .n{font-size:28px;font-weight:800;line-height:1}
-  .chip .l{font-size:11px;color:#9fb08f;letter-spacing:.5px;margin-top:4px}
-  .n.up{color:#69c47a}.n.mid{color:#cfcb92}.n.dn{color:#e57373}
-  .total{font-size:12px;color:#8a9a7c;margin-top:8px}
-  .total b{color:#eaf3de}
-  .lists{margin-top:14px;text-align:left;display:none}
-  .lists.open{display:block}
-  .lgrp{margin-bottom:10px}
-  .lgrp h4{margin:0 0 4px;font-size:12px;letter-spacing:.5px}
-  .lgrp.up h4{color:#69c47a}.lgrp.mid h4{color:#cfcb92}.lgrp.dn h4{color:#e57373}
-  .lgrp p{margin:0;font-size:12.5px;color:#b9b9b0;line-height:1.5}
-  .toggle{font-size:12px;color:#9fb08f;background:none;border:none;cursor:pointer;margin-top:6px;text-decoration:underline}
-  .status{font-size:12px;color:#8a9a7c;margin-top:14px}
+  body{background:radial-gradient(1100px 520px at 50% -8%, rgba(232,193,90,.10), transparent 60%), radial-gradient(900px 700px at 50% 120%, rgba(232,193,90,.05), transparent 60%), #04040a; color:#efe9dc; font-family:"Rajdhani",-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif; display:flex;align-items:flex-start;justify-content:center;min-height:100%;padding:26px;-webkit-font-smoothing:antialiased}
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;background-image:repeating-linear-gradient(0deg, rgba(255,255,255,.02) 0 1px, transparent 1px 3px);opacity:.35}
+  .app{width:100%;max-width:600px;position:relative;z-index:1}
+  .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;padding:0 4px}
+  .brand{font-family:"Orbitron",sans-serif;font-weight:800;letter-spacing:3px;font-size:20px;background:linear-gradient(90deg,#F6DE8B,#C9971F);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .brand small{display:block;font-weight:500;letter-spacing:2px;font-size:10px;color:#b79b5e;margin-top:4px;-webkit-text-fill-color:#b79b5e}
+  .clock{font-family:"Orbitron";font-size:12px;letter-spacing:1px;color:#caa85a}
+  .panel{position:relative;border-radius:20px;padding:36px 26px 26px;text-align:center;background:linear-gradient(#0a0a12,#07070d) padding-box, linear-gradient(140deg,#F6DE8B,#7a5c1c 45%,#F6DE8B) border-box;border:1.5px solid transparent;box-shadow:0 24px 70px rgba(0,0,0,.6), inset 0 0 44px rgba(232,193,90,.05)}
+  .panel::before,.panel::after{content:"";position:absolute;width:24px;height:24px;border:2px solid var(--gold);opacity:.85}
+  .panel::before{top:12px;left:12px;border-right:0;border-bottom:0;border-top-left-radius:8px}
+  .panel::after{bottom:12px;right:12px;border-left:0;border-top:0;border-bottom-right-radius:8px}
+  .orb{width:26px;height:26px;border-radius:50%;margin:0 auto 14px;position:relative;background:#2a2a2a}
+  .orb::after{content:"";position:absolute;inset:-7px;border-radius:50%;border:1px solid rgba(232,193,90,.25)}
+  .estado-label{font-size:12px;letter-spacing:5px;text-transform:uppercase;color:#b79b5e;margin-bottom:8px}
+  .estado{font-family:"Orbitron",sans-serif;font-size:46px;font-weight:800;line-height:1.02;margin:0 0 10px;letter-spacing:2px}
+  .frase{font-size:16px;color:#d7cdb4;margin:0 0 6px;min-height:22px;letter-spacing:.4px}
+  .placar,.total,.mudanca,.lists{display:none}
+  .status{font-family:"Orbitron";font-size:11px;letter-spacing:1px;color:#9a8a5e;margin-top:16px}
   .status.err{color:#e0a03a}
-  .controls{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:16px}
-  button.act{font:inherit;font-size:14px;font-weight:600;color:#eaf3de;background:#23301a;border:1px solid #3a4a2c;
-    border-radius:10px;padding:11px 16px;cursor:pointer}
-  button.act:hover{background:#2c3c20}
-  button.primary{background:#2e7d32;border-color:#2e7d32}
-  button.primary:hover{background:#36913b}
-  button.ghost{background:transparent}
-  .demo{margin-top:20px;border-top:1px dashed #2a3222;padding-top:14px}
-  .demo .t{font-size:11px;color:#7f8f72;letter-spacing:.5px;text-transform:uppercase;margin-bottom:8px}
+  .controls{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-top:20px}
+  button.act{font-family:"Rajdhani";font-weight:600;font-size:14px;letter-spacing:.5px;color:var(--gold2);background:rgba(232,193,90,.06);border:1px solid rgba(232,193,90,.45);border-radius:12px;padding:12px 18px;cursor:pointer;transition:.15s}
+  button.act:hover{background:rgba(232,193,90,.14);border-color:var(--gold)}
+  button.primary{background:linear-gradient(135deg,#F6DE8B,#C9971F);border:0;color:#1a1305;font-weight:700;box-shadow:0 6px 22px rgba(232,193,90,.28)}
+  button.primary:hover{filter:brightness(1.08)}
+  .demo{margin-top:22px;border-top:1px solid rgba(232,193,90,.15);padding-top:16px}
+  .demo .t{font-size:10px;color:#7c6b45;letter-spacing:2px;text-transform:uppercase;margin-bottom:10px}
   .demo .row{display:flex;gap:8px;justify-content:center}
-  .demo button{padding:8px 12px;font-size:12.5px;color:#eaf3de;background:#1b2414;border:1px solid #34432a;border-radius:9px;cursor:pointer}
-  .foot{text-align:center;font-size:11px;color:#6f7c64;margin-top:16px}
-  body.pos .dot{background:var(--green);box-shadow:0 0 22px 4px rgba(31,157,58,.6)}
-  body.neg .dot{background:var(--red);box-shadow:0 0 22px 4px rgba(198,40,40,.55)}
-  body.neu .dot{background:var(--gray);box-shadow:0 0 18px 3px rgba(120,120,110,.4)}
-  body.pos .estado{color:#69c47a}
-  body.neg .estado{color:#e57373}
-  body.neu .estado{color:#cfcfc4}
-  .chip.flash{animation:winflash 1.8s ease}
-  @keyframes winflash{0%{background:#11150e}20%{background:#33511f;transform:scale(1.07)}100%{background:#11150e;transform:scale(1)}}
-  .mudanca{font-size:12.5px;color:#cfe0b8;margin:8px 0 0;min-height:16px}
-  .mudanca b{color:#eaf3de}
+  .demo button{font-family:"Rajdhani";padding:9px 14px;font-size:12.5px;color:var(--gold2);background:rgba(232,193,90,.05);border:1px solid rgba(232,193,90,.3);border-radius:10px;cursor:pointer}
+  .foot{text-align:center;font-size:11px;color:#6b5d3a;margin-top:18px;letter-spacing:1px}
+  body.pos .estado{color:var(--green);text-shadow:0 0 26px rgba(87,224,141,.5)}
+  body.neg .estado{color:var(--red);text-shadow:0 0 26px rgba(255,93,93,.45)}
+  body.neu .estado{color:var(--gold);text-shadow:0 0 26px rgba(232,193,90,.55)}
+  body.pos .orb{background:var(--green);box-shadow:0 0 26px 6px rgba(87,224,141,.55);animation:pulse 2s infinite}
+  body.neg .orb{background:var(--red);box-shadow:0 0 26px 6px rgba(255,93,93,.5);animation:pulse 2s infinite}
+  body.neu .orb{background:var(--gold);box-shadow:0 0 26px 6px rgba(232,193,90,.55);animation:pulse 2s infinite}
+  @keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.12);opacity:.85}}
 </style>
 </head>
 <body class="neu">
 <div class="app">
   <div class="topbar">
-    <div class="brand">WINPRIME<small>Área do aluno · Painel Macro</small></div>
+    <div class="brand">WINPRIME<small>ÁREA DO ALUNO · PAINEL MACRO</small></div>
     <div class="clock" id="clock">—</div>
   </div>
   <div class="panel">
-    <div class="dot"></div>
-    <div class="estado-label">Sentimento de mercado</div>
+    <div class="orb dot"></div>
+    <div class="estado-label">Sentimento de Mercado</div>
     <h1 class="estado" id="estado">AGUARDANDO</h1>
     <p class="frase" id="frase">Clique em iniciar para começar o monitoramento com voz.</p>
-    <div class="placar" style="display:none">
-      <div class="chip"><div class="n up"  id="cAlt">–</div><div class="l">ALTISTAS</div></div>
-      <div class="chip"><div class="n mid" id="cNeu">–</div><div class="l">NEUTROS</div></div>
-      <div class="chip"><div class="n dn"  id="cBai">–</div><div class="l">BAIXISTAS</div></div>
-    </div>
+    <div class="placar" style="display:none"><div class="chip"><div class="n up" id="cAlt">–</div><div class="l">ALTISTAS</div></div><div class="chip"><div class="n mid" id="cNeu">–</div><div class="l">NEUTROS</div></div><div class="chip"><div class="n dn" id="cBai">–</div><div class="l">BAIXISTAS</div></div></div>
     <div class="total" style="display:none">Total analisado: <b id="cTot">–</b> ativos abertos<span id="cFech" style="color:#8a9a7c"></span></div>
     <div class="mudanca" id="mudanca" style="display:none"></div>
     <button class="toggle" id="btnLista" style="display:none">ver ativos por grupo ▾</button>
-    <div class="lists" id="lists" style="display:none">
-      <div class="lgrp up"><h4>Altistas</h4><p id="lAlt">—</p></div>
-      <div class="lgrp mid"><h4>Neutros</h4><p id="lNeu">—</p></div>
-      <div class="lgrp dn"><h4>Baixistas</h4><p id="lBai">—</p></div>
-    </div>
+    <div class="lists" id="lists" style="display:none"><div class="lgrp up"><h4>Altistas</h4><p id="lAlt">—</p></div><div class="lgrp mid"><h4>Neutros</h4><p id="lNeu">—</p></div><div class="lgrp dn"><h4>Baixistas</h4><p id="lBai">—</p></div></div>
     <div class="status" id="status">Parado.</div>
     <div class="controls">
       <button class="act primary" id="btnStart">▶ Iniciar monitoramento</button>
@@ -94,7 +72,7 @@
       <button class="act ghost" id="btnRepetir">↻ Repetir leitura</button>
     </div>
     <div class="demo">
-      <div class="t">Modo demonstração (teste com dados completos)</div>
+      <div class="t">Modo demonstração (teste)</div>
       <div class="row">
         <button data-e="2">Simular ALTA</button>
         <button data-e="1">Simular NEUTRO</button>
