@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WINPRIME - Leitor de Sentimento (Investing + DXY TradingView)
 // @namespace    winprime
-// @version      2.9
+// @version      2.10
 // @description  Le a SUA carteira de sentimento no Investing (so ativos abertos - relogio verde) + o DXY no TradingView a cada 30s, calcula o placar por maioria (regra estrita +/-0,30%, VIX e DXY invertidos) e publica no painel dos alunos. Partida blindada: nunca trava.
 // @match        https://br.investing.com/portfolio/*
 // @match        https://www.investing.com/portfolio/*
