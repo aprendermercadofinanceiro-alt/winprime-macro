@@ -1,0 +1,19 @@
+name: probe-data
+on:
+  workflow_dispatch:
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Stooq
+        run: |
+          S="^spx+^ndx+^dji+^vix+^bvp+^dax+^ukx+^nkx+^hsi+^kospi+^ibex+^stx+^axjo+xauusd+xagusd+cl.f+cb.f+ewz.us+ms.us+^dxy+usdollar"
+          echo "=== STOOQ ==="
+          curl -s -A "Mozilla/5.0" "https://stooq.com/q/l/?s=$S&f=sd2t2ohlcvpn&h&e=csv" || echo FAIL_STOOQ
+      - name: Yahoo
+        run: |
+          echo "=== YAHOO QUOTE ==="
+          curl -s -A "Mozilla/5.0" "https://query1.finance.yahoo.com/v7/finance/quote?symbols=%5EBVSP,ES=F,NQ=F,YM=F,%5EVIX,GC=F,SI=F,CL=F,BZ=F,%5EGDAXI,%5EFTSE,%5EN225,%5EHSI,EWZ,MS,DX-Y.NYB,%5ESTOXX50E,%5EIBEX,%5EAXJO,%5EKS200" || echo FAIL_YQ
+          echo ""
+          echo "=== YAHOO CHART BVSP ==="
+          curl -s -A "Mozilla/5.0" "https://query1.finance.yahoo.com/v8/finance/chart/%5EBVSP?interval=1d&range=1d" | head -c 1400 || echo FAIL_YC
