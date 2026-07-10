@@ -13,12 +13,12 @@
     "Topix 100"
   ],
   "lista_neutros": [
-    "Petróleo Brent",
     "DAX Futuros",
-    "S&P 500 Futuros",
     "Dow Jones Futuros",
-    "Nasdaq 100 Futuros",
     "S&P/ASX 200 Futuros",
+    "S&P 500 Futuros",
+    "Petróleo Brent",
+    "Nasdaq 100 Futuros",
     "Ouro",
     "DXY (dolar)"
   ],
@@ -28,6 +28,6 @@
     "Prata",
     "TOPIX Futuros"
   ],
-  "atualizado": "2026-07-10T00:26:59.731Z",
+  "atualizado": "2026-07-10T00:27:29.733Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
