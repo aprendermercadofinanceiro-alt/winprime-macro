@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name         WINPRIME - Leitor de Sentimento (Investing + DXY TradingView)
 // @namespace    winprime
-// @version      2.8
-// @description  Le a SUA carteira de sentimento no Investing + o DXY no TradingView a cada 30s (mesmo em segundo plano). So conta ativos ABERTOS (relogio verde); ignora fechados. Altista > +0,30%, Baixista < -0,30%, Neutro entre -0,30% e +0,30%. VIX e DXY invertidos. Veredito por MAIORIA: mais altistas = ALTA, mais baixistas = BAIXA, empate = descorrelacionado. Publica no painel dos alunos.
+// @version      2.9
+// @description  Le a SUA carteira de sentimento no Investing (so ativos abertos - relogio verde) + o DXY no TradingView a cada 30s, calcula o placar por maioria (regra estrita +/-0,30%, VIX e DXY invertidos) e publica no painel dos alunos. Partida blindada: nunca trava.
 // @match        https://br.investing.com/portfolio/*
 // @match        https://www.investing.com/portfolio/*
 // @match        https://br.tradingview.com/symbols/TVC-DXY/*
@@ -18,15 +18,6 @@
 
 (function () {
   "use strict";
-
-  // Timer que NAO e desacelerado quando a aba fica em segundo plano (roda num Web Worker).
-  function timerBackground(fn, ms) {
-    try {
-      const w = new Worker(URL.createObjectURL(new Blob(["setInterval(function(){postMessage(0);}," + ms + ");"], { type: "text/javascript" })));
-      w.onmessage = fn;
-      return w;
-    } catch (e) { return setInterval(fn, ms); }
-  }
 
   const NO_TRADINGVIEW = /tradingview\.com/i.test(location.hostname);
 
@@ -50,15 +41,17 @@
     box.innerHTML = "<b style='color:#b7e08c'>WINPRIME · DXY</b><br><small>lendo…</small>";
     document.body.appendChild(box);
     function ciclo() {
-      const v = lerDXY();
-      if (v === null) { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME · DXY</b><br><small>lendo…</small>"; return; }
-      GM_setValue("winprime_dxy", JSON.stringify({ v: v, ts: Date.now() }));
-      box.innerHTML = "<b style='color:#b7e08c'>WINPRIME · DXY</b><br>" +
-        "<span style='font-size:17px;font-weight:800'>" + (v >= 0 ? "+" : "") + v.toFixed(2) + "%</span><br>" +
-        "<small style='color:#9fb08f'>enviado ao placar · " + new Date().toLocaleTimeString("pt-BR") + "</small>";
+      try {
+        const v = lerDXY();
+        if (v === null) { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME · DXY</b><br><small>lendo…</small>"; return; }
+        GM_setValue("winprime_dxy", JSON.stringify({ v: v, ts: Date.now() }));
+        box.innerHTML = "<b style='color:#b7e08c'>WINPRIME · DXY</b><br>" +
+          "<span style='font-size:17px;font-weight:800'>" + (v >= 0 ? "+" : "") + v.toFixed(2) + "%</span><br>" +
+          "<small style='color:#9fb08f'>enviado ao placar · " + new Date().toLocaleTimeString("pt-BR") + "</small>";
+      } catch (e) {}
     }
+    setInterval(ciclo, 20000);   // timer primeiro (nunca depende do 1o ciclo)
     setTimeout(ciclo, 2500);
-    timerBackground(ciclo, 15000);
     return;
   }
 
@@ -68,10 +61,10 @@
   const OWNER = "aprendermercadofinanceiro-alt";
   const REPO  = "winprime-macro";
   const PATH  = "estado.json";
-  const INTERVALO_MS = 30000;
-  const DXY_VALIDADE_MS = 60 * 60 * 1000; // aceita DXY lido na ultima 1h (nunca some enquanto a aba do TradingView estiver aberta)
+  const INTERVALO_MS = 30000;              // publica a cada 30s
+  const DXY_VALIDADE_MS = 15 * 60 * 1000;  // aceita DXY lido nos ultimos 15 min
 
-  const LIMIAR = 0.30, CORTE_POS = 3, CORTE_NEG = -3;
+  const LIMIAR = 0.30;                      // regra estrita: >+0,30 alta ; <-0,30 baixa ; entre = neutro
   const INVERTIDO = /VIX|DXY|USDX|Índice Dólar|Dollar Index/i;
 
   let TOKEN = GM_getValue("winprime_token", "");
@@ -94,6 +87,8 @@
     } catch (e) { return null; }
   }
 
+  // Le a carteira: SO ativos abertos (relogio verde). Ignora fechados (relogio vermelho).
+  // Le exatamente a coluna "Var%" (nunca "Negociacao Estendida (%)").
   function lerCarteira() {
     const tables = Array.from(document.querySelectorAll("table"));
     let best = null, bestn = 0;
@@ -108,8 +103,9 @@
         Array.from(best.querySelectorAll("tbody tr")).forEach(tr => {
           const tds = tr.querySelectorAll("td");
           if (!tds[varIdx]) return;
+          // relogio: verde = aberto (conta) ; vermelho = fechado (ignora)
           const clock = tr.querySelector('[class*="ClockIcon"]');
-          if (clock && /red/i.test(clock.className)) { fechados++; return; } // relogio vermelho = ativo fechado -> nao conta
+          if (clock && /red/i.test(clock.className)) { fechados++; return; }
           const cell = tds[varIdx].innerText.trim().replace(/[−–]/g, "-");
           const m = cell.match(/(-?\d+,\d+)%/);
           if (!m) return;
@@ -119,12 +115,9 @@
         });
       }
     }
-    if (!ativos.length) {
-      const linhas = Array.from(document.querySelectorAll("tr")).map(tr => tr.innerText.replace(/\s+/g, " ").trim()).filter(t => t && /%/.test(t) && !/Nome/i.test(t));
-      ativos = linhas.map(t => { const m = t.replace(/[−–]/g, "-").match(/(-?\d+,\d+)%/g); if (!m) return null; return { nome: t.split(" ").slice(0, 3).join(" "), v: parseFloat(m[m.length - 1].replace(",", ".")), linha: t }; }).filter(Boolean);
-    }
+    // juntar o DXY vindo do TradingView (so se recente)
     const dxy = lerDXYArmazenado();
-    if (dxy) ativos.push({ nome: "DXY (dolar)", v: dxy.v, linha: "DXY Dollar Index" });
+    if (dxy && !dxy.velho) ativos.push({ nome: "DXY (dolar)", v: dxy.v, linha: "DXY Dollar Index" });
     ativos._dxy = dxy;
     ativos._fechados = fechados;
     return ativos;
@@ -133,22 +126,23 @@
   function computar(ativos) {
     let soma = 0; const alt = [], neu = [], bai = [];
     ativos.forEach(a => {
+      // REGRA ESTRITA: exatamente +/-0,30% cai em NEUTRO
       let voto = a.v > LIMIAR ? 1 : (a.v < -LIMIAR ? -1 : 0);
-      if (INVERTIDO.test(a.linha)) voto = -voto;
+      if (INVERTIDO.test(a.linha)) voto = -voto;   // VIX e DXY: queda = alta
       soma += voto;
       if (voto > 0) alt.push(a.nome);
       else if (voto < 0) bai.push(a.nome);
       else neu.push(a.nome);
     });
-    const estado = soma > 0 ? 2 : (soma < 0 ? 0 : 1); // veredito por maioria: mais altistas=ALTA, mais baixistas=BAIXA, empate=descorrelacionado
+    // VEREDITO POR MAIORIA
+    const estado = soma > 0 ? 2 : (soma < 0 ? 0 : 1);
     return {
       estado, aberto: true, soma,
       altistas: alt.length, neutros: neu.length, baixistas: bai.length,
-      total: ativos.length,
-      fechados: ativos._fechados || 0,
+      total: ativos.length, fechados: ativos._fechados || 0,
       lista_altistas: alt, lista_neutros: neu, lista_baixistas: bai,
       atualizado: new Date().toISOString(),
-      obs: "So ativos abertos (relogio verde). Fechados ignorados: " + (ativos._fechados || 0) + ". Carteira do Investing + DXY do TradingView (WINPRIME)."
+      obs: "So ativos abertos (relogio verde). Fechados ignorados: " + (ativos._fechados || 0) + ". Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
     };
   }
 
@@ -194,30 +188,35 @@
     else status = "erro ao publicar (" + res.status + ")";
     let dxyLinha;
     if (!dxy) dxyLinha = "<span style='color:#e0a03a'>DXY: abra a aba do TradingView</span>";
-    else if (dxy.velho) dxyLinha = "<span style='color:#e0a03a'>DXY (reabra o TradingView): " + (dxy.v >= 0 ? "+" : "") + dxy.v.toFixed(2) + "%</span>";
+    else if (dxy.velho) dxyLinha = "<span style='color:#e0a03a'>DXY desatualizado (reabra o TradingView)</span>";
     else dxyLinha = "<span style='color:#9fb08f'>DXY incluido: " + (dxy.v >= 0 ? "+" : "") + dxy.v.toFixed(2) + "%</span>";
     box.innerHTML = "<b style='color:#b7e08c'>WINPRIME · Placar</b><br>" +
       "<span style='font-size:22px;font-weight:800;color:" + cor + "'>" + rot + "</span><br>" +
       "<span style='color:#69c47a'>" + p.altistas + " alt</span> · " +
       "<span style='color:#cfcb92'>" + p.neutros + " neu</span> · " +
-      "<span style='color:#e57373'>" + p.baixistas + " bai</span> <span style='color:#9fb08f'>(" + p.total + " abertos · " + (p.fechados || 0) + " fechados fora)</span><br>" +
+      "<span style='color:#e57373'>" + p.baixistas + " bai</span> (" + p.total + " abertos · " + p.fechados + " fechados fora)<br>" +
       dxyLinha + "<br>" +
       "<small style='color:#9fb08f'>" + new Date().toLocaleTimeString("pt-BR") + " · " + status + "</small>";
   }
 
   async function ciclo() {
-    const ativos = lerCarteira();
-    if (!ativos.length) { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>aguardando a carteira carregar…</small>"; return; }
-    const p = computar(ativos);
-    let res = { ok: false, status: 0 };
-    try { res = await publicar(p); } catch (e) {}
-    pintar(p, res, ativos._dxy);
+    try {
+      const ativos = lerCarteira();
+      if (!ativos.length) { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>aguardando a carteira carregar…</small>"; return; }
+      const p = computar(ativos);
+      let res = { ok: false, status: 0 };
+      try { res = await publicar(p); } catch (e) {}
+      pintar(p, res, ativos._dxy);
+    } catch (e) {
+      // nunca deixa a leitura morrer: o proximo tick tenta de novo
+      try { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>reprocessando… (" + (e && e.message ? e.message : "erro") + ")</small>"; } catch (_) {}
+    }
   }
 
   function iniciar() {
     if (timer) return;
+    timer = setInterval(ciclo, INTERVALO_MS);  // TIMER PRIMEIRO: garante retry mesmo se o 1o ciclo falhar
     ciclo();
-    timer = timerBackground(ciclo, INTERVALO_MS);
   }
 
   function pedirToken() {
