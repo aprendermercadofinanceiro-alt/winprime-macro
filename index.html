@@ -289,16 +289,24 @@ body.fechado::after{content:"";position:fixed;inset:0;border:5px solid #e0b64d;p
   function sp(){ return new Date(new Date().toLocaleString("en-US",{timeZone:"America/Sao_Paulo"})); }
   window.mercadoAberto=function(){ var n=sp(),d=n.getDay(),h=n.getHours(); if(d===6)return false; if(d===0)return h>=19; if(d===5)return h<19; return true; };
   window.janelaFechada=function(){ return !window.mercadoAberto(); };
+  var FRASE_FECH="Voltaremos no domingo \u00e0s 19:00. Nos vemos no topo.";
+  var VOZ_FECH="Mercado macro fechado. Voltaremos no domingo \u00e0s 19:00. Nos vemos no topo.";
   var falou=false;
   function render(){
     if(!window.janelaFechada()){ falou=false; document.body.classList.remove("fechado"); return; }
     document.body.classList.add("fechado"); document.body.classList.remove("pausado");
     var e=document.getElementById("estado"); if(e) e.textContent="MERCADO MACRO FECHADO";
-    var f=document.getElementById("frase"); if(f) f.textContent="Lembre-se, paci\u00eancia recompensa.";
-    var lv=document.getElementById("wpLive"); if(lv){ lv.className="wp-live fechada"; lv.textContent="\u25A0 MERCADO MACRO FECHADO \u00b7 abre domingo 19h"; }
-    if(!falou){ falou=true; try{ if(window.vozAtiva!==false && typeof window.falar==="function"){ window.falar("Mercado macro fechado. Lembre-se, paci\u00eancia recompensa."); } }catch(_){} }
+    var f=document.getElementById("frase"); if(f) f.textContent=FRASE_FECH;
+    var lv=document.getElementById("wpLive"); if(lv){ lv.className="wp-live fechada"; lv.textContent="\u25A0 MERCADO MACRO FECHADO \u00b7 volta domingo 19h"; }
+    if(!falou){ falou=true; try{ if(window.vozAtiva!==false && typeof window.falar==="function"){ window.falar(VOZ_FECH); } }catch(_){} }
   }
   setInterval(render, 2000); render();
+  document.addEventListener("click", function(ev){
+    var b=document.getElementById("btnStart");
+    if(b && (ev.target===b || (b.contains && b.contains(ev.target))) && window.janelaFechada()){
+      try{ if(typeof window.falar==="function") window.falar(VOZ_FECH); }catch(_){}
+    }
+  }, true);
 })();
 </script>
 </body>
