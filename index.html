@@ -156,7 +156,7 @@ function fraseVoz(estado){
   return frase + " Lembre-se aluno, paciência recompensa.";
 }
 
-function aplicar(estado, d, falarSempre){
+function aplicar(estado, d, falarSempre){ if(window.janelaFechada&&window.janelaFechada()){return;}
   var m = MAP[estado]; if(!m) return;
   document.body.className = m.cls;
   document.getElementById("estado").textContent = m.nome;
@@ -261,7 +261,7 @@ body.pausado::after{content:"";position:fixed;inset:0;border:5px solid #e0b64d;p
 <script>
 (function(){
   var LIM=150;
-  function tick(){
+  function tick(){ if(window.janelaFechada&&window.janelaFechada())return;
     try{
       var t=window.__WPST&&window.__WPST.ultAt;
       var el=document.getElementById("wpLive");
@@ -274,6 +274,30 @@ body.pausado::after{content:"";position:fixed;inset:0;border:5px solid #e0b64d;p
     }catch(e){}
   }
   setInterval(tick,3000); tick();
+})();
+</script>
+
+<style>
+.wp-live.fechada{color:#e0b64d}
+body.fechado #estado{opacity:1!important;filter:none!important;font-size:26px;line-height:1.15}
+body.fechado #frase{opacity:1!important}
+body.fechado::after{content:"";position:fixed;inset:0;border:5px solid #e0b64d;pointer-events:none;z-index:99998;opacity:.5}
+</style>
+<script>
+(function(){
+  function sp(){ return new Date(new Date().toLocaleString("en-US",{timeZone:"America/Sao_Paulo"})); }
+  window.mercadoAberto=function(){ var n=sp(),d=n.getDay(),h=n.getHours(); if(d===6)return false; if(d===0)return h>=19; if(d===5)return h<19; return true; };
+  window.janelaFechada=function(){ return !window.mercadoAberto(); };
+  var falou=false;
+  function render(){
+    if(!window.janelaFechada()){ falou=false; document.body.classList.remove("fechado"); return; }
+    document.body.classList.add("fechado"); document.body.classList.remove("pausado");
+    var e=document.getElementById("estado"); if(e) e.textContent="MERCADO MACRO FECHADO";
+    var f=document.getElementById("frase"); if(f) f.textContent="Lembre-se, paci\u00eancia recompensa.";
+    var lv=document.getElementById("wpLive"); if(lv){ lv.className="wp-live fechada"; lv.textContent="\u25A0 MERCADO MACRO FECHADO \u00b7 abre domingo 19h"; }
+    if(!falou){ falou=true; try{ if(window.vozAtiva!==false && typeof window.falar==="function"){ window.falar("Mercado macro fechado. Lembre-se, paci\u00eancia recompensa."); } }catch(_){} }
+  }
+  setInterval(render, 2000); render();
 })();
 </script>
 </body>
