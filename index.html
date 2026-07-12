@@ -309,5 +309,15 @@ body.fechado::after{content:"";position:fixed;inset:0;border:5px solid #e0b64d;p
   }, true);
 })();
 </script>
+
+<script>
+/* AUTO-START WINPRIME: inicia a contagem sozinho e reativa se parar (nao pode parar) */
+(function(){
+  function precisaIniciar(){ var b=document.getElementById("btnStart"); return b && /Iniciar/i.test(b.textContent||""); }
+  function auto(){ try{ if(precisaIniciar()){ document.getElementById("btnStart").click(); } }catch(e){} }
+  setTimeout(auto, 1800);
+  setInterval(auto, 10000);
+})();
+</script>
 </body>
 </html>
