@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WINPRIME - Leitor de Sentimento (Investing + DXY TradingView)
 // @namespace    winprime
-// @version      2.11
+// @version      2.12
 // @description  Le a SUA carteira de sentimento no Investing (so ativos abertos - relogio verde) + o DXY no TradingView a cada 30s, calcula o placar por maioria (regra estrita +/-0,30%, VIX e DXY invertidos) e publica no painel dos alunos. Partida blindada: nunca trava.
 // @match        https://br.investing.com/portfolio/*
 // @match        https://www.investing.com/portfolio/*
@@ -89,14 +89,13 @@
 
   // Le a carteira: SO ativos abertos (relogio verde). Ignora fechados (relogio vermelho).
   // Le exatamente a coluna "Var%" (nunca "Negociacao Estendida (%)").
-  let _dxyInv = null;
-  async function refrescarDXYInvesting() {
+  let _dxyTV = null;
+  async function refrescarDXY_TV() {
     try {
-      const r = await fetch("https://br.investing.com/currencies/us-dollar-index", { cache: "no-store" });
+      const r = await fetch("https://scanner.tradingview.com/symbol?symbol=TVC:DXY&fields=change&no_404=true&t=" + Date.now(), { cache: "no-store" });
       if (!r.ok) return;
-      const h = await r.text();
-      const m = h.match(/instrument-price-change-percent"[^>]*>\(?(-?\d+,\d+)%\)?/);
-      if (m) { _dxyInv = { v: parseFloat(m[1].replace(",", ".")), ts: Date.now() }; }
+      const j = await r.json();
+      if (j && typeof j.change === "number") { _dxyTV = { v: Math.round(j.change * 100) / 100, ts: Date.now() }; }
     } catch (e) {}
   }
   function lerCarteira() {
@@ -127,7 +126,7 @@
     }
     // juntar o DXY vindo do TradingView (so se recente)
     let dxy = null;
-    if (_dxyInv && (Date.now() - _dxyInv.ts) < 15 * 60 * 1000) dxy = { v: _dxyInv.v, velho: false };
+    if (_dxyTV && (Date.now() - _dxyTV.ts) < 15 * 60 * 1000) dxy = { v: _dxyTV.v, velho: false };
     else dxy = lerDXYArmazenado();
     if (dxy && !dxy.velho) ativos.push({ nome: "DXY (dolar)", v: dxy.v, linha: "DXY Dollar Index" });
     ativos._dxy = dxy;
@@ -214,7 +213,7 @@
   async function ciclo() {
     try {
       try{box.setAttribute("data-wp-ciclo",String((+box.getAttribute("data-wp-ciclo")||0)+1));}catch(_){}
-      if (!_dxyInv || (Date.now() - _dxyInv.ts) > 120000) { await refrescarDXYInvesting(); }
+      await refrescarDXY_TV();
       const ativos = lerCarteira();
       if (!ativos.length) { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>aguardando a carteira carregar…</small>"; return; }
       const p = computar(ativos);
