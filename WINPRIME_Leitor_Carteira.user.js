@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WINPRIME - Leitor de Sentimento (Investing + DXY TradingView)
 // @namespace    winprime
-// @version      2.10
+// @version      2.11
 // @description  Le a SUA carteira de sentimento no Investing (so ativos abertos - relogio verde) + o DXY no TradingView a cada 30s, calcula o placar por maioria (regra estrita +/-0,30%, VIX e DXY invertidos) e publica no painel dos alunos. Partida blindada: nunca trava.
 // @match        https://br.investing.com/portfolio/*
 // @match        https://www.investing.com/portfolio/*
@@ -89,6 +89,16 @@
 
   // Le a carteira: SO ativos abertos (relogio verde). Ignora fechados (relogio vermelho).
   // Le exatamente a coluna "Var%" (nunca "Negociacao Estendida (%)").
+  let _dxyInv = null;
+  async function refrescarDXYInvesting() {
+    try {
+      const r = await fetch("https://br.investing.com/currencies/us-dollar-index", { cache: "no-store" });
+      if (!r.ok) return;
+      const h = await r.text();
+      const m = h.match(/instrument-price-change-percent"[^>]*>\(?(-?\d+,\d+)%\)?/);
+      if (m) { _dxyInv = { v: parseFloat(m[1].replace(",", ".")), ts: Date.now() }; }
+    } catch (e) {}
+  }
   function lerCarteira() {
     const tables = Array.from(document.querySelectorAll("table"));
     let best = null, bestn = 0;
@@ -116,7 +126,9 @@
       }
     }
     // juntar o DXY vindo do TradingView (so se recente)
-    const dxy = lerDXYArmazenado();
+    let dxy = null;
+    if (_dxyInv && (Date.now() - _dxyInv.ts) < 15 * 60 * 1000) dxy = { v: _dxyInv.v, velho: false };
+    else dxy = lerDXYArmazenado();
     if (dxy && !dxy.velho) ativos.push({ nome: "DXY (dolar)", v: dxy.v, linha: "DXY Dollar Index" });
     ativos._dxy = dxy;
     ativos._fechados = fechados;
@@ -202,6 +214,7 @@
   async function ciclo() {
     try {
       try{box.setAttribute("data-wp-ciclo",String((+box.getAttribute("data-wp-ciclo")||0)+1));}catch(_){}
+      if (!_dxyInv || (Date.now() - _dxyInv.ts) > 120000) { await refrescarDXYInvesting(); }
       const ativos = lerCarteira();
       if (!ativos.length) { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>aguardando a carteira carregar…</small>"; return; }
       const p = computar(ativos);
