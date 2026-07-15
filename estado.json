@@ -11,10 +11,10 @@
     "KOSPI 200 Futuros",
     "Hang Seng Futuros",
     "Morgan Stanley",
-    "S&P 500 Futuros",
-    "Ouro",
-    "Petróleo Brent",
     "Petróleo WTI",
+    "Petróleo Brent",
+    "Ouro",
+    "S&P 500 Futuros",
     "S&P 500 VIX Futuros",
     "DXY (dolar)"
   ],
@@ -32,6 +32,6 @@
     "Ibovespa",
     "Prata"
   ],
-  "atualizado": "2026-07-15T18:31:09.143Z",
+  "atualizado": "2026-07-15T18:31:40.066Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
