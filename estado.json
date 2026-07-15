@@ -8,9 +8,9 @@
   "total": 16,
   "fechados": 9,
   "lista_altistas": [
+    "KOSPI 200 Futuros",
     "Hang Seng Futuros",
     "Nasdaq 100 Futuros",
-    "KOSPI 200 Futuros",
     "Petróleo Brent",
     "Petróleo WTI",
     "S&P 500 VIX Futuros"
@@ -24,11 +24,11 @@
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Prata",
-    "Ouro",
+    "IBEX 35 Futuros",
     "S&P/ASX 200 Futuros",
-    "IBEX 35 Futuros"
+    "Ouro",
+    "Prata"
   ],
-  "atualizado": "2026-07-15T12:02:34.293Z",
+  "atualizado": "2026-07-15T12:02:46.290Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
