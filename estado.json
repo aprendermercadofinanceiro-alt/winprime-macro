@@ -11,8 +11,8 @@
     "KOSPI 200 Futuros",
     "Hang Seng Futuros",
     "Nasdaq 100 Futuros",
-    "Petróleo Brent",
     "Petróleo WTI",
+    "Petróleo Brent",
     "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
@@ -29,6 +29,6 @@
     "Ouro",
     "Prata"
   ],
-  "atualizado": "2026-07-15T12:07:38.616Z",
+  "atualizado": "2026-07-15T12:07:47.123Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
