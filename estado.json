@@ -11,13 +11,13 @@
     "Hang Seng Futuros"
   ],
   "lista_neutros": [
-    "Petróleo Brent",
-    "Petróleo WTI",
-    "China H-Shares Futuros",
     "Dow Jones Futuros",
+    "Petróleo WTI",
+    "FTSE 100",
+    "China H-Shares Futuros",
+    "Petróleo Brent",
     "Mini S&P 500 VIX Futuros",
     "DAX Futuros",
-    "FTSE 100",
     "S&P 500 Futuros",
     "Euro Stoxx 50 Futuros",
     "DXY (dolar)"
@@ -28,12 +28,12 @@
     "IBEX 35 Futuros",
     "Ibovespa",
     "Nasdaq 100 Futuros",
-    "Mini Ibovespa Futuros",
     "iShares MSCI Brazil Capped",
+    "Mini Ibovespa Futuros",
     "Ouro",
     "Prata",
     "Morgan Stanley"
   ],
-  "atualizado": "2026-07-16T14:53:12.303Z",
+  "atualizado": "2026-07-16T14:53:40.050Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
