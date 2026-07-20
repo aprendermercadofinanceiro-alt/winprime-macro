@@ -19,9 +19,9 @@
     "Mini Ibovespa Futuros",
     "Ibovespa",
     "Euro Stoxx 50 Futuros",
+    "Ouro",
     "DAX Futuros",
     "Petróleo Brent",
-    "Ouro",
     "IBEX 35 Futuros",
     "Dow Jones Futuros",
     "DXY (dolar)"
@@ -33,6 +33,6 @@
     "KOSPI 200 Futuros",
     "Morgan Stanley"
   ],
-  "atualizado": "2026-07-20T16:18:24.662Z",
+  "atualizado": "2026-07-20T16:18:49.997Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
