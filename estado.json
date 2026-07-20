@@ -17,10 +17,10 @@
     "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
-    "Euro Stoxx 50 Futuros",
     "Dow Jones Futuros",
-    "IBEX 35 Futuros",
+    "Euro Stoxx 50 Futuros",
     "DAX Futuros",
+    "IBEX 35 Futuros",
     "Ouro",
     "DXY (dolar)"
   ],
@@ -29,6 +29,6 @@
     "S&P/ASX 200 Futuros",
     "KOSPI 200 Futuros"
   ],
-  "atualizado": "2026-07-20T13:00:00.733Z",
+  "atualizado": "2026-07-20T13:00:04.682Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
