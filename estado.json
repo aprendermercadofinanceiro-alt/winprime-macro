@@ -22,12 +22,12 @@
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Ouro",
     "Euro Stoxx 50 Futuros",
-    "Prata",
     "Hang Seng Futuros",
-    "KOSPI 200 Futuros"
+    "Ouro",
+    "KOSPI 200 Futuros",
+    "Prata"
   ],
-  "atualizado": "2026-07-20T11:52:17.578Z",
+  "atualizado": "2026-07-20T11:52:23.763Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
