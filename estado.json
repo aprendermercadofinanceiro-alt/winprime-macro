@@ -9,11 +9,11 @@
   "fechados": 6,
   "lista_altistas": [
     "Prata",
-    "Morgan Stanley",
     "Petróleo WTI",
+    "Petróleo Brent",
+    "Morgan Stanley",
     "Nasdaq 100 Futuros",
     "Ouro",
-    "Petróleo Brent",
     "Topix 100",
     "Nikkei 225 Futuros",
     "S&P 500 Futuros",
@@ -31,6 +31,6 @@
     "KOSPI 200 Futuros",
     "TOPIX Futuros"
   ],
-  "atualizado": "2026-07-21T19:15:47.388Z",
+  "atualizado": "2026-07-21T19:16:10.087Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
