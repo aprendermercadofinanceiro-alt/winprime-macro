@@ -8,18 +8,18 @@
   "total": 20,
   "fechados": 4,
   "lista_altistas": [
-    "Prata",
-    "Petróleo WTI",
-    "Petróleo Brent",
-    "Morgan Stanley",
-    "Nasdaq 100 Futuros",
-    "Ouro",
+    "S&P 500 VIX Futuros",
     "Topix 100",
-    "Nikkei 225 Futuros",
+    "Nasdaq 100 Futuros",
+    "China H-Shares Futuros",
     "S&P 500 Futuros",
     "Dow Jones Futuros",
-    "China H-Shares Futuros",
-    "S&P 500 VIX Futuros"
+    "Nikkei 225 Futuros",
+    "Petróleo Brent",
+    "Prata",
+    "Ouro",
+    "Petróleo WTI",
+    "Morgan Stanley"
   ],
   "lista_neutros": [
     "S&P/ASX 200 Futuros",
@@ -27,12 +27,12 @@
   ],
   "lista_baixistas": [
     "iShares MSCI Brazil Capped",
-    "Mini Ibovespa Futuros",
-    "Ibovespa",
-    "Hang Seng Futuros",
     "KOSPI 200 Futuros",
-    "TOPIX Futuros"
+    "Hang Seng Futuros",
+    "TOPIX Futuros",
+    "Mini Ibovespa Futuros",
+    "Ibovespa"
   ],
-  "atualizado": "2026-07-21T14:59:13.029Z",
+  "atualizado": "2026-07-21T15:00:13.089Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
