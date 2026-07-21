@@ -3,9 +3,9 @@
   "aberto": true,
   "soma": 8,
   "altistas": 10,
-  "neutros": 5,
+  "neutros": 6,
   "baixistas": 2,
-  "total": 17,
+  "total": 18,
   "fechados": 7,
   "lista_altistas": [
     "Prata",
@@ -23,6 +23,7 @@
     "Dow Jones Futuros",
     "S&P/ASX 200 Futuros",
     "Hang Seng Futuros",
+    "Ibovespa",
     "Mini Ibovespa Futuros",
     "DXY (dolar)"
   ],
@@ -30,6 +31,6 @@
     "KOSPI 200 Futuros",
     "TOPIX Futuros"
   ],
-  "atualizado": "2026-07-21T13:16:13.090Z",
+  "atualizado": "2026-07-21T13:17:13.080Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
