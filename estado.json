@@ -1,12 +1,12 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 11,
+  "soma": 12,
   "altistas": 14,
   "neutros": 3,
-  "baixistas": 3,
-  "total": 20,
-  "fechados": 4,
+  "baixistas": 2,
+  "total": 19,
+  "fechados": 5,
   "lista_altistas": [
     "Prata",
     "Morgan Stanley",
@@ -29,10 +29,9 @@
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Hang Seng Futuros",
     "KOSPI 200 Futuros",
     "TOPIX Futuros"
   ],
-  "atualizado": "2026-07-21T19:00:13.048Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-07-21T19:01:13.052Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
