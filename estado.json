@@ -23,14 +23,14 @@
     "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
-    "Mini Ibovespa Futuros",
     "Ibovespa",
+    "Mini Ibovespa Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "KOSPI 200 Futuros",
     "TOPIX Futuros"
   ],
-  "atualizado": "2026-07-21T19:32:39.336Z",
+  "atualizado": "2026-07-21T19:33:09.337Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
