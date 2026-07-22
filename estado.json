@@ -20,9 +20,9 @@
     "Mini Ibovespa Futuros"
   ],
   "lista_neutros": [
-    "Hang Seng Futuros",
     "DAX Futuros",
     "Ibovespa",
+    "Hang Seng Futuros",
     "Dow Jones Futuros",
     "DXY (dolar)"
   ],
@@ -31,6 +31,6 @@
     "S&P 500 Futuros",
     "Nasdaq 100 Futuros"
   ],
-  "atualizado": "2026-07-22T13:18:13.081Z",
+  "atualizado": "2026-07-22T13:19:13.065Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
