@@ -12,8 +12,8 @@
     "Petróleo WTI",
     "FTSE 100",
     "Ouro",
-    "Prata",
     "IBEX 35 Futuros",
+    "Prata",
     "S&P/ASX 200 Futuros",
     "China H-Shares Futuros"
   ],
@@ -29,6 +29,6 @@
     "S&P 500 Futuros",
     "Nasdaq 100 Futuros"
   ],
-  "atualizado": "2026-07-22T12:24:39.992Z",
+  "atualizado": "2026-07-22T12:25:13.081Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
