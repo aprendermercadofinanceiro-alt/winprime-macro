@@ -14,8 +14,8 @@
     "Ouro",
     "IBEX 35 Futuros",
     "Prata",
-    "China H-Shares Futuros",
-    "S&P/ASX 200 Futuros"
+    "S&P/ASX 200 Futuros",
+    "China H-Shares Futuros"
   ],
   "lista_neutros": [
     "Euro Stoxx 50 Futuros",
@@ -29,6 +29,6 @@
     "S&P 500 Futuros",
     "Nasdaq 100 Futuros"
   ],
-  "atualizado": "2026-07-22T11:56:10.100Z",
+  "atualizado": "2026-07-22T11:56:13.113Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
