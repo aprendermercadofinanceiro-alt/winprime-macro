@@ -14,12 +14,12 @@
     "Topix 100"
   ],
   "lista_neutros": [
-    "Ibovespa",
+    "Mini Ibovespa Futuros",
     "DAX Futuros"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
-    "Mini Ibovespa Futuros",
+    "Ibovespa",
     "S&P 500 Futuros",
     "Dow Jones Futuros",
     "KOSPI 200 Futuros",
@@ -30,6 +30,6 @@
     "Prata",
     "DXY (dolar)"
   ],
-  "atualizado": "2026-07-23T13:19:13.079Z",
+  "atualizado": "2026-07-23T13:20:13.122Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 8. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
