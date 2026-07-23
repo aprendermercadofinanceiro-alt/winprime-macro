@@ -17,7 +17,7 @@
     "S&P/ASX 200 Futuros",
     "DAX Futuros",
     "Dow Jones Futuros",
-    "S&P 500 Futuros",
+    "Nasdaq 100 Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
@@ -27,6 +27,6 @@
     "KOSPI 200 Futuros",
     "TOPIX Futuros"
   ],
-  "atualizado": "2026-07-23T00:09:13.056Z",
+  "atualizado": "2026-07-23T00:10:13.093Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
