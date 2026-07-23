@@ -18,16 +18,16 @@
     "DXY (dolar)"
   ],
   "lista_baixistas": [
+    "S&P 500 VIX Futuros",
+    "S&P 500 Futuros",
+    "Dow Jones Futuros",
+    "Nasdaq 100 Futuros",
+    "S&P/ASX 200 Futuros",
+    "KOSPI 200 Futuros",
     "Ouro",
     "Prata",
-    "S&P 500 VIX Futuros",
-    "S&P/ASX 200 Futuros",
-    "Dow Jones Futuros",
-    "S&P 500 Futuros",
-    "Nasdaq 100 Futuros",
-    "KOSPI 200 Futuros",
     "TOPIX Futuros"
   ],
-  "atualizado": "2026-07-23T11:40:13.011Z",
+  "atualizado": "2026-07-23T11:41:13.070Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
