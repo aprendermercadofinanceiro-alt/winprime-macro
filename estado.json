@@ -3,17 +3,18 @@
   "aberto": true,
   "soma": -4,
   "altistas": 3,
-  "neutros": 2,
+  "neutros": 3,
   "baixistas": 7,
-  "total": 12,
-  "fechados": 13,
+  "total": 13,
+  "fechados": 12,
   "lista_altistas": [
-    "Petróleo Brent",
+    "Petróleo WTI",
     "Nikkei 225 Futuros",
     "Topix 100"
   ],
   "lista_neutros": [
     "Ouro",
+    "Prata",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
@@ -25,6 +26,6 @@
     "Nasdaq 100 Futuros",
     "TOPIX Futuros"
   ],
-  "atualizado": "2026-07-23T22:00:13.070Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 13. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-07-23T22:01:13.146Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 12. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
