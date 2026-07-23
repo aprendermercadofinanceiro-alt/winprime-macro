@@ -20,18 +20,18 @@
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
-    "iShares MSCI Brazil Capped",
-    "S&P 500 Futuros",
-    "Dow Jones Futuros",
-    "Nasdaq 100 Futuros",
-    "S&P/ASX 200 Futuros",
     "KOSPI 200 Futuros",
+    "Dow Jones Futuros",
+    "iShares MSCI Brazil Capped",
+    "S&P/ASX 200 Futuros",
+    "S&P 500 Futuros",
     "Morgan Stanley",
+    "Nasdaq 100 Futuros",
     "Ouro",
     "TOPIX Futuros",
     "Prata",
     "DXY (dolar)"
   ],
-  "atualizado": "2026-07-23T15:27:51.298Z",
+  "atualizado": "2026-07-23T15:28:10.015Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
