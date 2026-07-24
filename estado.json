@@ -12,27 +12,27 @@
     "Euro Stoxx 50 Futuros",
     "FTSE 100",
     "China H-Shares Futuros",
-    "Hang Seng Futuros",
     "Prata",
+    "Hang Seng Futuros",
     "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
-    "Dow Jones Futuros",
-    "S&P/ASX 200 Futuros",
     "S&P 500 Futuros",
     "Ouro",
+    "Dow Jones Futuros",
+    "S&P/ASX 200 Futuros",
     "DAX Futuros",
     "Nasdaq 100 Futuros",
     "Morgan Stanley",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
+    "iShares MSCI Brazil Capped",
     "Ibovespa",
     "Mini Ibovespa Futuros",
-    "iShares MSCI Brazil Capped",
     "Petróleo WTI",
     "Petróleo Brent"
   ],
-  "atualizado": "2026-07-24T13:46:13.213Z",
+  "atualizado": "2026-07-24T13:46:39.372Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
