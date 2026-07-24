@@ -1,9 +1,9 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 2,
-  "altistas": 7,
-  "neutros": 8,
+  "soma": 1,
+  "altistas": 6,
+  "neutros": 9,
   "baixistas": 5,
   "total": 20,
   "fechados": 4,
@@ -12,11 +12,11 @@
     "Euro Stoxx 50 Futuros",
     "FTSE 100",
     "China H-Shares Futuros",
-    "Hang Seng Futuros",
     "Morgan Stanley",
     "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
+    "Hang Seng Futuros",
     "Prata",
     "Dow Jones Futuros",
     "S&P/ASX 200 Futuros",
@@ -33,6 +33,6 @@
     "Petróleo WTI",
     "Petróleo Brent"
   ],
-  "atualizado": "2026-07-24T13:32:13.138Z",
+  "atualizado": "2026-07-24T13:33:13.117Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
