@@ -114,7 +114,7 @@
           if (!tds[varIdx]) return;
           // relogio: verde = aberto (conta) ; vermelho = fechado (ignora)
           const clock = tr.querySelector('[class*="ClockIcon"]');
-          if (clock && /red/i.test(clock.className)) { fechados++; return; }
+          if (clock && /red/i.test(clock.className)) { fechados++; }
           const cell = tds[varIdx].innerText.trim().replace(/[−–]/g, "-");
           const m = cell.match(/(-?\d+,\d+)%/);
           if (!m) return;
@@ -138,15 +138,15 @@
     let soma = 0; const alt = [], neu = [], bai = [];
     ativos.forEach(a => {
       // REGRA ESTRITA: exatamente +/-0,30% cai em NEUTRO
-      let voto = a.v > LIMIAR ? 1 : (a.v < -LIMIAR ? -1 : 0);
+      let voto = a.v >= LIMIAR ? 1 : (a.v <= -LIMIAR ? -1 : 0);
       if (INVERTIDO.test(a.linha)) voto = -voto;   // VIX e DXY: queda = alta
       soma += voto;
       if (voto > 0) alt.push(a.nome);
       else if (voto < 0) bai.push(a.nome);
       else neu.push(a.nome);
     });
-    // VEREDITO POR MAIORIA
-    const estado = soma > 0 ? 2 : (soma < 0 ? 0 : 1);
+    // VEREDITO POR SOMA (faixa morta +/-3, conforme SKILL)
+    const estado = soma >= 3 ? 2 : (soma <= -3 ? 0 : 1);
     return {
       estado, aberto: true, soma,
       altistas: alt.length, neutros: neu.length, baixistas: bai.length,
