@@ -6,7 +6,7 @@
   "neutros": 6,
   "baixistas": 5,
   "total": 16,
-  "fechados": 9,
+  "fechados": 7,
   "lista_altistas": [
     "Petróleo WTI",
     "Petróleo Brent",
@@ -29,6 +29,6 @@
     "Nikkei 225 Futuros",
     "KOSPI 200 Futuros"
   ],
-  "atualizado": "2026-07-29T13:01:12.803Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-07-29T13:02:12.789Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
