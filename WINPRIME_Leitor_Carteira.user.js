@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         WINPRIME - Leitor de Sentimento (Investing + DXY TradingView)
 // @namespace    winprime
-// @version      2.12
+// @version      2.13
 // @description  Le a SUA carteira de sentimento no Investing (so ativos abertos - relogio verde) + o DXY no TradingView a cada 30s, calcula o placar por maioria (regra estrita +/-0,30%, VIX e DXY invertidos) e publica no painel dos alunos. Partida blindada: nunca trava.
 // @match        https://br.investing.com/portfolio/*
 // @match        https://www.investing.com/portfolio/*
@@ -28,7 +28,7 @@
     function lerDXY() {
       const pt = document.querySelector(".js-symbol-change-pt");
       if (!pt) return null;
-      let v = parseFloat(pt.textContent.replace("%", "").replace(/\s/g, "").replace("−", "-").replace(".", "").replace(",", "."));
+      let v = parseFloat(pt.textContent.replace("%", "").replace(/\s/g, "").replace("â", "-").replace(".", "").replace(",", "."));
       if (isNaN(v)) return null;
       const dir = document.querySelector(".js-symbol-change-direction");
       const cls = dir ? dir.className : "";
@@ -38,16 +38,16 @@
     }
     const box = document.createElement("div");
     box.style.cssText = "position:fixed;top:12px;right:12px;z-index:2147483000;background:#0f130c;color:#f2f2ec;font:12px Arial;padding:10px 12px;border-radius:10px;border:1px solid #2a3222;box-shadow:0 6px 24px rgba(0,0,0,.4)";
-    box.innerHTML = "<b style='color:#b7e08c'>WINPRIME · DXY</b><br><small>lendo…</small>";
+    box.innerHTML = "<b style='color:#b7e08c'>WINPRIME Â· DXY</b><br><small>lendoâ¦</small>";
     document.body.appendChild(box);
     function ciclo() {
       try {
         const v = lerDXY();
-        if (v === null) { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME · DXY</b><br><small>lendo…</small>"; return; }
+        if (v === null) { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME Â· DXY</b><br><small>lendoâ¦</small>"; return; }
         GM_setValue("winprime_dxy", JSON.stringify({ v: v, ts: Date.now() }));
-        box.innerHTML = "<b style='color:#b7e08c'>WINPRIME · DXY</b><br>" +
+        box.innerHTML = "<b style='color:#b7e08c'>WINPRIME Â· DXY</b><br>" +
           "<span style='font-size:17px;font-weight:800'>" + (v >= 0 ? "+" : "") + v.toFixed(2) + "%</span><br>" +
-          "<small style='color:#9fb08f'>enviado ao placar · " + new Date().toLocaleTimeString("pt-BR") + "</small>";
+          "<small style='color:#9fb08f'>enviado ao placar Â· " + new Date().toLocaleTimeString("pt-BR") + "</small>";
       } catch (e) {}
     }
     setInterval(ciclo, 20000);   // timer primeiro (nunca depende do 1o ciclo)
@@ -65,7 +65,7 @@
   const DXY_VALIDADE_MS = 15 * 60 * 1000;  // aceita DXY lido nos ultimos 15 min
 
   const LIMIAR = 0.30;                      // regra estrita: >+0,30 alta ; <-0,30 baixa ; entre = neutro
-  const INVERTIDO = /VIX|DXY|USDX|Índice Dólar|Dollar Index/i;
+  const INVERTIDO = /VIX|DXY|USDX|Ãndice DÃ³lar|Dollar Index/i;
 
   let TOKEN = GM_getValue("winprime_token", "");
   let timer = null;
@@ -115,7 +115,7 @@
           // relogio: verde = aberto (conta) ; vermelho = fechado (ignora)
           const clock = tr.querySelector('[class*="ClockIcon"]');
           if (clock && /red/i.test(clock.className)) { fechados++; }
-          const cell = tds[varIdx].innerText.trim().replace(/[−–]/g, "-");
+          const cell = tds[varIdx].innerText.trim().replace(/[ââ]/g, "-");
           const m = cell.match(/(-?\d+,\d+)%/);
           if (!m) return;
           const v = parseFloat(m[1].replace(",", "."));
@@ -187,27 +187,27 @@
 
   const box = document.createElement("div");
   box.style.cssText = "position:fixed;top:12px;right:12px;z-index:2147483000;background:#0f130c;color:#f2f2ec;font:13px Arial;padding:12px 14px;border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,.4);min-width:230px;border:1px solid #2a3222";
-  box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>iniciando…</small>";
+  box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>iniciandoâ¦</small>";
   document.body.appendChild(box);
 
   function pintar(p, res, dxy) {
     const cor = p.estado === 2 ? "#69c47a" : p.estado === 0 ? "#e57373" : "#cfcb92";
     const rot = p.estado === 2 ? "POSITIVO" : p.estado === 0 ? "NEGATIVO" : "NEUTRO";
     let status;
-    if (res.ok) status = "publicado ✓";
-    else if (res.status === 401 || res.status === 403) status = "token invalido ✗ (Ctrl+Shift+K)";
+    if (res.ok) status = "publicado â";
+    else if (res.status === 401 || res.status === 403) status = "token invalido â (Ctrl+Shift+K)";
     else status = "erro ao publicar (" + res.status + ")";
     let dxyLinha;
     if (!dxy) dxyLinha = "<span style='color:#e0a03a'>DXY: abra a aba do TradingView</span>";
     else if (dxy.velho) dxyLinha = "<span style='color:#e0a03a'>DXY desatualizado (reabra o TradingView)</span>";
     else dxyLinha = "<span style='color:#9fb08f'>DXY incluido: " + (dxy.v >= 0 ? "+" : "") + dxy.v.toFixed(2) + "%</span>";
-    box.innerHTML = "<b style='color:#b7e08c'>WINPRIME · Placar</b><br>" +
+    box.innerHTML = "<b style='color:#b7e08c'>WINPRIME Â· Placar</b><br>" +
       "<span style='font-size:22px;font-weight:800;color:" + cor + "'>" + rot + "</span><br>" +
-      "<span style='color:#69c47a'>" + p.altistas + " alt</span> · " +
-      "<span style='color:#cfcb92'>" + p.neutros + " neu</span> · " +
-      "<span style='color:#e57373'>" + p.baixistas + " bai</span> (" + p.total + " abertos · " + p.fechados + " fechados fora)<br>" +
+      "<span style='color:#69c47a'>" + p.altistas + " alt</span> Â· " +
+      "<span style='color:#cfcb92'>" + p.neutros + " neu</span> Â· " +
+      "<span style='color:#e57373'>" + p.baixistas + " bai</span> (" + p.total + " abertos Â· " + p.fechados + " fechados fora)<br>" +
       dxyLinha + "<br>" +
-      "<small style='color:#9fb08f'>" + new Date().toLocaleTimeString("pt-BR") + " · " + status + "</small>";
+      "<small style='color:#9fb08f'>" + new Date().toLocaleTimeString("pt-BR") + " Â· " + status + "</small>";
   }
 
   async function ciclo() {
@@ -215,14 +215,14 @@
       try{box.setAttribute("data-wp-ciclo",String((+box.getAttribute("data-wp-ciclo")||0)+1));}catch(_){}
       await refrescarDXY_TV();
       const ativos = lerCarteira();
-      if (!ativos.length) { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>aguardando a carteira carregar…</small>"; return; }
+      if (!ativos.length) { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>aguardando a carteira carregarâ¦</small>"; return; }
       const p = computar(ativos);
       let res = { ok: false, status: 0 };
       try { res = await publicar(p); } catch (e) {}
       pintar(p, res, ativos._dxy);
     } catch (e) {
       // nunca deixa a leitura morrer: o proximo tick tenta de novo
-      try { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>reprocessando… (" + (e && e.message ? e.message : "erro") + ")</small>"; } catch (_) {}
+      try { box.innerHTML = "<b style='color:#b7e08c'>WINPRIME</b><br><small>reprocessandoâ¦ (" + (e && e.message ? e.message : "erro") + ")</small>"; } catch (_) {}
     }
   }
 
@@ -239,7 +239,7 @@
     w.style.cssText = "position:fixed;inset:0;z-index:2147483647;background:rgba(0,0,0,.72);display:flex;align-items:center;justify-content:center;font-family:Arial";
     w.innerHTML =
       "<div style='background:#0f130c;color:#f2f2ec;padding:26px;border-radius:14px;max-width:440px;width:90%;border:1px solid #2a3222;box-shadow:0 12px 48px rgba(0,0,0,.6)'>" +
-        "<div style='color:#b7e08c;font-weight:800;font-size:19px;margin-bottom:8px'>WINPRIME · Leitor de Sentimento</div>" +
+        "<div style='color:#b7e08c;font-weight:800;font-size:19px;margin-bottom:8px'>WINPRIME Â· Leitor de Sentimento</div>" +
         "<div style='font-size:13px;color:#cfd6c6;margin-bottom:14px;line-height:1.5'>Cole abaixo o seu <b>token do GitHub</b> (github_pat_...). Fica salvo <b>somente no seu navegador</b>.</div>" +
         "<input id='winprime-token-input' type='password' placeholder='github_pat_...' style='width:100%;padding:11px;border-radius:8px;border:1px solid #3a4531;background:#151a10;color:#fff;font-size:13px;box-sizing:border-box'>" +
         "<button id='winprime-token-save' style='margin-top:14px;width:100%;padding:11px;border:0;border-radius:8px;background:#8FD35A;color:#0f130c;font-weight:800;font-size:14px;cursor:pointer'>Salvar e ativar</button>" +
@@ -251,7 +251,7 @@
     setTimeout(() => inp.focus(), 50);
     function salvar() {
       const t = (inp.value || "").trim();
-      if (!t || t.length < 20) { msg.textContent = "Cole um token válido (github_pat_...)."; return; }
+      if (!t || t.length < 20) { msg.textContent = "Cole um token vÃ¡lido (github_pat_...)."; return; }
       GM_setValue("winprime_token", t); TOKEN = t; w.remove(); iniciar();
     }
     w.querySelector("#winprime-token-save").onclick = salvar;
