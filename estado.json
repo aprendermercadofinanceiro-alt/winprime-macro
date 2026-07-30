@@ -8,14 +8,14 @@
   "total": 20,
   "fechados": 5,
   "lista_altistas": [
-    "Nasdaq 100 Futuros",
     "Morgan Stanley",
+    "Nasdaq 100 Futuros",
     "iShares MSCI Brazil Capped",
-    "Ouro",
     "IBEX 35 Futuros",
-    "Prata",
     "Euro Stoxx 50 Futuros",
+    "Ouro",
     "Mini Ibovespa Futuros",
+    "Prata",
     "S&P 500 Futuros",
     "Ibovespa",
     "Dow Jones Futuros",
@@ -33,6 +33,6 @@
     "Petróleo WTI",
     "Petróleo Brent"
   ],
-  "atualizado": "2026-07-30T17:21:22.405Z",
+  "atualizado": "2026-07-30T17:21:46.127Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
