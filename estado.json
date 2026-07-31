@@ -1,10 +1,10 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 4,
+  "soma": 5,
   "altistas": 9,
-  "neutros": 4,
-  "baixistas": 5,
+  "neutros": 5,
+  "baixistas": 4,
   "total": 18,
   "fechados": 7,
   "lista_altistas": [
@@ -22,15 +22,15 @@
     "IBEX 35 Futuros",
     "DAX Futuros",
     "FTSE 100",
-    "S&P 500 Futuros"
+    "S&P 500 Futuros",
+    "DXY (dolar)"
   ],
   "lista_baixistas": [
     "Hang Seng Futuros",
     "S&P/ASX 200 Futuros",
     "Prata",
-    "Ouro",
-    "DXY (dolar)"
+    "Ouro"
   ],
-  "atualizado": "2026-07-31T13:24:06.105Z",
+  "atualizado": "2026-07-31T13:25:06.085Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
