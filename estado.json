@@ -1,17 +1,19 @@
 {
-  "estado": 1,
+  "estado": 2,
   "aberto": true,
-  "soma": 0,
-  "altistas": 0,
+  "soma": 1,
+  "altistas": 1,
   "neutros": 1,
   "baixistas": 0,
-  "total": 1,
-  "fechados": 24,
-  "lista_altistas": [],
+  "total": 2,
+  "fechados": 23,
+  "lista_altistas": [
+    "KOSPI 200 Futuros"
+  ],
   "lista_neutros": [
     "DXY (dolar)"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-07-31T22:56:06.136Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 24. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-07-31T22:57:06.116Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 23. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
