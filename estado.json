@@ -6,7 +6,7 @@
   "neutros": 7,
   "baixistas": 2,
   "total": 14,
-  "fechados": 7,
+  "fechados": 10,
   "lista_altistas": [
     "S&P 500 VIX Futuros",
     "TOPIX Futuros",
@@ -27,6 +27,6 @@
     "KOSPI 200 Futuros",
     "Nikkei 225 Futuros"
   ],
-  "atualizado": "2026-07-31T00:08:06.103Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-07-31T00:09:06.097Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
