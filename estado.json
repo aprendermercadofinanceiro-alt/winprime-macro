@@ -1,15 +1,14 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 7,
-  "altistas": 11,
+  "soma": 6,
+  "altistas": 10,
   "neutros": 5,
   "baixistas": 4,
-  "total": 20,
-  "fechados": 5,
+  "total": 19,
+  "fechados": 6,
   "lista_altistas": [
     "Euro Stoxx 50 Futuros",
-    "KOSPI 200 Futuros",
     "S&P 500 VIX Futuros",
     "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
@@ -33,6 +32,6 @@
     "Prata",
     "Ouro"
   ],
-  "atualizado": "2026-07-31T17:15:06.070Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-07-31T17:16:06.051Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
