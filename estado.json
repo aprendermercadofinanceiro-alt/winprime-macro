@@ -8,11 +8,11 @@
   "total": 12,
   "fechados": 13,
   "lista_altistas": [
-    "Petróleo WTI",
     "Petróleo Brent",
-    "Nasdaq 100 Futuros",
+    "Petróleo WTI",
     "S&P 500 Futuros",
     "Dow Jones Futuros",
+    "Nasdaq 100 Futuros",
     "Mini S&P 500 VIX Futuros",
     "S&P 500 VIX Futuros"
   ],
@@ -25,6 +25,6 @@
     "S&P/ASX 200 Futuros",
     "Prata"
   ],
-  "atualizado": "2026-07-31T20:28:16.128Z",
+  "atualizado": "2026-07-31T20:28:45.381Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 13. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
