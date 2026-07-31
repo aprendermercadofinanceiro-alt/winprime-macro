@@ -3,9 +3,9 @@
   "aberto": true,
   "soma": 3,
   "altistas": 5,
-  "neutros": 7,
+  "neutros": 8,
   "baixistas": 2,
-  "total": 14,
+  "total": 15,
   "fechados": 10,
   "lista_altistas": [
     "S&P 500 VIX Futuros",
@@ -16,6 +16,7 @@
   ],
   "lista_neutros": [
     "DAX Futuros",
+    "Topix 100",
     "S&P/ASX 200 Futuros",
     "S&P 500 Futuros",
     "Dow Jones Futuros",
@@ -27,6 +28,6 @@
     "KOSPI 200 Futuros",
     "Nikkei 225 Futuros"
   ],
-  "atualizado": "2026-07-31T00:16:06.095Z",
+  "atualizado": "2026-07-31T00:17:06.081Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
