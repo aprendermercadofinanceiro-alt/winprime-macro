@@ -1,15 +1,16 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 4,
-  "altistas": 9,
+  "soma": 6,
+  "altistas": 10,
   "neutros": 7,
-  "baixistas": 5,
+  "baixistas": 4,
   "total": 21,
   "fechados": 4,
   "lista_altistas": [
     "iShares MSCI Brazil Capped",
     "Euro Stoxx 50 Futuros",
+    "Mini S&P 500 VIX Futuros",
     "S&P 500 VIX Futuros",
     "China H-Shares Futuros",
     "Mini Ibovespa Futuros",
@@ -29,11 +30,10 @@
   ],
   "lista_baixistas": [
     "Hang Seng Futuros",
-    "Mini S&P 500 VIX Futuros",
     "S&P/ASX 200 Futuros",
     "Prata",
     "Ouro"
   ],
-  "atualizado": "2026-07-31T14:51:06.142Z",
+  "atualizado": "2026-07-31T14:52:06.077Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
