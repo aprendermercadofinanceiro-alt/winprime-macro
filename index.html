@@ -57,6 +57,21 @@
   </div>
   <div class="panel">
       <img id="wpLogo" src="logo.png?v=3" alt="WINPRIME" onerror="this.style.display=&#39;none&#39;" style="width:104px;height:104px;object-fit:cover;border-radius:24px;display:block;margin:8px auto 10px;border:1px solid rgba(224,182,77,.45);box-shadow:0 0 30px rgba(224,182,77,.55)">
+      <div id="wpAvatar" style="text-align:center;margin:2px auto 6px">
+      <svg id="wpFace" width="140" height="150" viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg" style="filter:drop-shadow(0 0 14px rgba(224,182,77,.35))">
+        <defs><radialGradient id="wpSkin" cx="50%" cy="38%" r="72%"><stop offset="0%" stop-color="#20241a"/><stop offset="100%" stop-color="#0c0e09"/></radialGradient></defs>
+        <rect x="83" y="176" width="34" height="30" rx="9" fill="url(#wpSkin)" stroke="#b7952a" stroke-width="2"/>
+        <path d="M100 20 C142 20 168 54 168 104 C168 156 140 198 100 198 C60 198 32 156 32 104 C32 54 58 20 100 20 Z" fill="url(#wpSkin)" stroke="#e0b64d" stroke-width="2.5"/>
+        <path d="M55 79 q17 -9 33 0" stroke="#e0b64d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <path d="M112 79 q17 -9 33 0" stroke="#e0b64d" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <g id="wpEyes">
+          <ellipse cx="72" cy="99" rx="15" ry="9.5" fill="#070805" stroke="#e0b64d" stroke-width="1.6"/><circle cx="72" cy="99" r="5" fill="#ffe6a3"/>
+          <ellipse cx="128" cy="99" rx="15" ry="9.5" fill="#070805" stroke="#e0b64d" stroke-width="1.6"/><circle cx="128" cy="99" r="5" fill="#ffe6a3"/>
+        </g>
+        <path d="M100 106 L100 134 q-8 5 -13 1" stroke="#e0b64d" stroke-width="2" fill="none" stroke-linecap="round"/>
+        <ellipse id="wpMouth" cx="100" cy="162" rx="24" ry="3.5" fill="#3a2410" stroke="#e0b64d" stroke-width="2.2"/>
+      </svg>
+      </div>
     <div class="orb dot"></div>
     <div class="estado-label">Sentimento de Mercado</div>
     <h1 class="estado" id="estado">AGUARDANDO</h1>
@@ -317,6 +332,28 @@ body.fechado::after{content:"";position:fixed;inset:0;border:5px solid #e0b64d;p
   function auto(){ try{ if(precisaIniciar()){ document.getElementById("btnStart").click(); } }catch(e){} }
   setTimeout(auto, 1800);
   setInterval(auto, 10000);
+})();
+</script>
+
+<style>
+#wpEyes{transform-box:fill-box;transform-origin:center;animation:wpblink 5.4s infinite ease-in-out}
+@keyframes wpblink{0%,90%,100%{transform:scaleY(1)}94%{transform:scaleY(.08)}}
+</style>
+<script>
+(function(){
+  var mouth=document.getElementById("wpMouth");
+  var CLOSED=3.5, OPEN=15;
+  function loop(){
+    requestAnimationFrame(loop);
+    if(!mouth) return;
+    var sp = window.speechSynthesis && window.speechSynthesis.speaking;
+    if(sp){
+      var t=Date.now()/85; var a=0.5+0.5*Math.sin(t);
+      var ry=CLOSED + (OPEN-CLOSED)*a*(0.55+0.45*Math.random());
+      mouth.setAttribute("ry", ry.toFixed(1)); mouth.setAttribute("fill","#6a2f1c");
+    } else { mouth.setAttribute("ry", CLOSED); mouth.setAttribute("fill","#3a2410"); }
+  }
+  requestAnimationFrame(loop);
 })();
 </script>
 </body>
