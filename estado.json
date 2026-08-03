@@ -14,8 +14,8 @@
     "S&P/ASX 200 Futuros",
     "Dow Jones Futuros",
     "IBEX 35 Futuros",
-    "S&P 500 VIX Futuros",
-    "Mini S&P 500 VIX Futuros"
+    "Mini S&P 500 VIX Futuros",
+    "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
     "Hang Seng Futuros",
@@ -25,14 +25,14 @@
     "DXY (dolar)"
   ],
   "lista_baixistas": [
+    "Mini Ibovespa Futuros",
     "Ouro",
     "Morgan Stanley",
-    "Mini Ibovespa Futuros",
     "iShares MSCI Brazil Capped",
     "KOSPI 200 Futuros",
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-03T17:29:31.375Z",
+  "atualizado": "2026-08-03T17:29:41.091Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
