@@ -21,7 +21,7 @@
     "Hang Seng Futuros",
     "DAX Futuros",
     "Prata",
-    "Morgan Stanley",
+    "Ibovespa",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
@@ -29,10 +29,10 @@
     "KOSPI 200 Futuros",
     "Mini Ibovespa Futuros",
     "Petróleo Brent",
-    "Ibovespa",
     "Ouro",
-    "Petróleo WTI"
+    "Petróleo WTI",
+    "Morgan Stanley"
   ],
-  "atualizado": "2026-08-03T18:09:05.935Z",
+  "atualizado": "2026-08-03T18:09:22.922Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
