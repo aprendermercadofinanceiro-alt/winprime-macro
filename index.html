@@ -56,11 +56,12 @@
     <div class="clock" id="clock">—</div>
   </div>
   <div class="panel">
-      <img id="wpLogo" src="logo.png?v=3" alt="WINPRIME" onerror="this.style.display=&#39;none&#39;" style="width:104px;height:104px;object-fit:cover;border-radius:24px;display:block;margin:8px auto 10px;border:1px solid rgba(224,182,77,.45);box-shadow:0 0 30px rgba(224,182,77,.55)">
+      
       <div id="wpAvatar" style="text-align:center;margin:2px auto 6px">
-      <div style="position:relative;display:inline-block">
-        <img id="wpFaceImg" src="rosto_ouro.png?v=1" alt="WINPRIME IA" style="width:160px;height:160px;border-radius:50%;object-fit:cover;display:block;box-shadow:0 0 30px rgba(224,182,77,.5);border:1px solid rgba(224,182,77,.45)">
-        <div id="wpMouthGlow" style="position:absolute;left:50%;top:72%;transform:translate(-50%,-50%);width:46px;height:16px;border-radius:50%;background:radial-gradient(ellipse,rgba(255,214,130,.95),rgba(224,140,60,.45) 60%,rgba(224,140,60,0) 78%);opacity:0;filter:blur(3px);pointer-events:none"></div>
+      <div id="wpFaceWrap" style="position:relative;display:inline-block;border-radius:14px;box-shadow:0 0 16px 1px rgba(224,182,77,.25)">
+        <img id="wpFaceImg" src="rosto_ia.png?v=1" alt="WINPRIME IA" style="width:240px;display:block;border-radius:12px">
+        <div class="wpLid" style="left:34%;top:45.3%"></div>
+        <div class="wpLid" style="left:65%;top:45.3%"></div>
       </div>
       </div>
     <div class="orb dot"></div>
@@ -332,20 +333,23 @@ body.fechado::after{content:"";position:fixed;inset:0;border:5px solid #e0b64d;p
 </style>
 <script>
 (function(){
-  var glow=document.getElementById("wpMouthGlow");
+  var wrap=document.getElementById("wpFaceWrap");
   function loop(){
     requestAnimationFrame(loop);
-    if(!glow) return;
-    var sp = window.speechSynthesis && window.speechSynthesis.speaking;
+    if(!wrap) return;
+    var sp=window.speechSynthesis && window.speechSynthesis.speaking;
     if(sp){
-      var t=Date.now()/90; var a=0.5+0.5*Math.sin(t);
-      var op=0.30 + 0.65*a*(0.6+0.4*Math.random());
-      glow.style.opacity=op.toFixed(2);
-      glow.style.transform="translate(-50%,-50%) scaleY("+(0.6+1.2*a).toFixed(2)+")";
-    } else { glow.style.opacity="0"; }
+      var t=Date.now()/120, a=0.5+0.5*Math.sin(t);
+      var blur=26+26*a, spread=6+9*a, op=0.5+0.4*a;
+      wrap.style.boxShadow="0 0 "+blur.toFixed(0)+"px "+spread.toFixed(0)+"px rgba(224,182,77,"+op.toFixed(2)+"),0 0 "+(blur*2).toFixed(0)+"px "+(spread*2).toFixed(0)+"px rgba(224,182,77,.28)";
+    } else { wrap.style.boxShadow="0 0 16px 1px rgba(224,182,77,.25)"; }
   }
   requestAnimationFrame(loop);
 })();
 </script>
+<style>
+.wpLid{position:absolute;width:12%;height:6%;transform:translate(-50%,-50%) scaleY(0);transform-origin:center;background:radial-gradient(ellipse,#171009 58%,rgba(23,16,9,0));border-radius:50%;pointer-events:none;animation:wpblink2 5.6s infinite}
+@keyframes wpblink2{0%,92%,100%{transform:translate(-50%,-50%) scaleY(0)}95%{transform:translate(-50%,-50%) scaleY(1)}}
+</style>
 </body>
 </html>
