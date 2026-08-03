@@ -1,24 +1,17 @@
 {
-  "estado": 0,
+  "estado": 1,
   "aberto": true,
-  "soma": -1,
-  "altistas": 2,
+  "soma": 0,
+  "altistas": 0,
   "neutros": 1,
-  "baixistas": 3,
-  "total": 6,
-  "fechados": 19,
-  "lista_altistas": [
-    "S&P/ASX 200 Futuros",
-    "TOPIX Futuros"
-  ],
+  "baixistas": 0,
+  "total": 1,
+  "fechados": 24,
+  "lista_altistas": [],
   "lista_neutros": [
     "DXY (dolar)"
   ],
-  "lista_baixistas": [
-    "KOSPI 200 Futuros",
-    "Topix 100",
-    "Nikkei 225 Futuros"
-  ],
-  "atualizado": "2026-08-03T21:37:05.957Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 19. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "lista_baixistas": [],
+  "atualizado": "2026-08-03T21:38:05.968Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 24. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
