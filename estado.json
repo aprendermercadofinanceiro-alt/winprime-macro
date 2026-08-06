@@ -13,10 +13,10 @@
     "Ouro",
     "Euro Stoxx 50 Futuros",
     "Petróleo Brent",
-    "FTSE 100"
+    "Dow Jones Futuros"
   ],
   "lista_neutros": [
-    "Dow Jones Futuros",
+    "FTSE 100",
     "Petróleo WTI",
     "S&P 500 Futuros",
     "DAX Futuros",
@@ -29,6 +29,6 @@
     "Nasdaq 100 Futuros",
     "Hang Seng Futuros"
   ],
-  "atualizado": "2026-08-06T09:39:38.838Z",
+  "atualizado": "2026-08-06T09:40:08.795Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
