@@ -15,15 +15,15 @@
     "Petróleo WTI"
   ],
   "lista_neutros": [
+    "Mini S&P 500 VIX Futuros",
     "IBEX 35 Futuros",
     "DAX Futuros",
-    "China H-Shares Futuros",
     "S&P 500 Futuros"
   ],
   "lista_baixistas": [
     "iShares MSCI Brazil Capped",
+    "KOSPI 200 Futuros",
     "Hang Seng Futuros",
-    "Mini S&P 500 VIX Futuros",
     "Nasdaq 100 Futuros",
     "Dow Jones Futuros",
     "Mini Ibovespa Futuros",
@@ -33,6 +33,6 @@
     "Morgan Stanley",
     "DXY (dolar)"
   ],
-  "atualizado": "2026-08-06T16:16:23.145Z",
+  "atualizado": "2026-08-06T16:17:23.117Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
