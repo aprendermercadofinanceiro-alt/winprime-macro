@@ -1,35 +1,41 @@
 {
-  "estado": 0,
+  "estado": 1,
   "aberto": true,
-  "soma": -1,
-  "altistas": 3,
-  "neutros": 10,
-  "baixistas": 4,
-  "total": 17,
-  "fechados": 7,
+  "soma": -2,
+  "altistas": 8,
+  "neutros": 6,
+  "baixistas": 10,
+  "total": 24,
   "lista_altistas": [
     "Euro Stoxx 50 Futuros",
+    "Mini S&P 500 VIX Futuros",
     "S&P 500 VIX Futuros",
-    "Topix 100"
-  ],
-  "lista_neutros": [
-    "Hang Seng Futuros",
-    "DAX Futuros",
+    "IBEX 35 Futuros",
     "S&P/ASX 200 Futuros",
-    "Nasdaq 100 Futuros",
-    "S&P 500 Futuros",
-    "Dow Jones Futuros",
-    "Petróleo Brent",
-    "Prata",
-    "Ouro",
-    "DXY (dolar)"
-  ],
-  "lista_baixistas": [
-    "KOSPI 200 Futuros",
     "TOPIX Futuros",
-    "Nikkei 225 Futuros",
+    "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-06T19:12:23.114Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "lista_neutros": [
+    "DAX Futuros",
+    "Topix 100",
+    "FTSE 100",
+    "Nasdaq 100 Futuros",
+    "S&P 500 Futuros",
+    "Ouro"
+  ],
+  "lista_baixistas": [
+    "iShares MSCI Brazil Capped",
+    "KOSPI 200 Futuros",
+    "Hang Seng Futuros",
+    "China H-Shares Futuros",
+    "Dow Jones Futuros",
+    "Mini Ibovespa Futuros",
+    "Nikkei 225 Futuros",
+    "Prata",
+    "Ibovespa",
+    "Morgan Stanley"
+  ],
+  "atualizado": "2026-08-06T16:12:30-03:00",
+  "obs": "Leitura ao vivo da carteira Investing (24 ativos, regra WINPRIME limiar 0,30% e VIX invertido)."
 }
