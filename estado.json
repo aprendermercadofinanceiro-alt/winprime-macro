@@ -1,38 +1,35 @@
 {
-  "estado": 2,
+  "estado": 0,
   "aberto": true,
-  "soma": 1,
-  "altistas": 7,
-  "neutros": 7,
-  "baixistas": 6,
-  "total": 20,
-  "fechados": 5,
+  "soma": -1,
+  "altistas": 3,
+  "neutros": 10,
+  "baixistas": 4,
+  "total": 17,
+  "fechados": 7,
   "lista_altistas": [
-    "Petróleo Brent",
-    "Petróleo WTI",
-    "S&P/ASX 200 Futuros",
-    "IBEX 35 Futuros",
     "Euro Stoxx 50 Futuros",
-    "Mini S&P 500 VIX Futuros",
-    "S&P 500 VIX Futuros"
+    "S&P 500 VIX Futuros",
+    "Topix 100"
   ],
   "lista_neutros": [
-    "Ouro",
-    "iShares MSCI Brazil Capped",
+    "Hang Seng Futuros",
+    "DAX Futuros",
+    "S&P/ASX 200 Futuros",
     "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
-    "DAX Futuros",
-    "China H-Shares Futuros",
+    "Dow Jones Futuros",
+    "Petróleo Brent",
+    "Prata",
+    "Ouro",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Hang Seng Futuros\nHang Seng\n 25.516,0-165,0  (-0,64%)\n12:51:37 - Dados derivados atuais\n08:00\n10:00\n25,600.0\n25,525.0\n25,550.0\n25,575.0\n\nResumo Técnico\n\n5 min:\nVenda Forte\n15 min:\nVenda Forte\n30 min:\nVenda Forte\nHora:\nVenda Forte\nDiário:\nCompra\nMensal:\nCompra Forte",
-    "Ibovespa",
-    "Dow Jones Futuros",
-    "Mini Ibovespa Futuros",
-    "Morgan Stanley",
-    "Prata"
+    "KOSPI 200 Futuros",
+    "TOPIX Futuros",
+    "Nikkei 225 Futuros",
+    "Petróleo WTI"
   ],
-  "atualizado": "2026-08-06T15:52:03.924Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-06T15:52:23.093Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
