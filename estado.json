@@ -1,8 +1,8 @@
 {
   "estado": 2,
   "aberto": true,
-  "altistas": 14,
-  "neutros": 6,
+  "altistas": 13,
+  "neutros": 7,
   "baixistas": 4,
   "total": 24,
   "lista_altistas": [
@@ -18,7 +18,6 @@
     "Petróleo Brent",
     "Prata",
     "Ouro",
-    "Petróleo WTI",
     "Morgan Stanley"
   ],
   "lista_neutros": [
@@ -27,7 +26,8 @@
     "DAX Futuros",
     "TOPIX Futuros",
     "China H-Shares Futuros",
-    "Dow Jones Futuros"
+    "Dow Jones Futuros",
+    "Petróleo WTI"
   ],
   "lista_baixistas": [
     "iShares MSCI Brazil Capped",
@@ -35,6 +35,6 @@
     "Nikkei 225 Futuros",
     "Ibovespa"
   ],
-  "atualizado": "2026-08-07T15:09:10-03:00",
+  "atualizado": "2026-08-07T16:09:00-03:00",
   "obs": "Leitura ao vivo da carteira Investing."
 }
