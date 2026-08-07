@@ -58,7 +58,7 @@
   <div class="panel">
       
       <div id="wpAvatar" style="text-align:center;margin:2px auto 6px">
-      <div id="wpGlobe" style="width:224px;height:224px;margin:2px auto 4px"></div>
+      <div id="wpGlobe" style="width:254px;height:254px;margin:2px auto 4px"></div>
       </div>
     <div class="orb dot"></div>
     <div class="estado-label">Sentimento de Mercado</div>
@@ -334,37 +334,37 @@ body.fechado::after{content:"";position:fixed;inset:0;border:5px solid #e0b64d;p
     var el=document.getElementById("wpGlobe"); if(!el) return;
     if(typeof THREE==="undefined") return false;
     try{
-      var W=el.clientWidth||240,H=el.clientHeight||240;
+      var W=el.clientWidth||254,H=el.clientHeight||254;
       var sc=new THREE.Scene();
-      var cam=new THREE.PerspectiveCamera(42,W/H,0.1,100); cam.position.z=3.25;
+      var cam=new THREE.PerspectiveCamera(42,W/H,0.1,100); cam.position.z=3.02;
       var rd=new THREE.WebGLRenderer({alpha:true,antialias:true}); rd.setSize(W,H); rd.setPixelRatio(Math.min(2,window.devicePixelRatio||1)); el.appendChild(rd.domElement);
       var cnv=document.createElement("canvas"); cnv.width=cnv.height=32; var cx=cnv.getContext("2d");
-      var gd=cx.createRadialGradient(16,16,0,16,16,16); gd.addColorStop(0,"#ffffff"); gd.addColorStop(.35,"#cfeaff"); gd.addColorStop(1,"rgba(120,200,255,0)");
+      var gd=cx.createRadialGradient(16,16,0,16,16,16); gd.addColorStop(0,"#ffffff"); gd.addColorStop(.35,"#ffe9c0"); gd.addColorStop(1,"rgba(200,160,255,0)");
       cx.fillStyle=gd; cx.beginPath(); cx.arc(16,16,16,0,7); cx.fill(); var tex=new THREE.CanvasTexture(cnv);
       var stars=[]; for(var i=0;i<300;i++){ var v=new THREE.Vector3(Math.random()-.5,Math.random()-.5,Math.random()-.5); v.normalize().multiplyScalar(8+Math.random()*10); stars.push(v); }
-      var sm=new THREE.PointsMaterial({size:0.055,map:tex,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,color:0x8aa0c0,opacity:0.6});
+      var sm=new THREE.PointsMaterial({size:0.05,map:tex,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,color:0x9a92b8,opacity:0.55});
       sc.add(new THREE.Points(new THREE.BufferGeometry().setFromPoints(stars),sm));
       var grp=new THREE.Group(); sc.add(grp); grp.rotation.x=0.35; grp.rotation.z=0.12;
       function sph(n,r){var a=[];var phi=Math.PI*(3-Math.sqrt(5));for(var i=0;i<n;i++){var y=1-(i/(n-1))*2;var rr=Math.sqrt(1-y*y);var th=phi*i;a.push(new THREE.Vector3(Math.cos(th)*rr*r,y*r,Math.sin(th)*rr*r));}return a;}
       function noise(p){ return Math.sin(p.x*2.7+p.y*1.9)*0.5+Math.sin(p.y*2.1+p.z*3.1)*0.32+Math.sin(p.z*3.3+p.x*1.5)*0.22+Math.sin((p.x-p.y+p.z)*4.9)*0.18+Math.sin((p.x+p.y)*6.1)*0.12; }
-      var ip=sph(4200,1); var c1={r:0.30,g:0.85,b:1.0}, c2={r:0.66,g:0.42,b:1.0};
-      var opos=[],ocol=[],lpos=[],lcol=[];
-      for(var i=0;i<ip.length;i++){ var p=ip[i]; var t=(p.x+1)/2; var r=c1.r+(c2.r-c1.r)*t,g=c1.g+(c2.g-c1.g)*t,b=c1.b+(c2.b-c1.b)*t;
-        if(noise(p)>0.12){ lpos.push(p.x,p.y,p.z); lcol.push(r,g,b); } else { opos.push(p.x,p.y,p.z); ocol.push(r*0.16,g*0.16,b*0.16); } }
-      var og=new THREE.BufferGeometry(); og.setAttribute("position",new THREE.Float32BufferAttribute(opos,3)); og.setAttribute("color",new THREE.Float32BufferAttribute(ocol,3));
-      var mo=new THREE.PointsMaterial({size:0.03,map:tex,vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,opacity:0.55});
-      grp.add(new THREE.Points(og,mo));
-      var lg=new THREE.BufferGeometry(); lg.setAttribute("position",new THREE.Float32BufferAttribute(lpos,3)); lg.setAttribute("color",new THREE.Float32BufferAttribute(lcol,3));
-      var mlnd=new THREE.PointsMaterial({size:0.075,map:tex,vertexColors:true,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,opacity:1.0});
+      var ip=sph(6400,1); var opos=[],lpos=[];
+      for(var i=0;i<ip.length;i++){ var p=ip[i]; if(noise(p)>0.04){ lpos.push(p.x,p.y,p.z); } else { opos.push(p.x,p.y,p.z); } }
+      var mo=new THREE.PointsMaterial({size:0.028,map:tex,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,color:0x2b5566,opacity:0.5});
+      grp.add(new THREE.Points(new THREE.BufferGeometry().setFromPoints(opos.reduce(function(a,v,i){if(i%3===0)a.push(new THREE.Vector3(opos[i],opos[i+1],opos[i+2]));return a;},[])),mo));
+      var lg=new THREE.BufferGeometry(); lg.setAttribute("position",new THREE.Float32BufferAttribute(lpos,3));
+      var mlnd=new THREE.PointsMaterial({size:0.09,map:tex,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,color:0xe0b64d,opacity:1.0});
       grp.add(new THREE.Points(lg,mlnd));
-      var halo=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,color:0x7ec8ff,transparent:true,opacity:0,blending:THREE.AdditiveBlending,depthWrite:false})); halo.scale.set(4.4,4.4,1); sc.add(halo);
+      var halo=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,color:0xe0b64d,transparent:true,opacity:0,blending:THREE.AdditiveBlending,depthWrite:false})); halo.scale.set(4.6,4.6,1); sc.add(halo);
       var glow=0;
       function loop(){requestAnimationFrame(loop); grp.rotation.y+=0.0015;
         var sp=window.speechSynthesis&&window.speechSynthesis.speaking; glow+=((sp?1:0)-glow)*0.08;
-        mlnd.opacity=0.95+0.05*glow; mlnd.size=0.075+0.03*glow; mo.opacity=0.5+0.2*glow; halo.material.opacity=0.24*glow;
+        var t=(performance.now()||Date.now())/1000; var mix=0.5+0.5*Math.sin(t*0.34); var hue=0.125+(0.78-0.125)*mix;
+        mlnd.color.setHSL(hue,0.85,0.6+0.14*glow); mlnd.size=0.09+0.03*glow;
+        mo.opacity=0.45+0.2*glow;
+        halo.material.color.setHSL(hue,0.8,0.62); halo.material.opacity=0.26*glow;
         rd.render(sc,cam);}
       loop(); return true;
-    }catch(e){ el.innerHTML="<div style=\"width:160px;height:160px;border-radius:50%;margin:34px auto;background:radial-gradient(circle at 40% 40%,#1b4a6e,#2a1a5a 70%,#050608);box-shadow:0 0 34px rgba(90,190,255,.5)\"></div>"; return true; }
+    }catch(e){ el.innerHTML="<div style=\"width:170px;height:170px;border-radius:50%;margin:34px auto;background:radial-gradient(circle at 40% 40%,#5a3d12,#2a1a5a 70%,#050608);box-shadow:0 0 34px rgba(224,182,77,.5)\"></div>"; return true; }
   }
   var tries=0; var iv=setInterval(function(){ tries++; if(boot()||tries>50){ clearInterval(iv); } },200);
 })();
