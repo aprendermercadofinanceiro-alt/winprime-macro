@@ -58,11 +58,7 @@
   <div class="panel">
       
       <div id="wpAvatar" style="text-align:center;margin:2px auto 6px">
-      <div id="wpFaceWrap" style="position:relative;display:inline-block;border-radius:14px;box-shadow:0 0 16px 1px rgba(224,182,77,.25)">
-        <img id="wpFaceImg" src="rosto_ia.png?v=1" alt="WINPRIME IA" style="width:240px;display:block;border-radius:12px">
-        <div class="wpLid" style="left:34%;top:45.3%"></div>
-        <div class="wpLid" style="left:65%;top:45.3%"></div>
-      </div>
+      <div id="wpGlobe" style="width:224px;height:224px;margin:2px auto 4px"></div>
       </div>
     <div class="orb dot"></div>
     <div class="estado-label">Sentimento de Mercado</div>
@@ -331,20 +327,43 @@ body.fechado::after{content:"";position:fixed;inset:0;border:5px solid #e0b64d;p
 #wpEyes{transform-box:fill-box;transform-origin:center;animation:wpblink 5.4s infinite ease-in-out}
 @keyframes wpblink{0%,90%,100%{transform:scaleY(1)}94%{transform:scaleY(.08)}}
 </style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function(){
-  var wrap=document.getElementById("wpFaceWrap");
-  function loop(){
-    requestAnimationFrame(loop);
-    if(!wrap) return;
-    var sp=window.speechSynthesis && window.speechSynthesis.speaking;
-    if(sp){
-      var t=Date.now()/120, a=0.5+0.5*Math.sin(t);
-      var blur=26+26*a, spread=6+9*a, op=0.5+0.4*a;
-      wrap.style.boxShadow="0 0 "+blur.toFixed(0)+"px "+spread.toFixed(0)+"px rgba(224,182,77,"+op.toFixed(2)+"),0 0 "+(blur*2).toFixed(0)+"px "+(spread*2).toFixed(0)+"px rgba(224,182,77,.28)";
-    } else { wrap.style.boxShadow="0 0 16px 1px rgba(224,182,77,.25)"; }
+  function boot(){
+    var el=document.getElementById("wpGlobe"); if(!el) return;
+    if(typeof THREE==="undefined"){ return false; }
+    try{
+      var W=el.clientWidth||224,H=el.clientHeight||224;
+      var sc=new THREE.Scene();
+      var cam=new THREE.PerspectiveCamera(45,W/H,0.1,100); cam.position.z=3.4;
+      var rd=new THREE.WebGLRenderer({alpha:true,antialias:true});
+      rd.setSize(W,H); rd.setPixelRatio(Math.min(2,window.devicePixelRatio||1)); el.appendChild(rd.domElement);
+      var grp=new THREE.Group(); sc.add(grp); grp.rotation.x=0.4;
+      var cnv=document.createElement("canvas"); cnv.width=cnv.height=32; var cx=cnv.getContext("2d");
+      var gd=cx.createRadialGradient(16,16,0,16,16,16); gd.addColorStop(0,"#ffffff"); gd.addColorStop(.35,"#bfe9ff"); gd.addColorStop(1,"rgba(120,200,255,0)");
+      cx.fillStyle=gd; cx.beginPath(); cx.arc(16,16,16,0,7); cx.fill(); var tex=new THREE.CanvasTexture(cnv);
+      function sph(n,r){var a=[];var phi=Math.PI*(3-Math.sqrt(5));for(var i=0;i<n;i++){var y=1-(i/(n-1))*2;var rr=Math.sqrt(1-y*y);var th=phi*i;a.push(new THREE.Vector3(Math.cos(th)*rr*r,y*r,Math.sin(th)*rr*r));}return a;}
+      var inner=sph(1100,1);
+      var m1=new THREE.PointsMaterial({size:0.05,map:tex,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,color:0x5cc6ff,opacity:0.9});
+      grp.add(new THREE.Points(new THREE.BufferGeometry().setFromPoints(inner),m1));
+      var outer=sph(88,1.34);
+      var m2=new THREE.PointsMaterial({size:0.08,map:tex,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,color:0xa9e6ff,opacity:0.95});
+      grp.add(new THREE.Points(new THREE.BufferGeometry().setFromPoints(outer),m2));
+      var lp=[];for(var i=0;i<outer.length;i++){var dd=[];for(var j=0;j<outer.length;j++){if(i!==j)dd.push([outer[i].distanceTo(outer[j]),j]);}dd.sort(function(a,b){return a[0]-b[0];});for(var k=0;k<2;k++){lp.push(outer[i],outer[dd[k][1]]);}}
+      var ml=new THREE.LineBasicMaterial({color:0x3f8fc0,transparent:true,opacity:0.32,blending:THREE.AdditiveBlending});
+      grp.add(new THREE.LineSegments(new THREE.BufferGeometry().setFromPoints(lp),ml));
+      var halo=new THREE.Sprite(new THREE.SpriteMaterial({map:tex,color:0x9fd8ff,transparent:true,opacity:0,blending:THREE.AdditiveBlending,depthWrite:false})); halo.scale.set(4.2,4.2,1); sc.add(halo);
+      var glow=0;
+      function loop(){requestAnimationFrame(loop); grp.rotation.y+=0.0016;
+        var sp=window.speechSynthesis && window.speechSynthesis.speaking; glow+=((sp?1:0)-glow)*0.08;
+        m1.opacity=0.82+0.18*glow; m1.size=0.05+0.03*glow; m1.color.setHSL(0.56,0.9,0.6+0.18*glow);
+        m2.opacity=0.9+0.1*glow; ml.opacity=0.28+0.45*glow; halo.material.opacity=0.20*glow;
+        rd.render(sc,cam);}
+      loop(); return true;
+    }catch(e){ el.innerHTML="<div style=\"width:150px;height:150px;border-radius:50%;margin:30px auto;background:radial-gradient(circle,#0e2a3a,#050608);box-shadow:0 0 30px rgba(90,190,255,.5)\"></div>"; return true; }
   }
-  requestAnimationFrame(loop);
+  var tries=0; var iv=setInterval(function(){ tries++; if(boot()||tries>50){ clearInterval(iv); } },200);
 })();
 </script>
 <style>
