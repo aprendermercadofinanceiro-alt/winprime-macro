@@ -1,12 +1,13 @@
 {
   "estado": 2,
   "aberto": true,
-  "altistas": 9,
+  "altistas": 10,
   "neutros": 11,
-  "baixistas": 4,
+  "baixistas": 3,
   "total": 24,
   "lista_altistas": [
     "KOSPI 200 Futuros",
+    "Hang Seng Futuros",
     "S&P 500 VIX Futuros",
     "Topix 100",
     "TOPIX Futuros",
@@ -18,7 +19,6 @@
   ],
   "lista_neutros": [
     "Euro Stoxx 50 Futuros",
-    "Hang Seng Futuros",
     "Mini S&P 500 VIX Futuros",
     "IBEX 35 Futuros",
     "DAX Futuros",
@@ -27,14 +27,14 @@
     "Dow Jones Futuros",
     "Mini Ibovespa Futuros",
     "Ibovespa",
+    "Ouro",
     "Morgan Stanley"
   ],
   "lista_baixistas": [
     "iShares MSCI Brazil Capped",
     "S&P/ASX 200 Futuros",
-    "FTSE 100",
-    "Ouro"
+    "FTSE 100"
   ],
-  "atualizado": "2026-08-10T11:09:21-03:00",
+  "atualizado": "2026-08-10T12:11:32-03:00",
   "obs": "Leitura ao vivo da carteira Investing."
 }
