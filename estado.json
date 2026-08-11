@@ -2,8 +2,8 @@
   "estado": 0,
   "aberto": true,
   "altistas": 6,
-  "neutros": 8,
-  "baixistas": 10,
+  "neutros": 7,
+  "baixistas": 11,
   "total": 24,
   "lista_altistas": [
     "S&P 500 VIX Futuros",
@@ -19,7 +19,6 @@
     "DAX Futuros",
     "FTSE 100",
     "China H-Shares Futuros",
-    "Dow Jones Futuros",
     "Ouro",
     "Morgan Stanley"
   ],
@@ -30,50 +29,12 @@
     "S&P/ASX 200 Futuros",
     "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
-    "Mini Ibovespa Futuros",
-    "Nikkei 225 Futuros",
-    "Prata",
-    "Ibovespa"
-  ],
-  "atualizado": "2026-08-11T16:09:39-03:00",
-  "obs": "Leitura ao vivo da carteira Investing."
-}{
-  "estado": 0,
-  "aberto": true,
-  "altistas": 6,
-  "neutros": 9,
-  "baixistas": 9,
-  "total": 24,
-  "lista_altistas": [
-    "S&P 500 VIX Futuros",
-    "IBEX 35 Futuros",
-    "Topix 100",
-    "TOPIX Futuros",
-    "Petróleo Brent",
-    "Petróleo WTI"
-  ],
-  "lista_neutros": [
-    "Euro Stoxx 50 Futuros",
-    "Mini S&P 500 VIX Futuros",
-    "DAX Futuros",
-    "FTSE 100",
-    "China H-Shares Futuros",
-    "S&P 500 Futuros",
     "Dow Jones Futuros",
-    "Ouro",
-    "Morgan Stanley"
-  ],
-  "lista_baixistas": [
-    "iShares MSCI Brazil Capped",
-    "KOSPI 200 Futuros",
-    "Hang Seng Futuros",
-    "S&P/ASX 200 Futuros",
-    "Nasdaq 100 Futuros",
     "Mini Ibovespa Futuros",
     "Nikkei 225 Futuros",
     "Prata",
     "Ibovespa"
   ],
-  "atualizado": "2026-08-11T15:10:01-03:00",
+  "atualizado": "2026-08-11T17:08:57-03:00",
   "obs": "Leitura ao vivo da carteira Investing."
 }
