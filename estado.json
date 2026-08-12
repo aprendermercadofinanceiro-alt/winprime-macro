@@ -20,7 +20,7 @@
     "IBEX 35 Futuros",
     "Ibovespa",
     "DAX Futuros",
-    "S&P/ASX 200 Futuros",
+    "Mini Ibovespa Futuros",
     "FTSE 100",
     "Petróleo WTI",
     "Petróleo Brent",
@@ -29,10 +29,10 @@
   ],
   "lista_baixistas": [
     "Euro Stoxx 50 Futuros",
-    "Mini Ibovespa Futuros",
+    "S&P/ASX 200 Futuros",
     "China H-Shares Futuros",
     "Hang Seng Futuros"
   ],
-  "atualizado": "2026-08-12T15:04:28.073Z",
+  "atualizado": "2026-08-12T15:05:28.060Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 3. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
