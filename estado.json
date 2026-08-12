@@ -1,36 +1,41 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 5,
-  "altistas": 7,
-  "neutros": 9,
-  "baixistas": 2,
-  "total": 18,
-  "fechados": 6,
+  "soma": 7,
+  "altistas": 10,
+  "neutros": 11,
+  "baixistas": 3,
+  "total": 24,
   "lista_altistas": [
-    "Mini S&P 500 VIX Futuros",
-    "S&P 500 VIX Futuros",
-    "Nasdaq 100 Futuros",
+    "KOSPI 200 Futuros (KOR200)",
+    "Mini S&P 500 VIX Futuros (VXMN)",
+    "S&P 500 VIX Futuros (VX)",
+    "Topix 100 (TOPX100)",
+    "TOPIX Futuros (JTI)",
+    "Nasdaq Futuros",
     "S&P 500 Futuros",
-    "Prata",
-    "Ouro",
-    "Morgan Stanley"
+    "Prata (SI)",
+    "Ouro (GC)",
+    "Morgan Stanley (MS)"
   ],
   "lista_neutros": [
-    "iShares MSCI Brazil Capped",
-    "Euro Stoxx 50 Futuros",
-    "DAX Futuros",
-    "S&P/ASX 200 Futuros",
-    "Dow Jones Futuros",
-    "Mini Ibovespa Futuros",
-    "Petróleo Brent",
-    "Ibovespa",
-    "DXY (dolar)"
+    "iShares MSCI Brazil Capped (EWZ)",
+    "Euro Stoxx 50 Futuros (EU50)",
+    "IBEX 35 Futuros (ES35)",
+    "DAX Futuros (FDX)",
+    "S&P/ASX 200 Futuros (AUS200)",
+    "FTSE 100 (UK100)",
+    "Dow Jones Futuros (YM)",
+    "Mini Ibovespa Futuros (WIN)",
+    "Nikkei",
+    "Petróleo Brent (LCO)",
+    "Ibovespa (IBOV)"
   ],
   "lista_baixistas": [
-    "Hang Seng Futuros",
-    "Petróleo WTI"
+    "Hang Seng Futuros (HK50)",
+    "China H-Shares Futuros (HCEI)",
+    "Petróleo WTI (CL)"
   ],
-  "atualizado": "2026-08-12T18:14:28.117Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-12T15:09:02-03:00",
+  "obs": "Leitura ao vivo da carteira Investing."
 }
