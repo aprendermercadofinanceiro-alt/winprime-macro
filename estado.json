@@ -1,12 +1,12 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 5,
+  "soma": 6,
   "altistas": 7,
   "neutros": 9,
-  "baixistas": 2,
-  "total": 18,
-  "fechados": 6,
+  "baixistas": 1,
+  "total": 17,
+  "fechados": 7,
   "lista_altistas": [
     "Mini S&P 500 VIX Futuros",
     "S&P 500 VIX Futuros",
@@ -28,9 +28,8 @@
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Hang Seng Futuros",
     "Mini Ibovespa Futuros"
   ],
-  "atualizado": "2026-08-12T18:59:28.071Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-12T19:00:28.138Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
