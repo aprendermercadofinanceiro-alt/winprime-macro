@@ -1,38 +1,41 @@
 {
-  "estado": 2,
+  "estado": 1,
   "aberto": true,
-  "soma": 1,
-  "altistas": 5,
-  "neutros": 11,
-  "baixistas": 4,
-  "total": 20,
-  "fechados": 3,
+  "soma": 2,
+  "altistas": 8,
+  "neutros": 10,
+  "baixistas": 6,
+  "total": 24,
   "lista_altistas": [
-    "Prata",
+    "KOSPI 200 Futuros",
+    "S&P 500 VIX Futuros",
+    "Topix 100",
+    "TOPIX Futuros",
     "Nasdaq 100 Futuros",
+    "Prata",
     "Ouro",
-    "Morgan Stanley",
-    "S&P 500 VIX Futuros"
+    "Morgan Stanley"
   ],
   "lista_neutros": [
+    "iShares MSCI Brazil Capped",
+    "Mini S&P 500 VIX Futuros",
+    "IBEX 35 Futuros",
+    "DAX Futuros",
     "S&P 500 Futuros",
     "Dow Jones Futuros",
-    "IBEX 35 Futuros",
-    "Ibovespa",
-    "DAX Futuros",
-    "S&P/ASX 200 Futuros",
-    "Mini Ibovespa Futuros",
-    "Petróleo WTI",
+    "Nikkei 225 Futuros",
     "Petróleo Brent",
-    "iShares MSCI Brazil Capped",
-    "DXY (dolar)"
+    "Ibovespa",
+    "Petróleo WTI"
   ],
   "lista_baixistas": [
     "Euro Stoxx 50 Futuros",
+    "Hang Seng Futuros",
+    "S&P/ASX 200 Futuros",
     "FTSE 100",
     "China H-Shares Futuros",
-    "Hang Seng Futuros"
+    "Mini Ibovespa Futuros"
   ],
-  "atualizado": "2026-08-12T15:12:28.145Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 3. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-12T12:13:08-03:00",
+  "obs": "Leitura ao vivo da carteira Investing."
 }
