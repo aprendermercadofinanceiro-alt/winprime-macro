@@ -9,15 +9,15 @@
   "fechados": 4,
   "lista_altistas": [
     "Morgan Stanley",
-    "IBEX 35 Futuros",
     "Euro Stoxx 50 Futuros",
+    "Dow Jones Futuros",
     "S&P 500 Futuros",
     "Nasdaq 100 Futuros",
     "Mini Ibovespa Futuros",
     "Ibovespa"
   ],
   "lista_neutros": [
-    "Dow Jones Futuros",
+    "IBEX 35 Futuros",
     "Hang Seng Futuros",
     "DAX Futuros",
     "S&P/ASX 200 Futuros",
@@ -32,6 +32,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-13T13:57:28.100Z",
+  "atualizado": "2026-08-13T13:58:28.061Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
