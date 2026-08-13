@@ -6,7 +6,7 @@
   "neutros": 5,
   "baixistas": 9,
   "total": 18,
-  "fechados": 5,
+  "fechados": 6,
   "lista_altistas": [
     "Nasdaq 100 Futuros",
     "Morgan Stanley",
@@ -31,6 +31,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-13T16:11:28.068Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-13T16:12:28.091Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
