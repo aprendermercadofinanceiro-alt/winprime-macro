@@ -11,20 +11,20 @@
     "Topix 100"
   ],
   "lista_neutros": [
-    "Prata",
-    "Nasdaq 100 Futuros",
-    "Ouro",
-    "S&P 500 Futuros",
-    "Dow Jones Futuros",
+    "S&P 500 VIX Futuros",
     "DAX Futuros",
     "S&P/ASX 200 Futuros",
+    "Nasdaq 100 Futuros",
+    "S&P 500 Futuros",
+    "Dow Jones Futuros",
     "Petróleo Brent",
-    "S&P 500 VIX Futuros",
+    "Prata",
+    "Ouro",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-13T04:52:28.140Z",
+  "atualizado": "2026-08-13T04:53:28.120Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
