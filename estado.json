@@ -1,33 +1,30 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 4,
-  "altistas": 5,
-  "neutros": 9,
+  "soma": 5,
+  "altistas": 6,
+  "neutros": 5,
   "baixistas": 1,
-  "total": 15,
-  "fechados": 9,
+  "total": 12,
+  "fechados": 10,
   "lista_altistas": [
-    "S&P 500 VIX Futuros",
-    "Ouro",
-    "Petróleo Brent",
     "Petróleo WTI",
+    "Topix 100",
+    "Petróleo Brent",
+    "Ouro",
+    "S&P 500 VIX Futuros",
     "DXY (dolar)"
   ],
   "lista_neutros": [
-    "IBEX 35 Futuros",
-    "Euro Stoxx 50 Futuros",
-    "Dow Jones Futuros",
-    "S&P 500 Futuros",
-    "Hang Seng Futuros",
     "Nasdaq 100 Futuros",
+    "S&P 500 Futuros",
+    "Prata",
     "DAX Futuros",
-    "FTSE 100",
-    "Prata"
+    "Dow Jones Futuros"
   ],
   "lista_baixistas": [
     "S&P/ASX 200 Futuros"
   ],
-  "atualizado": "2026-08-14T12:28:28.052Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-14T12:28:40.515Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
