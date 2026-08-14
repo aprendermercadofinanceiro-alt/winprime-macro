@@ -15,18 +15,18 @@
     "DXY (dolar)"
   ],
   "lista_neutros": [
-    "Petróleo WTI",
-    "Petróleo Brent",
     "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
+    "Petróleo WTI",
     "DAX Futuros",
-    "Dow Jones Futuros",
-    "Ibovespa"
+    "Petróleo Brent",
+    "Ibovespa",
+    "Dow Jones Futuros"
   ],
   "lista_baixistas": [
     "Mini Ibovespa Futuros",
     "S&P/ASX 200 Futuros"
   ],
-  "atualizado": "2026-08-14T13:23:34.686Z",
+  "atualizado": "2026-08-14T13:24:01.060Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 8. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
