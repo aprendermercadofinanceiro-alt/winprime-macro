@@ -16,13 +16,13 @@
     "Hang Seng Futuros"
   ],
   "lista_neutros": [
-    "S&P 500 VIX Futuros",
-    "DAX Futuros",
-    "Mini Ibovespa Futuros",
-    "Ibovespa",
     "iShares MSCI Brazil Capped",
+    "DAX Futuros",
+    "S&P 500 VIX Futuros",
     "Nasdaq 100 Futuros",
+    "Mini Ibovespa Futuros",
     "Euro Stoxx 50 Futuros",
+    "Ibovespa",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
@@ -30,6 +30,6 @@
     "Dow Jones Futuros",
     "S&P/ASX 200 Futuros"
   ],
-  "atualizado": "2026-08-17T18:27:20.257Z",
+  "atualizado": "2026-08-17T18:27:59.109Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
