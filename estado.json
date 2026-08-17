@@ -10,13 +10,13 @@
   "lista_altistas": [
     "Prata",
     "Hang Seng Futuros",
-    "Petróleo Brent",
     "Nasdaq 100 Futuros",
+    "Ouro",
     "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
+    "Petróleo Brent",
     "Petróleo WTI",
-    "Ouro",
     "Euro Stoxx 50 Futuros",
     "S&P 500 Futuros",
     "FTSE 100",
@@ -28,6 +28,6 @@
   "lista_baixistas": [
     "S&P/ASX 200 Futuros"
   ],
-  "atualizado": "2026-08-17T12:05:56.093Z",
+  "atualizado": "2026-08-17T12:06:56.080Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
