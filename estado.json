@@ -13,11 +13,11 @@
     "Ouro",
     "Petróleo Brent",
     "Hang Seng Futuros",
-    "Petróleo WTI",
+    "Nasdaq 100 Futuros",
     "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
-    "Nasdaq 100 Futuros",
+    "Petróleo WTI",
     "Euro Stoxx 50 Futuros",
     "iShares MSCI Brazil Capped",
     "DAX Futuros",
@@ -32,6 +32,6 @@
     "IBEX 35 Futuros",
     "S&P/ASX 200 Futuros"
   ],
-  "atualizado": "2026-08-17T14:01:59.057Z",
+  "atualizado": "2026-08-17T14:02:29.117Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
