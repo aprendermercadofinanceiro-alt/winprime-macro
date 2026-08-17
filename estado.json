@@ -1,17 +1,17 @@
 {
-  "estado": 1,
+  "estado": 2,
   "aberto": true,
-  "soma": 0,
-  "altistas": 0,
-  "neutros": 1,
+  "soma": 1,
+  "altistas": 1,
+  "neutros": 0,
   "baixistas": 0,
   "total": 1,
   "fechados": 23,
-  "lista_altistas": [],
-  "lista_neutros": [
+  "lista_altistas": [
     "DXY (dolar)"
   ],
+  "lista_neutros": [],
   "lista_baixistas": [],
-  "atualizado": "2026-08-17T08:24:27.036Z",
+  "atualizado": "2026-08-17T08:25:27.146Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 23. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
