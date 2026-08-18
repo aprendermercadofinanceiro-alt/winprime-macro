@@ -1,9 +1,9 @@
 {
-  "estado": 1,
+  "estado": 0,
   "aberto": true,
-  "soma": 0,
-  "altistas": 7,
-  "neutros": 5,
+  "soma": -1,
+  "altistas": 6,
+  "neutros": 6,
   "baixistas": 7,
   "total": 19,
   "fechados": 4,
@@ -13,10 +13,10 @@
     "Ibovespa",
     "Mini Ibovespa Futuros",
     "FTSE 100",
-    "Petróleo Brent",
-    "Hang Seng Futuros"
+    "Petróleo Brent"
   ],
   "lista_neutros": [
+    "Hang Seng Futuros",
     "S&P/ASX 200 Futuros",
     "IBEX 35 Futuros",
     "DAX Futuros",
@@ -32,6 +32,6 @@
     "Nasdaq 100 Futuros",
     "Prata"
   ],
-  "atualizado": "2026-08-18T13:56:10.138Z",
+  "atualizado": "2026-08-18T13:56:40.127Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
