@@ -12,25 +12,25 @@
     "Petróleo Brent"
   ],
   "lista_neutros": [
-    "Ibovespa",
-    "Hang Seng Futuros",
-    "Mini Ibovespa Futuros",
     "S&P/ASX 200 Futuros",
-    "iShares MSCI Brazil Capped",
+    "Hang Seng Futuros",
     "DAX Futuros",
+    "Ibovespa",
     "Dow Jones Futuros",
+    "Mini Ibovespa Futuros",
+    "iShares MSCI Brazil Capped",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
     "IBEX 35 Futuros",
     "S&P 500 Futuros",
-    "Ouro",
     "Morgan Stanley",
     "Euro Stoxx 50 Futuros",
+    "Ouro",
     "Nasdaq 100 Futuros",
     "Prata"
   ],
-  "atualizado": "2026-08-18T17:07:37.282Z",
+  "atualizado": "2026-08-18T17:07:39.120Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
