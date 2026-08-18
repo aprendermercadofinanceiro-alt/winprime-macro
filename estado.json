@@ -13,11 +13,11 @@
     "Ibovespa",
     "Mini Ibovespa Futuros",
     "FTSE 100",
-    "Petróleo Brent",
-    "Hang Seng Futuros"
+    "Hang Seng Futuros",
+    "S&P/ASX 200 Futuros"
   ],
   "lista_neutros": [
-    "S&P/ASX 200 Futuros",
+    "Petróleo Brent",
     "IBEX 35 Futuros",
     "DAX Futuros",
     "Dow Jones Futuros",
@@ -32,6 +32,6 @@
     "Nasdaq 100 Futuros",
     "Prata"
   ],
-  "atualizado": "2026-08-18T14:00:38.169Z",
+  "atualizado": "2026-08-18T14:01:38.117Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
