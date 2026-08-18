@@ -9,14 +9,14 @@
   "fechados": 4,
   "lista_altistas": [
     "Ibovespa",
-    "Petróleo WTI"
+    "Hang Seng Futuros"
   ],
   "lista_neutros": [
-    "Hang Seng Futuros",
     "FTSE 100",
     "Mini Ibovespa Futuros",
     "S&P/ASX 200 Futuros",
     "iShares MSCI Brazil Capped",
+    "Petróleo WTI",
     "DAX Futuros",
     "IBEX 35 Futuros",
     "Dow Jones Futuros",
@@ -32,6 +32,6 @@
     "Nasdaq 100 Futuros",
     "Prata"
   ],
-  "atualizado": "2026-08-18T14:47:40.133Z",
+  "atualizado": "2026-08-18T14:48:38.103Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
