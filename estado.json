@@ -3,10 +3,10 @@
   "aberto": true,
   "soma": 10,
   "altistas": 13,
-  "neutros": 3,
+  "neutros": 2,
   "baixistas": 3,
-  "total": 19,
-  "fechados": 4,
+  "total": 18,
+  "fechados": 5,
   "lista_altistas": [
     "iShares MSCI Brazil Capped",
     "Ouro",
@@ -23,7 +23,6 @@
     "DXY (dolar)"
   ],
   "lista_neutros": [
-    "FTSE 100",
     "Nasdaq 100 Futuros",
     "DAX Futuros"
   ],
@@ -32,6 +31,6 @@
     "IBEX 35 Futuros",
     "Morgan Stanley"
   ],
-  "atualizado": "2026-08-19T15:34:38.083Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-19T15:35:38.070Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
