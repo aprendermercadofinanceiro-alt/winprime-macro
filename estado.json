@@ -2,21 +2,18 @@
   "estado": 2,
   "aberto": true,
   "soma": 1,
-  "altistas": 2,
+  "altistas": 1,
   "neutros": 1,
-  "baixistas": 1,
-  "total": 4,
-  "fechados": 20,
+  "baixistas": 0,
+  "total": 2,
+  "fechados": 22,
   "lista_altistas": [
-    "Hang Seng Futuros",
     "DXY (dolar)"
   ],
   "lista_neutros": [
     "Petróleo Brent"
   ],
-  "lista_baixistas": [
-    "IBEX 35 Futuros"
-  ],
-  "atualizado": "2026-08-19T21:59:38.015Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 20. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "lista_baixistas": [],
+  "atualizado": "2026-08-19T22:00:38.039Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 22. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
