@@ -6,7 +6,7 @@
   "neutros": 6,
   "baixistas": 1,
   "total": 10,
-  "fechados": 14,
+  "fechados": 13,
   "lista_altistas": [
     "Hang Seng Futuros",
     "Nasdaq 100 Futuros",
@@ -23,6 +23,6 @@
   "lista_baixistas": [
     "IBEX 35 Futuros"
   ],
-  "atualizado": "2026-08-19T23:00:38.034Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 14. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-19T23:01:38.067Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 13. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
