@@ -18,15 +18,15 @@
     "DXY (dolar)"
   ],
   "lista_neutros": [
+    "Nasdaq 100 Futuros",
     "Euro Stoxx 50 Futuros",
     "FTSE 100",
     "IBEX 35 Futuros",
     "DAX Futuros",
-    "Nasdaq 100 Futuros",
     "Petróleo Brent",
     "Petróleo WTI"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-08-19T12:51:38.058Z",
+  "atualizado": "2026-08-19T12:52:08.822Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
