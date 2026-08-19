@@ -1,11 +1,11 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 4,
+  "soma": 3,
   "altistas": 5,
   "neutros": 9,
-  "baixistas": 1,
-  "total": 15,
+  "baixistas": 2,
+  "total": 16,
   "fechados": 9,
   "lista_altistas": [
     "Hang Seng Futuros",
@@ -26,8 +26,9 @@
     "DXY (dolar)"
   ],
   "lista_baixistas": [
+    "KOSPI 200 Futuros",
     "Prata"
   ],
-  "atualizado": "2026-08-19T12:08:38.113Z",
+  "atualizado": "2026-08-19T12:09:06.044Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
