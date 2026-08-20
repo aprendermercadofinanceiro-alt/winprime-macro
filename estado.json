@@ -1,12 +1,12 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 3,
+  "soma": 2,
   "altistas": 4,
   "neutros": 6,
-  "baixistas": 1,
-  "total": 11,
-  "fechados": 12,
+  "baixistas": 2,
+  "total": 12,
+  "fechados": 9,
   "lista_altistas": [
     "Hang Seng Futuros",
     "Nasdaq 100 Futuros",
@@ -22,8 +22,9 @@
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "IBEX 35 Futuros"
+    "IBEX 35 Futuros",
+    "Topix 100"
   ],
-  "atualizado": "2026-08-19T23:59:38.094Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 12. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-20T00:00:38.011Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
