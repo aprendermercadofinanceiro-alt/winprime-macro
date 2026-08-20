@@ -13,21 +13,21 @@
     "Prata"
   ],
   "lista_neutros": [
-    "IBEX 35 Futuros",
     "DAX Futuros",
+    "IBEX 35 Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
-    "S&P 500 Futuros",
     "FTSE 100",
-    "Nasdaq 100 Futuros",
-    "Hang Seng Futuros",
-    "Dow Jones Futuros",
     "Ouro",
+    "Hang Seng Futuros",
+    "S&P 500 Futuros",
     "Euro Stoxx 50 Futuros",
-    "S&P/ASX 200 Futuros"
+    "S&P/ASX 200 Futuros",
+    "Nasdaq 100 Futuros",
+    "Dow Jones Futuros"
   ],
-  "atualizado": "2026-08-20T12:54:24.149Z",
+  "atualizado": "2026-08-20T12:54:53.082Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 8. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
