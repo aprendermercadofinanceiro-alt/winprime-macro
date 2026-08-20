@@ -13,7 +13,7 @@
     "Petróleo WTI"
   ],
   "lista_neutros": [
-    "S&P 500 VIX Futuros",
+    "Hang Seng Futuros",
     "IBEX 35 Futuros",
     "DAX Futuros",
     "FTSE 100",
@@ -25,9 +25,9 @@
   ],
   "lista_baixistas": [
     "Euro Stoxx 50 Futuros",
-    "Hang Seng Futuros",
+    "S&P 500 VIX Futuros",
     "S&P/ASX 200 Futuros"
   ],
-  "atualizado": "2026-08-20T09:52:24.096Z",
+  "atualizado": "2026-08-20T09:53:24.099Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 8. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
