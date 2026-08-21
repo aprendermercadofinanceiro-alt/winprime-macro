@@ -12,16 +12,16 @@
   ],
   "lista_neutros": [
     "S&P 500 VIX Futuros",
-    "Ouro",
-    "S&P 500 Futuros",
     "Nasdaq 100 Futuros",
+    "S&P 500 Futuros",
     "Dow Jones Futuros",
+    "Ouro",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Petróleo WTI",
-    "S&P/ASX 200 Futuros"
+    "S&P/ASX 200 Futuros",
+    "Petróleo WTI"
   ],
-  "atualizado": "2026-08-21T00:37:24.111Z",
+  "atualizado": "2026-08-21T00:38:24.092Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 14. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
