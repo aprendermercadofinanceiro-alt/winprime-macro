@@ -1,48 +1,9 @@
 {
   "estado": 2,
   "aberto": true,
+  "soma": 9,
   "altistas": 9,
-  "neutros": 11,
-  "baixistas": 4,
-  "total": 24,
-  "lista_altistas": [
-    "Hang Seng Futuros HK50",
-    "S&P 500 VIX Futuros VX",
-    "IBEX 35 Futuros ES35",
-    "TOPIX Futuros JTIc2",
-    "Nasdaq 100 Futuros NQU26",
-    "S&P 500 Futuros ESU26",
-    "Dow Jones Futuros YMU26",
-    "Prata SI",
-    "Ouro GC"
-  ],
-  "lista_neutros": [
-    "Euro Stoxx 50 Futuros EU50",
-    "KOSPI 200 Futuros KOR200c1",
-    "DAX Futuros FDXc3",
-    "Topix 100 TOPX100",
-    "S&P/ASX 200 Futuros AUS200",
-    "FTSE 100 UK100",
-    "China H-Shares Futuros HCEIc1",
-    "Mini Ibovespa Futuros WINc1",
-    "Petróleo Brent LCO",
-    "Ibovespa IBOV",
-    "Petróleo WTI CL"
-  ],
-  "lista_baixistas": [
-    "iShares MSCI Brazil Capped EWZ",
-    "Mini S&P 500 VIX Futuros VXMNc1",
-    "Nikkei 225 Futuros JNMc1",
-    "Morgan Stanley MS"
-  ],
-  "atualizado": "2026-08-21T09:08:54-03:00",
-  "obs": "Leitura ao vivo da carteira Investing."
-}{
-  "estado": 2,
-  "aberto": true,
-  "soma": 8,
-  "altistas": 8,
-  "neutros": 7,
+  "neutros": 6,
   "baixistas": 0,
   "total": 15,
   "fechados": 9,
@@ -53,6 +14,7 @@
     "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
     "Dow Jones Futuros",
+    "Petróleo Brent",
     "Prata",
     "Ouro"
   ],
@@ -61,11 +23,10 @@
     "DAX Futuros",
     "S&P/ASX 200 Futuros",
     "FTSE 100",
-    "Petróleo Brent",
     "Petróleo WTI",
     "DXY (dolar)"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-08-21T12:12:24.090Z",
+  "atualizado": "2026-08-21T12:13:24.146Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
