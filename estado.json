@@ -8,21 +8,21 @@
   "total": 11,
   "fechados": 12,
   "lista_altistas": [
-    "S&P 500 VIX Futuros",
-    "S&P/ASX 200 Futuros",
-    "S&P 500 Futuros",
-    "Dow Jones Futuros",
     "Prata",
-    "Ouro"
+    "Ouro",
+    "Dow Jones Futuros",
+    "S&P 500 Futuros",
+    "S&P/ASX 200 Futuros",
+    "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
-    "DAX Futuros",
-    "Nasdaq 100 Futuros",
     "Petróleo Brent",
+    "Nasdaq 100 Futuros",
     "Petróleo WTI",
+    "DAX Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-08-21T20:58:24.099Z",
+  "atualizado": "2026-08-21T20:59:24.131Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 12. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
