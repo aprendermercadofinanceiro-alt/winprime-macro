@@ -10,13 +10,13 @@
   "lista_altistas": [
     "Ouro",
     "IBEX 35 Futuros",
-    "S&P/ASX 200 Futuros"
+    "Dow Jones Futuros"
   ],
   "lista_neutros": [
     "Morgan Stanley",
     "FTSE 100",
+    "S&P/ASX 200 Futuros",
     "iShares MSCI Brazil Capped",
-    "Dow Jones Futuros",
     "DAX Futuros",
     "Euro Stoxx 50 Futuros",
     "Ibovespa",
@@ -32,6 +32,6 @@
     "Hang Seng Futuros",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-24T14:08:23.290Z",
+  "atualizado": "2026-08-24T14:09:23.294Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
