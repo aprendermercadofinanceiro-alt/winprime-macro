@@ -19,8 +19,8 @@
   "lista_neutros": [
     "Dow Jones Futuros",
     "Mini Ibovespa Futuros",
-    "S&P 500 VIX Futuros",
     "DAX Futuros",
+    "S&P 500 VIX Futuros",
     "Euro Stoxx 50 Futuros",
     "S&P 500 Futuros",
     "DXY (dolar)"
@@ -32,6 +32,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-24T14:46:42.589Z",
+  "atualizado": "2026-08-24T14:47:12.622Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
