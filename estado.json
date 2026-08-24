@@ -14,9 +14,9 @@
     "Morgan Stanley"
   ],
   "lista_neutros": [
-    "Ouro",
     "S&P/ASX 200 Futuros",
     "Dow Jones Futuros",
+    "Ouro",
     "Euro Stoxx 50 Futuros",
     "DAX Futuros",
     "S&P 500 VIX Futuros",
@@ -25,11 +25,11 @@
   ],
   "lista_baixistas": [
     "Nasdaq 100 Futuros",
-    "Prata",
     "Hang Seng Futuros",
+    "Prata",
     "Petróleo WTI",
     "Petróleo Brent"
   ],
-  "atualizado": "2026-08-24T18:56:12.588Z",
+  "atualizado": "2026-08-24T18:56:43.283Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
