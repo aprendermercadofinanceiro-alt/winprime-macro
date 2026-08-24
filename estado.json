@@ -15,22 +15,22 @@
     "Ouro"
   ],
   "lista_neutros": [
-    "S&P 500 VIX Futuros",
     "S&P/ASX 200 Futuros",
     "Dow Jones Futuros",
     "DAX Futuros",
     "Euro Stoxx 50 Futuros",
     "S&P 500 Futuros",
+    "Morgan Stanley",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Morgan Stanley",
+    "S&P 500 VIX Futuros",
     "Nasdaq 100 Futuros",
     "Hang Seng Futuros",
     "Prata",
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-24T17:44:12.584Z",
+  "atualizado": "2026-08-24T17:44:43.304Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
