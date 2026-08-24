@@ -1,13 +1,15 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -4,
-  "altistas": 2,
+  "soma": -2,
+  "altistas": 4,
   "neutros": 8,
   "baixistas": 6,
-  "total": 16,
-  "fechados": 9,
+  "total": 18,
+  "fechados": 7,
   "lista_altistas": [
+    "Ibovespa",
+    "Mini Ibovespa Futuros",
     "Ouro",
     "IBEX 35 Futuros"
   ],
@@ -29,6 +31,6 @@
     "Petróleo WTI",
     "KOSPI 200 Futuros"
   ],
-  "atualizado": "2026-08-24T13:00:42.597Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-24T13:01:12.594Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
