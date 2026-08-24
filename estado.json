@@ -9,13 +9,13 @@
   "fechados": 4,
   "lista_altistas": [
     "Ouro",
-    "Morgan Stanley",
     "IBEX 35 Futuros",
-    "FTSE 100"
+    "FTSE 100",
+    "S&P/ASX 200 Futuros"
   ],
   "lista_neutros": [
+    "Morgan Stanley",
     "S&P 500 VIX Futuros",
-    "S&P/ASX 200 Futuros",
     "iShares MSCI Brazil Capped",
     "Dow Jones Futuros",
     "DAX Futuros",
@@ -32,6 +32,6 @@
     "Hang Seng Futuros",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-24T14:23:23.315Z",
+  "atualizado": "2026-08-24T14:24:23.343Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
