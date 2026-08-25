@@ -18,8 +18,8 @@
   "lista_neutros": [
     "IBEX 35 Futuros",
     "FTSE 100",
-    "Hang Seng Futuros",
     "Ouro",
+    "Hang Seng Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
@@ -27,6 +27,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-25T12:52:12.685Z",
+  "atualizado": "2026-08-25T12:52:42.586Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
