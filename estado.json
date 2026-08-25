@@ -6,7 +6,7 @@
   "neutros": 4,
   "baixistas": 2,
   "total": 15,
-  "fechados": 7,
+  "fechados": 8,
   "lista_altistas": [
     "Mini Ibovespa Futuros",
     "Ibovespa",
@@ -28,6 +28,6 @@
     "Petróleo WTI",
     "Petróleo Brent"
   ],
-  "atualizado": "2026-08-25T19:01:23.347Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-25T19:02:23.382Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 8. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
