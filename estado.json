@@ -16,21 +16,21 @@
   "lista_neutros": [
     "Dow Jones Futuros",
     "Euro Stoxx 50 Futuros",
-    "Ibovespa",
     "Morgan Stanley",
     "FTSE 100",
     "Hang Seng Futuros",
+    "IBEX 35 Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "Mini Ibovespa Futuros",
+    "Ibovespa",
     "iShares MSCI Brazil Capped",
-    "IBEX 35 Futuros",
     "Ouro",
     "Prata",
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-25T13:56:23.322Z",
+  "atualizado": "2026-08-25T13:57:23.343Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
