@@ -10,18 +10,18 @@
   "lista_altistas": [],
   "lista_neutros": [
     "S&P 500 VIX Futuros",
-    "Dow Jones Futuros\nDow Jones\n 53.650,00+5,00  (+0,01%)\n08:50:38 - Dados em Atraso\n04:00\n06:00\n53,600.00\n53,700.00\n53,650.00\n\nResumo Técnico\n\n5 min:\nCompra\n15 min:\nNeutro\n30 min:\nCompra\nHora:\nNeutro\nDiário:\nCompra Forte\nMensal:\nCompra Forte",
+    "Dow Jones Futuros",
     "Hang Seng Futuros",
     "Prata",
     "S&P 500 Futuros",
-    "Ouro",
     "Nasdaq 100 Futuros",
+    "Ouro",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "S&P/ASX 200 Futuros",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-26T12:02:12.645Z",
+  "atualizado": "2026-08-26T12:02:43.277Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 13. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
