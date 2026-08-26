@@ -6,7 +6,7 @@
   "neutros": 4,
   "baixistas": 7,
   "total": 11,
-  "fechados": 12,
+  "fechados": 10,
   "lista_altistas": [],
   "lista_neutros": [
     "Hang Seng Futuros",
@@ -23,6 +23,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-08-26T13:00:23.375Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 12. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-26T13:01:23.388Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
