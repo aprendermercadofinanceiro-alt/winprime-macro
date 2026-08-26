@@ -6,7 +6,7 @@
   "neutros": 8,
   "baixistas": 6,
   "total": 14,
-  "fechados": 8,
+  "fechados": 9,
   "lista_altistas": [],
   "lista_neutros": [
     "Nasdaq 100 Futuros",
@@ -26,6 +26,6 @@
     "Ouro",
     "Morgan Stanley"
   ],
-  "atualizado": "2026-08-26T19:01:42.599Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 8. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-26T19:02:12.646Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
