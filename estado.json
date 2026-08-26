@@ -14,20 +14,20 @@
     "Petróleo Brent"
   ],
   "lista_neutros": [
-    "S&P 500 VIX Futuros",
     "S&P 500 Futuros",
     "Hang Seng Futuros",
     "Nasdaq 100 Futuros",
     "iShares MSCI Brazil Capped",
+    "Dow Jones Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Dow Jones Futuros",
+    "S&P 500 VIX Futuros",
     "S&P/ASX 200 Futuros",
     "Ouro",
     "Prata",
     "Morgan Stanley"
   ],
-  "atualizado": "2026-08-26T16:43:42.627Z",
+  "atualizado": "2026-08-26T16:44:12.610Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
