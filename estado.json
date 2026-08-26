@@ -12,11 +12,11 @@
   ],
   "lista_neutros": [
     "Nasdaq 100 Futuros",
-    "S&P 500 Futuros",
     "Ibovespa",
+    "S&P 500 Futuros",
     "Mini Ibovespa Futuros",
-    "iShares MSCI Brazil Capped",
     "Dow Jones Futuros",
+    "iShares MSCI Brazil Capped",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
@@ -27,6 +27,6 @@
     "Ouro",
     "Morgan Stanley"
   ],
-  "atualizado": "2026-08-26T19:18:50.854Z",
+  "atualizado": "2026-08-26T19:19:12.621Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
