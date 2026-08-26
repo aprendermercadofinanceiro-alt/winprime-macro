@@ -6,7 +6,7 @@
   "neutros": 3,
   "baixistas": 5,
   "total": 10,
-  "fechados": 13,
+  "fechados": 15,
   "lista_altistas": [
     "Nasdaq 100 Futuros",
     "S&P 500 VIX Futuros"
@@ -23,6 +23,6 @@
     "S&P/ASX 200 Futuros",
     "Ouro"
   ],
-  "atualizado": "2026-08-26T21:00:42.597Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 13. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-26T21:01:12.619Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 15. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
