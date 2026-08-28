@@ -6,7 +6,7 @@
   "neutros": 7,
   "baixistas": 4,
   "total": 15,
-  "fechados": 6,
+  "fechados": 7,
   "lista_altistas": [
     "Topix 100",
     "Hang Seng Futuros",
@@ -28,6 +28,6 @@
     "Prata",
     "Ouro"
   ],
-  "atualizado": "2026-08-28T06:15:16.099Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-28T06:16:16.097Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
