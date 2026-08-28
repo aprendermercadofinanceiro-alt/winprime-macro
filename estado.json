@@ -6,7 +6,7 @@
   "neutros": 6,
   "baixistas": 4,
   "total": 14,
-  "fechados": 10,
+  "fechados": 8,
   "lista_altistas": [
     "Prata",
     "Euro Stoxx 50 Futuros",
@@ -27,6 +27,6 @@
     "Petróleo WTI",
     "China H-Shares Futuros"
   ],
-  "atualizado": "2026-08-28T13:00:08.099Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-08-28T13:01:08.096Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 8. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
