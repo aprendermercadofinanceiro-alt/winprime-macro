@@ -21,13 +21,13 @@
     "IBEX 35 Futuros",
     "FTSE 100",
     "Euro Stoxx 50 Futuros",
-    "S&P 500 Futuros",
-    "Dow Jones Futuros",
     "Hang Seng Futuros",
+    "Dow Jones Futuros",
+    "S&P 500 Futuros",
     "Nasdaq 100 Futuros",
     "Ouro",
     "Prata"
   ],
-  "atualizado": "2026-09-01T12:53:34.609Z",
+  "atualizado": "2026-09-01T12:54:01.548Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
