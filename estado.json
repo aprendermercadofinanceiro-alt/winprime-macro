@@ -12,23 +12,23 @@
     "Petróleo WTI"
   ],
   "lista_neutros": [
-    "KOSPI 200 Futuros",
     "DAX Futuros",
+    "KOSPI 200 Futuros",
     "S&P/ASX 200 Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Euro Stoxx 50 Futuros",
-    "Hang Seng Futuros",
     "S&P 500 VIX Futuros",
+    "Dow Jones Futuros",
+    "S&P 500 Futuros",
     "IBEX 35 Futuros",
     "FTSE 100",
+    "Euro Stoxx 50 Futuros",
+    "Hang Seng Futuros",
     "Nasdaq 100 Futuros",
-    "S&P 500 Futuros",
-    "Dow Jones Futuros",
-    "Prata",
-    "Ouro"
+    "Ouro",
+    "Prata"
   ],
-  "atualizado": "2026-09-01T11:21:00.776Z",
+  "atualizado": "2026-09-01T11:21:30.717Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
