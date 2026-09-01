@@ -19,15 +19,15 @@
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
     "IBEX 35 Futuros",
+    "Dow Jones Futuros",
     "FTSE 100",
+    "S&P 500 Futuros",
     "Euro Stoxx 50 Futuros",
     "Hang Seng Futuros",
-    "Dow Jones Futuros",
-    "S&P 500 Futuros",
     "Nasdaq 100 Futuros",
     "Ouro",
     "Prata"
   ],
-  "atualizado": "2026-09-01T13:11:30.672Z",
+  "atualizado": "2026-09-01T13:12:00.678Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
