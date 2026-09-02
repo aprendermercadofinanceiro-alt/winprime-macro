@@ -1,12 +1,12 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 13,
-  "altistas": 13,
+  "soma": 12,
+  "altistas": 12,
   "neutros": 5,
   "baixistas": 0,
-  "total": 18,
-  "fechados": 5,
+  "total": 17,
+  "fechados": 6,
   "lista_altistas": [
     "iShares MSCI Brazil Capped",
     "Ibovespa",
@@ -19,7 +19,6 @@
     "Ouro",
     "Prata",
     "S&P/ASX 200 Futuros",
-    "IBEX 35 Futuros",
     "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
@@ -30,6 +29,6 @@
     "DXY (dolar)"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-09-02T17:59:34.629Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-09-02T18:00:34.582Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
