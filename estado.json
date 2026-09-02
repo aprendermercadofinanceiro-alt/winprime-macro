@@ -8,28 +8,28 @@
   "total": 17,
   "fechados": 6,
   "lista_altistas": [
-    "Petróleo Brent",
-    "Petróleo WTI",
     "iShares MSCI Brazil Capped",
     "Ibovespa",
-    "Mini Ibovespa Futuros"
+    "Petróleo WTI",
+    "Mini Ibovespa Futuros",
+    "Petróleo Brent"
   ],
   "lista_neutros": [
-    "S&P 500 VIX Futuros",
-    "DAX Futuros",
-    "S&P/ASX 200 Futuros",
-    "Dow Jones Futuros",
     "S&P 500 Futuros",
+    "DAX Futuros",
     "Nasdaq 100 Futuros",
+    "Dow Jones Futuros",
+    "S&P 500 VIX Futuros",
+    "S&P/ASX 200 Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Hang Seng Futuros",
-    "Morgan Stanley",
     "Euro Stoxx 50 Futuros",
     "Ouro",
+    "Hang Seng Futuros",
+    "Morgan Stanley",
     "Prata"
   ],
-  "atualizado": "2026-09-02T00:41:01.574Z",
+  "atualizado": "2026-09-02T00:41:31.519Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
