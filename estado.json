@@ -1,11 +1,11 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -3,
+  "soma": -2,
   "altistas": 2,
   "neutros": 7,
-  "baixistas": 5,
-  "total": 14,
+  "baixistas": 4,
+  "total": 13,
   "fechados": 5,
   "lista_altistas": [
     "Petróleo WTI",
@@ -24,9 +24,8 @@
     "Euro Stoxx 50 Futuros",
     "Ouro",
     "Hang Seng Futuros",
-    "Morgan Stanley",
     "Prata"
   ],
-  "atualizado": "2026-09-02T02:01:34.590Z",
+  "atualizado": "2026-09-02T02:02:34.555Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
