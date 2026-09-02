@@ -11,23 +11,23 @@
     "IBEX 35 Futuros"
   ],
   "lista_neutros": [
-    "Petróleo Brent",
-    "S&P 500 Futuros",
+    "S&P 500 VIX Futuros",
+    "Hang Seng Futuros",
+    "S&P/ASX 200 Futuros",
     "DAX Futuros",
     "Dow Jones Futuros",
-    "S&P 500 VIX Futuros",
-    "S&P/ASX 200 Futuros",
+    "Petróleo Brent",
+    "S&P 500 Futuros",
     "Euro Stoxx 50 Futuros",
-    "Hang Seng Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "Petróleo WTI",
-    "Nasdaq 100 Futuros",
     "FTSE 100",
+    "Nasdaq 100 Futuros",
     "Ouro",
     "Prata"
   ],
-  "atualizado": "2026-09-02T11:19:30.696Z",
+  "atualizado": "2026-09-02T11:20:00.648Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
