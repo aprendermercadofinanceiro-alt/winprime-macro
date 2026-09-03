@@ -8,18 +8,18 @@
   "total": 16,
   "fechados": 6,
   "lista_altistas": [
-    "Ouro",
     "Prata",
+    "Ouro",
     "Morgan Stanley",
-    "iShares MSCI Brazil Capped",
     "Petróleo WTI",
-    "Dow Jones Futuros",
-    "FTSE 100",
     "Petróleo Brent",
-    "S&P/ASX 200 Futuros",
+    "iShares MSCI Brazil Capped",
+    "Dow Jones Futuros",
     "IBEX 35 Futuros",
-    "S&P 500 Futuros",
+    "FTSE 100",
     "Nasdaq 100 Futuros",
+    "S&P 500 Futuros",
+    "S&P/ASX 200 Futuros",
     "S&P 500 VIX Futuros",
     "DXY (dolar)"
   ],
@@ -29,6 +29,6 @@
   "lista_baixistas": [
     "Hang Seng Futuros"
   ],
-  "atualizado": "2026-09-03T14:27:34.638Z",
+  "atualizado": "2026-09-03T14:28:01.489Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
