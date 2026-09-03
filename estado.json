@@ -10,11 +10,11 @@
   "lista_altistas": [
     "Prata",
     "Ouro",
-    "Nasdaq 100 Futuros",
     "Dow Jones Futuros",
+    "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
-    "S&P/ASX 200 Futuros",
     "Petróleo WTI",
+    "S&P/ASX 200 Futuros",
     "S&P 500 VIX Futuros",
     "DXY (dolar)"
   ],
@@ -22,6 +22,6 @@
     "Petróleo Brent"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-09-03T20:27:07.886Z",
+  "atualizado": "2026-09-03T20:27:31.515Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 13. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
