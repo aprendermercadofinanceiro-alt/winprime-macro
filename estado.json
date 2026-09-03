@@ -6,7 +6,7 @@
   "neutros": 6,
   "baixistas": 4,
   "total": 14,
-  "fechados": 6,
+  "fechados": 7,
   "lista_altistas": [
     "Ouro",
     "Prata",
@@ -27,6 +27,6 @@
     "Petróleo WTI",
     "S&P 500 VIX Futuros"
   ],
-  "atualizado": "2026-09-03T06:14:34.641Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-09-03T06:15:34.624Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
