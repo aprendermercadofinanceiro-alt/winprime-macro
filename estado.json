@@ -15,17 +15,17 @@
     "Dow Jones Futuros",
     "S&P 500 Futuros",
     "S&P/ASX 200 Futuros",
-    "Euro Stoxx 50 Futuros",
     "Petróleo WTI",
+    "Euro Stoxx 50 Futuros",
     "S&P 500 VIX Futuros",
     "DXY (dolar)"
   ],
   "lista_neutros": [
     "Hang Seng Futuros",
-    "iShares MSCI Brazil Capped",
-    "Petróleo Brent"
+    "Petróleo Brent",
+    "iShares MSCI Brazil Capped"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-09-03T18:52:34.624Z",
+  "atualizado": "2026-09-03T18:53:01.504Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 8. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
