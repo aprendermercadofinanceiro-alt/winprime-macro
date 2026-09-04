@@ -1,29 +1,40 @@
 {
-  "estado": 0,
+  "estado": 1,
   "aberto": true,
-  "soma": -1,
-  "altistas": 3,
-  "neutros": 4,
-  "baixistas": 4,
-  "total": 11,
-  "fechados": 9,
+  "altistas": 8,
+  "neutros": 10,
+  "baixistas": 6,
+  "total": 24,
   "lista_altistas": [
-    "Petróleo WTI",
-    "Hang Seng Futuros",
-    "S&P 500 VIX Futuros"
+    "KOSPI 200 Futuros",
+    "Hang Seng Futuros (CFD)",
+    "Mini S&P 500 VIX Futures Futuros",
+    "S&P 500 VIX Futuros (CFD)",
+    "Nasdaq 100 Futuros",
+    "China H-Shares Futuros",
+    "Nikkei 225 Futuros (Tóquio)",
+    "Morgan Stanley"
   ],
   "lista_neutros": [
-    "Dow Jones Futuros",
-    "Nasdaq 100 Futuros",
+    "iShares MSCI Brazil ETF",
+    "Euro Stoxx 50 Futuros (CFD)",
+    "IBEX 35 Futuros (CFD)",
+    "DAX Futuros (Eurex)",
+    "Topix 100",
+    "FTSE 100 (CFD)",
     "S&P 500 Futuros",
-    "DXY (dolar)"
+    "Dow Jones Futuros",
+    "Mini Ibovespa Futuros",
+    "Ibovespa"
   ],
   "lista_baixistas": [
-    "Prata",
-    "Ouro",
-    "S&P/ASX 200 Futuros",
-    "Topix 100"
+    "S&P/ASX 200 Futuros (CFD)",
+    "TOPIX Futuros (Tóquio)",
+    "Petróleo Brent Futuros (CFD)",
+    "Prata Futuros (CFD)",
+    "Ouro Futuros (CFD)",
+    "Petróleo WTI Futuros (CFD)"
   ],
-  "atualizado": "2026-09-04T12:14:34.672Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-09-04T09:15:21-03:00",
+  "obs": "Leitura ao vivo da carteira Investing."
 }
