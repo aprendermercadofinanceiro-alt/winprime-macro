@@ -1,10 +1,10 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -2,
+  "soma": -1,
   "altistas": 2,
-  "neutros": 6,
-  "baixistas": 4,
+  "neutros": 7,
+  "baixistas": 3,
   "total": 12,
   "fechados": 11,
   "lista_altistas": [
@@ -17,14 +17,14 @@
     "Prata",
     "Euro Stoxx 50 Futuros",
     "Nasdaq 100 Futuros",
+    "S&P 500 Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "S&P/ASX 200 Futuros",
-    "S&P 500 Futuros",
     "Ouro",
     "Dow Jones Futuros"
   ],
-  "atualizado": "2026-09-08T12:02:31.551Z",
+  "atualizado": "2026-09-08T12:03:19.502Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 11. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
