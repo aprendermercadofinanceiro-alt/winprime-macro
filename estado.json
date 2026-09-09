@@ -14,13 +14,12 @@
     "Ouro"
   ],
   "lista_neutros": [
+    "S&P 500 Futuros",
     "Nasdaq 100 Futuros",
-    "Morgan Stanley",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
-    "S&P 500 Futuros",
     "Dow Jones Futuros",
     "Ibovespa",
     "Hang Seng Futuros",
@@ -28,9 +27,10 @@
     "S&P/ASX 200 Futuros",
     "iShares MSCI Brazil Capped",
     "FTSE 100",
+    "Morgan Stanley",
     "IBEX 35 Futuros",
     "Euro Stoxx 50 Futuros"
   ],
-  "atualizado": "2026-09-09T13:49:34.799Z",
+  "atualizado": "2026-09-09T13:50:34.787Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
