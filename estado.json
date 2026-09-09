@@ -24,12 +24,12 @@
     "Dow Jones Futuros",
     "Ibovespa",
     "Hang Seng Futuros",
-    "S&P/ASX 200 Futuros",
     "Mini Ibovespa Futuros",
+    "S&P/ASX 200 Futuros",
     "iShares MSCI Brazil Capped",
     "IBEX 35 Futuros",
     "Euro Stoxx 50 Futuros"
   ],
-  "atualizado": "2026-09-09T17:24:30.727Z",
+  "atualizado": "2026-09-09T17:25:01.520Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 5. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
