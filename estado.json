@@ -14,17 +14,17 @@
     "S&P 500 VIX Futuros",
     "Petróleo Brent",
     "Topix 100",
-    "Hang Seng Futuros",
     "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
+    "S&P/ASX 200 Futuros",
     "Dow Jones Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "Prata",
-    "S&P/ASX 200 Futuros",
+    "Hang Seng Futuros",
     "Ouro"
   ],
-  "atualizado": "2026-09-09T01:50:34.721Z",
+  "atualizado": "2026-09-09T01:51:34.700Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 8. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
