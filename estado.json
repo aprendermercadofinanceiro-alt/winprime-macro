@@ -6,7 +6,7 @@
   "neutros": 4,
   "baixistas": 8,
   "total": 15,
-  "fechados": 7,
+  "fechados": 8,
   "lista_altistas": [
     "Petróleo Brent",
     "Petróleo WTI",
@@ -28,6 +28,6 @@
     "iShares MSCI Brazil Capped",
     "Euro Stoxx 50 Futuros"
   ],
-  "atualizado": "2026-09-09T19:00:34.777Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-09-09T19:01:34.793Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 8. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
