@@ -1,19 +1,17 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -5,
+  "soma": -6,
   "altistas": 2,
-  "neutros": 1,
-  "baixistas": 7,
+  "neutros": 0,
+  "baixistas": 8,
   "total": 10,
   "fechados": 13,
   "lista_altistas": [
     "Petróleo WTI",
     "Petróleo Brent"
   ],
-  "lista_neutros": [
-    "DXY (dolar)"
-  ],
+  "lista_neutros": [],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
     "Dow Jones Futuros",
@@ -21,8 +19,9 @@
     "Nasdaq 100 Futuros",
     "S&P/ASX 200 Futuros",
     "Ouro",
-    "Prata"
+    "Prata",
+    "DXY (dolar)"
   ],
-  "atualizado": "2026-09-10T20:03:03.112Z",
+  "atualizado": "2026-09-10T20:04:03.139Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 13. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
