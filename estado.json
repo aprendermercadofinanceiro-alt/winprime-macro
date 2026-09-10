@@ -12,17 +12,17 @@
     "Petróleo Brent"
   ],
   "lista_neutros": [
-    "Dow Jones Futuros",
     "IBEX 35 Futuros",
+    "Morgan Stanley",
     "Ibovespa",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
+    "Dow Jones Futuros",
     "S&P 500 Futuros",
     "Euro Stoxx 50 Futuros",
     "FTSE 100",
-    "Morgan Stanley",
     "Nasdaq 100 Futuros",
     "Hang Seng Futuros",
     "S&P/ASX 200 Futuros",
@@ -31,6 +31,6 @@
     "iShares MSCI Brazil Capped",
     "Prata"
   ],
-  "atualizado": "2026-09-10T14:00:03.169Z",
+  "atualizado": "2026-09-10T14:01:03.126Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
