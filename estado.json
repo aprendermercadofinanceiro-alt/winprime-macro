@@ -1,32 +1,40 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -5,
-  "altistas": 2,
-  "neutros": 5,
-  "baixistas": 7,
-  "total": 14,
-  "fechados": 9,
+  "altistas": 3,
+  "neutros": 6,
+  "baixistas": 15,
+  "total": 24,
   "lista_altistas": [
-    "Petróleo WTI",
-    "Petróleo Brent"
+    "Topix 100",
+    "Petróleo Brent",
+    "Petróleo WTI"
   ],
   "lista_neutros": [
-    "Dow Jones Futuros",
-    "IBEX 35 Futuros",
-    "S&P 500 Futuros",
     "Euro Stoxx 50 Futuros",
-    "DXY (dolar)"
+    "IBEX 35 Futuros",
+    "DAX Futuros",
+    "TOPIX Futuros",
+    "S&P 500 Futuros",
+    "Dow Jones Futuros"
   ],
   "lista_baixistas": [
+    "iShares MSCI Brazil Capped",
+    "KOSPI 200 Futuros",
+    "Hang Seng Futuros",
+    "Mini S&P 500 VIX Futuros",
     "S&P 500 VIX Futuros",
+    "S&P/ASX 200 Futuros",
     "FTSE 100",
     "Nasdaq 100 Futuros",
-    "Hang Seng Futuros",
-    "S&P/ASX 200 Futuros",
+    "China H-Shares Futuros",
+    "Mini Ibovespa Futuros",
+    "Nikkei 225 Futuros",
+    "Prata",
+    "Ibovespa",
     "Ouro",
-    "Prata"
+    "Morgan Stanley"
   ],
-  "atualizado": "2026-09-10T12:09:03.099Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-09-10T09:08:23-03:00",
+  "obs": "Leitura ao vivo da carteira Investing."
 }
