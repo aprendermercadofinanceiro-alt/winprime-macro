@@ -1,40 +1,32 @@
 {
   "estado": 0,
   "aberto": true,
-  "altistas": 3,
-  "neutros": 6,
-  "baixistas": 15,
-  "total": 24,
+  "soma": -5,
+  "altistas": 2,
+  "neutros": 5,
+  "baixistas": 7,
+  "total": 14,
+  "fechados": 9,
   "lista_altistas": [
-    "Topix 100",
-    "Petróleo Brent",
-    "Petróleo WTI"
+    "Petróleo WTI",
+    "Petróleo Brent"
   ],
   "lista_neutros": [
-    "Euro Stoxx 50 Futuros",
+    "Dow Jones Futuros",
     "IBEX 35 Futuros",
-    "DAX Futuros",
-    "TOPIX Futuros",
     "S&P 500 Futuros",
-    "Dow Jones Futuros"
+    "Euro Stoxx 50 Futuros",
+    "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "iShares MSCI Brazil Capped",
-    "KOSPI 200 Futuros",
-    "Hang Seng Futuros",
-    "Mini S&P 500 VIX Futuros",
     "S&P 500 VIX Futuros",
-    "S&P/ASX 200 Futuros",
     "FTSE 100",
     "Nasdaq 100 Futuros",
-    "China H-Shares Futuros",
-    "Mini Ibovespa Futuros",
-    "Nikkei 225 Futuros",
-    "Prata",
-    "Ibovespa",
+    "Hang Seng Futuros",
+    "S&P/ASX 200 Futuros",
     "Ouro",
-    "Morgan Stanley"
+    "Prata"
   ],
-  "atualizado": "2026-09-10T09:08:23-03:00",
-  "obs": "Leitura ao vivo da carteira Investing."
+  "atualizado": "2026-09-10T12:10:03.164Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
