@@ -6,7 +6,7 @@
   "neutros": 8,
   "baixistas": 4,
   "total": 14,
-  "fechados": 6,
+  "fechados": 7,
   "lista_altistas": [
     "S&P 500 VIX Futuros",
     "Dow Jones Futuros"
@@ -27,6 +27,6 @@
     "Hang Seng Futuros",
     "Prata"
   ],
-  "atualizado": "2026-09-10T06:15:03.130Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-09-10T06:16:03.180Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
