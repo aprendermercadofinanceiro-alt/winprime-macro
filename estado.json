@@ -1,20 +1,20 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -8,
-  "altistas": 3,
-  "neutros": 4,
+  "soma": -7,
+  "altistas": 4,
+  "neutros": 3,
   "baixistas": 11,
   "total": 18,
   "fechados": 4,
   "lista_altistas": [
     "Petróleo WTI",
     "Petróleo Brent",
+    "Ibovespa",
     "iShares MSCI Brazil Capped"
   ],
   "lista_neutros": [
     "IBEX 35 Futuros",
-    "Ibovespa",
     "Mini Ibovespa Futuros",
     "DXY (dolar)"
   ],
@@ -31,6 +31,6 @@
     "Ouro",
     "Prata"
   ],
-  "atualizado": "2026-09-10T14:40:03.138Z",
+  "atualizado": "2026-09-10T14:41:03.162Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 4. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
