@@ -35,14 +35,14 @@ score = soma(ponto x peso dos participantes) / soma(peso dos participantes)  -> 
 - Dentro do neutro, se dispersão alta (altistas e baixistas ambos >= ~30% dos participantes, ou global divergindo do Brasil) -> rótulo "descorrelacionado".
 
 ## 6. Fases horárias (America/Sao_Paulo)
-- Janela de operação: seg-sex, 08:50 a 17:55.
+- Janela de operação: seg-sex, 08:40 a 18:30.
 - Antes das 10:00: conta global + juros + forex.
 - A partir das 10:00: entram ações BR, IFNC e gringos (abertura da B3).
 - 10:30: abre o mercado americano à vista (marcar volatilidade no mini índice).
 
 ## 7. Fontes de dados
 - Global: Yahoo Finance (v8 chart).
-- Brasil / juros / forex: watchlist do TradingView (conta do usuário).
+- Brasil / juros / forex: watchlist do TradingView (conta do usuário); ações BR e forex também no Yahoo (.SA / =X).
 - Gringos (MS, JPM, UBS): Yahoo.
 
 ## 8. Publicação
@@ -58,5 +58,5 @@ O leitor v2 é o único gravador. Devem ser desligados:
 ## 10. Premissas assumidas (revisar quando quiser)
 - Forex com peso x1; USDJPY tratado como risk-on quando sobe.
 - DIs com peso de primário (x3).
-- Tickers Yahoo validados: ^IXIC/NQ=F, ES=F, YM=F, ^VIX, DX-Y.NYB, ^GDAXI, ^STOXX50E, ^AXJO, ^IBEX, ^HSCE, ^HSI, ^FTSE, ^N225, 1306.T (Topix), MS, JPM, UBS.
-- Tickers TradingView (Brasil/juros/forex): BMFBOVESPA:* e TVC:* conforme a watchlist do usuário.
+- Tickers Yahoo validados: NQ=F, ES=F, YM=F, ^VIX, DX-Y.NYB, ^GDAXI, ^STOXX50E, ^AXJO, ^IBEX, ^HSCE, ^HSI, ^FTSE, ^N225, 1306.T (Topix), MS, JPM, UBS, *.SA, =X.
+- Tickers TradingView (DIs/IFNC): DI1F2027, DI1F2029, DI1F2031, DI1F2033, IFNC.
