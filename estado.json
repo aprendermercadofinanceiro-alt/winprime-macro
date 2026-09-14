@@ -1,11 +1,11 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -7,
+  "soma": -6,
   "altistas": 2,
   "neutros": 2,
-  "baixistas": 9,
-  "total": 13,
+  "baixistas": 8,
+  "total": 12,
   "fechados": 10,
   "lista_altistas": [
     "Petróleo WTI",
@@ -23,9 +23,8 @@
     "iShares MSCI Brazil Capped",
     "Ouro",
     "Prata",
-    "Morgan Stanley",
-    "DXY (dolar)"
+    "Morgan Stanley"
   ],
-  "atualizado": "2026-09-14T17:22:03.110Z",
+  "atualizado": "2026-09-14T21:33:33.746Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
