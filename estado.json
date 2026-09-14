@@ -8,8 +8,8 @@
   "total": 9,
   "fechados": 15,
   "lista_altistas": [
-    "Petróleo Brent",
-    "Petróleo WTI"
+    "Petróleo WTI",
+    "Petróleo Brent"
   ],
   "lista_neutros": [],
   "lista_baixistas": [
@@ -21,6 +21,6 @@
     "Prata",
     "DXY (dolar)"
   ],
-  "atualizado": "2026-09-14T12:45:01.681Z",
+  "atualizado": "2026-09-14T12:45:17.062Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 15. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
