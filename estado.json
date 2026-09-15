@@ -1,10 +1,10 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -7,
+  "soma": -6,
   "altistas": 2,
-  "neutros": 2,
-  "baixistas": 9,
+  "neutros": 3,
+  "baixistas": 8,
   "total": 13,
   "fechados": 10,
   "lista_altistas": [
@@ -13,7 +13,8 @@
   ],
   "lista_neutros": [
     "Dow Jones Futuros",
-    "S&P 500 Futuros"
+    "S&P 500 Futuros",
+    "DXY (dolar)"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
@@ -23,9 +24,8 @@
     "iShares MSCI Brazil Capped",
     "Ouro",
     "Prata",
-    "Morgan Stanley",
-    "DXY (dolar)"
+    "Morgan Stanley"
   ],
-  "atualizado": "2026-09-14T21:58:03.109Z",
+  "atualizado": "2026-09-15T11:45:06.734Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 10. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
