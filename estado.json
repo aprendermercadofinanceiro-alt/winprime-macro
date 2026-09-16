@@ -17,7 +17,7 @@
     "S&P 500 VIX Futuros"
   ],
   "lista_neutros": [
-    "S&P 500 Futuros\nS&P 500\n 7.673,75+17,75  (+0,23%)\n08:14:22 - Dados em Atraso\n04:00\n06:00\n08:00\n7,660.00\n7,680.00\n7,670.00\n7,665.00\n7,675.00\n\nResumo Técnico\n\n5 min:\nCompra Forte\n15 min:\nCompra Forte\n30 min:\nCompra Forte\nHora:\nCompra Forte\nDiário:\nVenda\nMensal:\nCompra Forte",
+    "S&P 500 Futuros",
     "Dow Jones Futuros",
     "IBEX 35 Futuros",
     "DAX Futuros",
@@ -29,6 +29,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-09-16T11:25:22.732Z",
+  "atualizado": "2026-09-16T11:25:52.656Z",
   "obs": "So ativos abertos (relogio verde). Fechados ignorados: 9. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
