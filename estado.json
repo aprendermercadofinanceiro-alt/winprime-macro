@@ -6,7 +6,7 @@
   "neutros": 2,
   "baixistas": 8,
   "total": 16,
-  "fechados": 7,
+  "fechados": 6,
   "lista_altistas": [
     "S&P 500 VIX Futuros",
     "Nasdaq 100 Futuros",
@@ -29,6 +29,6 @@
     "Petróleo Brent",
     "Morgan Stanley"
   ],
-  "atualizado": "2026-09-17T09:14:22.729Z",
-  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 7. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
+  "atualizado": "2026-09-17T09:14:52.704Z",
+  "obs": "So ativos abertos (relogio verde). Fechados ignorados: 6. Veredito por maioria. Carteira do Investing + DXY do TradingView (WINPRIME)."
 }
