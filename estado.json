@@ -3,9 +3,9 @@
   "aberto": true,
   "soma": 10,
   "altistas": 17,
-  "neutros": 8,
+  "neutros": 9,
   "baixistas": 7,
-  "total": 32,
+  "total": 33,
   "fechados": 14,
   "tv_somados": 16,
   "tv_fechados": 7,
@@ -31,6 +31,7 @@
   ],
   "lista_neutros": [
     "DAX Futuros",
+    "Ibovespa",
     "Mini Ibovespa Futuros",
     "DXY (dolar)",
     "ITUB4",
@@ -48,6 +49,6 @@
     "ABEV3",
     "VALE3"
   ],
-  "atualizado": "2026-09-17T13:17:30.493Z",
+  "atualizado": "2026-09-17T13:18:30.762Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 16 | TV fechados fora: 7 | TV ja na carteira: 11."
 }
