@@ -18,11 +18,11 @@
     "IBEX 35 Futuros",
     "S&P 500 Futuros",
     "Euro Stoxx 50 Futuros",
-    "Ouro",
     "Dow Jones Futuros",
     "Ibovespa",
     "Morgan Stanley",
     "iShares MSCI Brazil Capped",
+    "Mini Ibovespa Futuros",
     "S&P 500 VIX Futuros",
     "Nikkei 225",
     "WEGE3",
@@ -35,8 +35,8 @@
     "UBS"
   ],
   "lista_neutros": [
+    "Ouro",
     "DAX Futuros",
-    "Mini Ibovespa Futuros",
     "DXY (dolar)",
     "PETR4",
     "ABEV3",
@@ -52,6 +52,6 @@
     "DI Jan/31",
     "DI Jan/33"
   ],
-  "atualizado": "2026-09-17T16:33:30.298Z",
+  "atualizado": "2026-09-17T16:34:30.481Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 12."
 }
