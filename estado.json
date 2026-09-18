@@ -32,6 +32,6 @@
     "Topix 100",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-09-18T01:17:30.392Z",
+  "atualizado": "2026-09-18T01:18:30.514Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 3 | TV fechados fora: 23 | TV ja na carteira: 8."
 }
