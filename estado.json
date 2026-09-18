@@ -15,10 +15,10 @@
     "BBAS3"
   ],
   "lista_neutros": [
+    "Petróleo WTI",
     "Hang Seng Futuros",
     "Nasdaq 100 Futuros",
     "DAX Futuros",
-    "S&P 500 Futuros",
     "Ouro",
     "DXY (dolar)",
     "WEGE3",
@@ -30,8 +30,8 @@
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
-    "Petróleo WTI",
     "Petróleo Brent",
+    "S&P 500 Futuros",
     "Dow Jones Futuros",
     "Ibovespa",
     "Morgan Stanley",
@@ -52,6 +52,6 @@
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-09-18T16:09:18.441Z",
+  "atualizado": "2026-09-18T16:10:18.885Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 12."
 }
