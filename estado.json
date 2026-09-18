@@ -54,6 +54,6 @@
     "VALE3",
     "JP Morgan"
   ],
-  "atualizado": "2026-09-18T17:31:31.346Z",
+  "atualizado": "2026-09-18T17:32:00.517Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 3 | TV ja na carteira: 13."
 }
