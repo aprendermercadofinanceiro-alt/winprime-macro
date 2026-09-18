@@ -22,6 +22,7 @@
     "S&P 500 Futuros",
     "DAX Futuros",
     "Dow Jones Futuros",
+    "Morgan Stanley",
     "DXY (dolar)",
     "ITUB4",
     "PETR4",
@@ -30,14 +31,12 @@
     "DI Jan/29",
     "DI Jan/31",
     "DI Jan/33",
-    "JP Morgan",
     "UBS"
   ],
   "lista_baixistas": [
     "Mini S&P 500 VIX Futuros",
     "S&P 500 VIX Futuros",
     "Ibovespa",
-    "Morgan Stanley",
     "iShares MSCI Brazil Capped",
     "Mini Ibovespa Futuros",
     "S&P/ASX 200 Futuros",
@@ -49,8 +48,9 @@
     "BOVA11",
     "PETR3",
     "ABEV3",
-    "VALE3"
+    "VALE3",
+    "JP Morgan"
   ],
-  "atualizado": "2026-09-18T19:44:00.474Z",
+  "atualizado": "2026-09-18T19:44:30.418Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 6 | TV ja na carteira: 10."
 }
