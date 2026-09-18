@@ -1,10 +1,10 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -11,
+  "soma": -12,
   "altistas": 5,
-  "neutros": 14,
-  "baixistas": 16,
+  "neutros": 13,
+  "baixistas": 17,
   "total": 35,
   "fechados": 13,
   "tv_somados": 18,
@@ -19,10 +19,9 @@
   ],
   "lista_neutros": [
     "Nasdaq 100 Futuros",
-    "S&P 500 Futuros",
     "DAX Futuros",
+    "S&P 500 Futuros",
     "Dow Jones Futuros",
-    "Morgan Stanley",
     "DXY (dolar)",
     "ITUB4",
     "PETR4",
@@ -35,13 +34,14 @@
   ],
   "lista_baixistas": [
     "Mini S&P 500 VIX Futuros",
-    "S&P 500 VIX Futuros",
+    "S&P 500 VIX Futuros\nS&P 500 VIX\n 18,03+0,06  (+0,32%)\n16:39:16 - Dados derivados atuais\n09:30\n11:00\n18.00\n17.80\n18.20\n\nResumo Técnico\n\n5 min:\nNeutro\n15 min:\nNeutro\n30 min:\nVenda Forte\nHora:\nNeutro\nDiário:\nNeutro\nMensal:\nVenda Forte",
     "Ibovespa",
+    "Morgan Stanley",
     "iShares MSCI Brazil Capped",
     "Mini Ibovespa Futuros",
     "S&P/ASX 200 Futuros",
-    "Petróleo Brent",
     "Euro Stoxx 50 Futuros",
+    "Petróleo Brent",
     "Petróleo WTI",
     "Nikkei 225",
     "BBDC4",
@@ -51,6 +51,6 @@
     "VALE3",
     "JP Morgan"
   ],
-  "atualizado": "2026-09-18T19:44:30.418Z",
+  "atualizado": "2026-09-18T19:44:59.613Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 6 | TV ja na carteira: 10."
 }
