@@ -20,6 +20,6 @@
     "ASX 200"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-09-20T23:54:05.572Z",
+  "atualizado": "2026-09-20T23:55:05.928Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 4 | TV fechados fora: 30 | TV ja na carteira: 0."
 }
