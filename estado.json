@@ -24,6 +24,6 @@
     "FTSE 100"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-09-21T07:09:05.841Z",
+  "atualizado": "2026-09-21T07:10:05.995Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 8 | TV fechados fora: 26 | TV ja na carteira: 0."
 }
