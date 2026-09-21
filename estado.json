@@ -26,6 +26,6 @@
   "lista_baixistas": [
     "VIX"
   ],
-  "atualizado": "2026-09-21T07:26:06.298Z",
+  "atualizado": "2026-09-21T07:27:05.897Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 9 | TV fechados fora: 25 | TV ja na carteira: 0."
 }
