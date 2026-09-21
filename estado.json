@@ -1,25 +1,27 @@
 {
-  "estado": 1,
+  "estado": 2,
   "aberto": true,
-  "soma": 1,
-  "altistas": 1,
-  "neutros": 4,
+  "soma": 2,
+  "altistas": 2,
+  "neutros": 5,
   "baixistas": 0,
-  "total": 5,
-  "fechados": 53,
-  "tv_somados": 4,
-  "tv_fechados": 30,
+  "total": 7,
+  "fechados": 51,
+  "tv_somados": 6,
+  "tv_fechados": 28,
   "tv_duplicados": 0,
   "lista_altistas": [
-    "Nasdaq"
+    "Nasdaq",
+    "KOSPI 200"
   ],
   "lista_neutros": [
     "DXY (dolar)",
     "S&P 500",
     "Dow Jones",
-    "ASX 200"
+    "ASX 200",
+    "Nikkei 225"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-09-21T00:00:05.400Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 4 | TV fechados fora: 30 | TV ja na carteira: 0."
+  "atualizado": "2026-09-21T00:01:05.894Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 28 | TV ja na carteira: 0."
 }
