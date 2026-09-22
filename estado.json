@@ -1,59 +1,38 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 13,
-  "altistas": 23,
-  "neutros": 5,
-  "baixistas": 10,
-  "total": 38,
-  "fechados": 8,
-  "tv_somados": 18,
-  "tv_fechados": 3,
-  "tv_duplicados": 13,
+  "soma": 3,
+  "altistas": 7,
+  "neutros": 6,
+  "baixistas": 4,
+  "total": 17,
+  "fechados": 31,
+  "tv_somados": 1,
+  "tv_fechados": 22,
+  "tv_duplicados": 11,
   "lista_altistas": [
-    "iShares MSCI Brazil Capped",
     "Euro Stoxx 50 Futuros",
+    "KOSPI 200 Futuros",
     "Hang Seng Futuros",
     "S&P 500 VIX Futuros",
     "IBEX 35 Futuros",
     "S&P/ASX 200 Futuros",
+    "Nikkei 225"
+  ],
+  "lista_neutros": [
+    "DAX Futuros",
+    "FTSE 100",
     "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
     "Dow Jones Futuros",
-    "Mini Ibovespa Futuros",
-    "Ibovespa",
-    "Morgan Stanley",
-    "Nikkei 225",
-    "ITUB4",
-    "BBDC4",
-    "BOVA11",
-    "ABEV3",
-    "IFNC",
-    "DI Jan/29",
-    "DI Jan/31",
-    "DI Jan/33",
-    "JP Morgan",
-    "UBS"
-  ],
-  "lista_neutros": [
-    "KOSPI 200 Futuros",
-    "DAX Futuros",
-    "DXY (dolar)",
-    "VALE3",
-    "DI Jan/27"
+    "DXY (dolar)"
   ],
   "lista_baixistas": [
-    "Mini S&P 500 VIX Futuros",
     "Petróleo Brent",
     "Prata",
     "Ouro",
-    "Petróleo WTI",
-    "WEGE3",
-    "BBAS3",
-    "PETR3",
-    "PETR4",
-    "CXSE3"
+    "Petróleo WTI"
   ],
-  "atualizado": "2026-09-21T17:35:32.023Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 3 | TV ja na carteira: 13."
+  "atualizado": "2026-09-22T11:43:44.211Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 1 | TV fechados fora: 22 | TV ja na carteira: 11."
 }
