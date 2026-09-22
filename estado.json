@@ -1,9 +1,9 @@
 {
   "estado": 1,
   "aberto": true,
-  "soma": -2,
-  "altistas": 9,
-  "neutros": 16,
+  "soma": -1,
+  "altistas": 10,
+  "neutros": 15,
   "baixistas": 11,
   "total": 36,
   "fechados": 11,
@@ -14,6 +14,7 @@
     "Prata",
     "Nasdaq 100 Futuros",
     "Euro Stoxx 50 Futuros",
+    "S&P/ASX 200 Futuros",
     "Mini S&P 500 VIX Futuros",
     "S&P 500 VIX Futuros",
     "Nikkei 225",
@@ -22,7 +23,6 @@
     "PETR4"
   ],
   "lista_neutros": [
-    "S&P/ASX 200 Futuros",
     "Ouro",
     "S&P 500 Futuros",
     "DAX Futuros",
@@ -52,6 +52,6 @@
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-09-22T18:05:08.385Z",
+  "atualizado": "2026-09-22T18:05:39.053Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 5 | TV ja na carteira: 11."
 }
