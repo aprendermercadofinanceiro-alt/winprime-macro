@@ -27,9 +27,9 @@
     "Prata",
     "DXY (dolar)",
     "WEGE3",
-    "BBDC4",
     "PETR3",
     "PETR4",
+    "CXSE3",
     "DI Jan/27",
     "DI Jan/29",
     "DI Jan/31",
@@ -44,15 +44,15 @@
     "Petróleo Brent",
     "Petróleo WTI",
     "ITUB4",
+    "BBDC4",
     "BOVA11",
     "BBAS3",
     "ABEV3",
-    "CXSE3",
     "VALE3",
     "IFNC",
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-09-22T14:11:05.942Z",
+  "atualizado": "2026-09-22T14:12:05.835Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 3 | TV ja na carteira: 13."
 }
