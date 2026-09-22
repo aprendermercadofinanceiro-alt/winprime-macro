@@ -25,8 +25,8 @@
     "S&P 500 Futuros",
     "DAX Futuros",
     "DXY (dolar)",
-    "PETR4",
     "ABEV3",
+    "CXSE3",
     "DI Jan/27",
     "DI Jan/33"
   ],
@@ -45,7 +45,7 @@
     "BOVA11",
     "BBAS3",
     "PETR3",
-    "CXSE3",
+    "PETR4",
     "VALE3",
     "IFNC",
     "DI Jan/29",
@@ -53,6 +53,6 @@
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-09-22T14:52:05.747Z",
+  "atualizado": "2026-09-22T14:53:05.872Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 3 | TV ja na carteira: 13."
 }
