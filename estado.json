@@ -1,10 +1,10 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -12,
-  "altistas": 6,
+  "soma": -14,
+  "altistas": 5,
   "neutros": 11,
-  "baixistas": 18,
+  "baixistas": 19,
   "total": 35,
   "fechados": 9,
   "tv_somados": 16,
@@ -14,26 +14,25 @@
     "Petróleo Brent",
     "Petróleo WTI",
     "Nikkei 225",
-    "BBAS3",
     "PETR3",
     "PETR4"
   ],
   "lista_neutros": [
     "DAX Futuros",
-    "FTSE 100",
+    "FTSE 100\nFTSE 100\n 10.703,47-4,86  (-0,05%)\n10:34:26 - Dados derivados atuais\n\nResumo Técnico\n\n5 min:\nCompra\n15 min:\nVenda\n30 min:\nVenda Forte\nHora:\nVenda Forte\nDiário:\nVenda\nMensal:\nCompra Forte",
     "S&P 500 Futuros",
     "Mini Ibovespa Futuros",
     "Nasdaq 100 Futuros",
     "Ibovespa",
-    "iShares MSCI Brazil Capped",
-    "BBDC4",
+    "Dow Jones Futuros",
     "BOVA11",
+    "BBAS3",
     "DI Jan/27",
     "DI Jan/33"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
-    "Dow Jones Futuros",
+    "iShares MSCI Brazil Capped",
     "Euro Stoxx 50 Futuros",
     "Morgan Stanley",
     "IBEX 35 Futuros",
@@ -44,6 +43,7 @@
     "DXY (dolar)",
     "WEGE3",
     "ITUB4",
+    "BBDC4",
     "ABEV3",
     "CXSE3",
     "VALE3",
@@ -51,6 +51,6 @@
     "DI Jan/29",
     "DI Jan/31"
   ],
-  "atualizado": "2026-09-23T13:35:45.914Z",
+  "atualizado": "2026-09-23T13:36:15.767Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 16 | TV fechados fora: 5 | TV ja na carteira: 13."
 }
