@@ -38,6 +38,6 @@
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-09-23T20:21:06.004Z",
+  "atualizado": "2026-09-23T20:22:05.974Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 11 | TV fechados fora: 17 | TV ja na carteira: 6."
 }
