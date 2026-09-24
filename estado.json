@@ -30,7 +30,7 @@
     "Nasdaq 100 Futuros",
     "DXY (dolar)",
     "Euro Stoxx 50",
-    "ITUB4",
+    "BOVA11",
     "PETR3",
     "PETR4",
     "DI Jan/27",
@@ -43,8 +43,8 @@
     "Morgan Stanley",
     "Prata",
     "WEGE3",
+    "ITUB4",
     "BBDC4",
-    "BOVA11",
     "BBAS3",
     "VALE3",
     "IFNC",
@@ -52,6 +52,6 @@
     "DI Jan/31",
     "DI Jan/33"
   ],
-  "atualizado": "2026-09-24T16:39:05.829Z",
+  "atualizado": "2026-09-24T16:40:05.855Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
