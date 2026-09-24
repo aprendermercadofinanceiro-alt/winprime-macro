@@ -33,6 +33,6 @@
     "Euro Stoxx 50",
     "Nikkei 225"
   ],
-  "atualizado": "2026-09-24T10:32:05.815Z",
+  "atualizado": "2026-09-24T10:33:05.942Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 5 | TV fechados fora: 22 | TV ja na carteira: 7."
 }
