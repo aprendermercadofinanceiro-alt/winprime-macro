@@ -33,9 +33,9 @@
     "Nikkei 225",
     "ITUB4",
     "BBDC4",
+    "BOVA11",
     "BBAS3",
     "VALE3",
-    "IFNC",
     "DI Jan/27",
     "DI Jan/29",
     "DI Jan/31",
@@ -48,8 +48,8 @@
     "Prata",
     "DAX",
     "WEGE3",
-    "BOVA11"
+    "IFNC"
   ],
-  "atualizado": "2026-09-24T13:24:06.523Z",
+  "atualizado": "2026-09-24T13:25:05.875Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 20 | TV fechados fora: 6 | TV ja na carteira: 8."
 }
