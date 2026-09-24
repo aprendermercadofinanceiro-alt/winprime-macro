@@ -21,15 +21,15 @@
     "Dow Jones Futuros",
     "Nasdaq 100 Futuros",
     "S&P/ASX 200 Futuros",
-    "Prata",
+    "Hang Seng Futuros",
     "DXY (dolar)"
   ],
   "lista_baixistas": [
     "Petróleo WTI",
-    "Hang Seng Futuros",
+    "Prata",
     "DAX",
     "Euro Stoxx 50"
   ],
-  "atualizado": "2026-09-24T01:19:05.767Z",
+  "atualizado": "2026-09-24T01:20:05.701Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 3 | TV fechados fora: 24 | TV ja na carteira: 7."
 }
