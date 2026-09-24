@@ -37,6 +37,6 @@
     "Prata",
     "DAX"
   ],
-  "atualizado": "2026-09-24T12:49:06.553Z",
+  "atualizado": "2026-09-24T12:50:06.227Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 9 | TV fechados fora: 18 | TV ja na carteira: 7."
 }
