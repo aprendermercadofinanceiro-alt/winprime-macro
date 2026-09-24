@@ -3,12 +3,12 @@
   "aberto": true,
   "soma": -4,
   "altistas": 1,
-  "neutros": 10,
+  "neutros": 11,
   "baixistas": 5,
-  "total": 16,
-  "fechados": 31,
-  "tv_somados": 4,
-  "tv_fechados": 23,
+  "total": 17,
+  "fechados": 30,
+  "tv_somados": 5,
+  "tv_fechados": 22,
   "tv_duplicados": 7,
   "lista_altistas": [
     "S&P/ASX 200 Futuros"
@@ -22,6 +22,7 @@
     "Hang Seng Futuros",
     "DXY (dolar)",
     "Euro Stoxx 50",
+    "IBEX 35",
     "China H (HSCEI)",
     "FTSE 100"
   ],
@@ -32,6 +33,6 @@
     "Prata",
     "DAX"
   ],
-  "atualizado": "2026-09-24T07:32:05.939Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 4 | TV fechados fora: 23 | TV ja na carteira: 7."
+  "atualizado": "2026-09-24T07:33:05.649Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 5 | TV fechados fora: 22 | TV ja na carteira: 7."
 }
