@@ -30,6 +30,6 @@
     "DAX",
     "Euro Stoxx 50"
   ],
-  "atualizado": "2026-09-24T01:27:05.685Z",
+  "atualizado": "2026-09-24T01:28:05.534Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 3 | TV fechados fora: 24 | TV ja na carteira: 7."
 }
