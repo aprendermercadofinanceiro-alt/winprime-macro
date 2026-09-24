@@ -24,6 +24,6 @@
     "Topix 100",
     "Dow Jones Futuros"
   ],
-  "atualizado": "2026-09-24T21:42:06.506Z",
+  "atualizado": "2026-09-24T21:43:06.149Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 0 | TV fechados fora: 28 | TV ja na carteira: 6."
 }
