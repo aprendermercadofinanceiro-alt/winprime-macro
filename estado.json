@@ -19,10 +19,10 @@
     "UBS"
   ],
   "lista_neutros": [
+    "S&P 500 VIX Futuros",
     "S&P/ASX 200 Futuros",
     "Topix 100",
     "DAX Futuros",
-    "Dow Jones Futuros",
     "S&P 500 Futuros",
     "Nasdaq 100 Futuros",
     "DXY (dolar)",
@@ -34,10 +34,10 @@
     "JP Morgan"
   ],
   "lista_baixistas": [
-    "S&P 500 VIX Futuros",
     "Mini Ibovespa Futuros",
     "Ibovespa",
     "iShares MSCI Brazil Capped",
+    "Dow Jones Futuros",
     "Ouro",
     "Morgan Stanley",
     "Prata",
@@ -52,6 +52,6 @@
     "IFNC",
     "DI Jan/29"
   ],
-  "atualizado": "2026-09-24T19:12:06.677Z",
+  "atualizado": "2026-09-24T19:13:05.884Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 20 | TV fechados fora: 4 | TV ja na carteira: 10."
 }
