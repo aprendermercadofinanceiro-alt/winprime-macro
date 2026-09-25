@@ -3,12 +3,12 @@
   "aberto": true,
   "soma": 14,
   "altistas": 19,
-  "neutros": 11,
+  "neutros": 10,
   "baixistas": 5,
-  "total": 35,
-  "fechados": 13,
-  "tv_somados": 19,
-  "tv_fechados": 5,
+  "total": 34,
+  "fechados": 14,
+  "tv_somados": 18,
+  "tv_fechados": 6,
   "tv_duplicados": 10,
   "lista_altistas": [
     "Prata",
@@ -38,7 +38,6 @@
     "S&P/ASX 200 Futuros",
     "iShares MSCI Brazil Capped",
     "DXY (dolar)",
-    "Hang Seng",
     "Nikkei 225",
     "BOVA11",
     "VALE3",
@@ -51,6 +50,6 @@
     "PETR4",
     "ABEV3"
   ],
-  "atualizado": "2026-09-25T19:15:44.408Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 5 | TV ja na carteira: 10."
+  "atualizado": "2026-09-25T19:16:44.377Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 6 | TV ja na carteira: 10."
 }
