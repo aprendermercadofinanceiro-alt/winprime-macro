@@ -36,6 +36,6 @@
     "Petróleo WTI",
     "Hang Seng Futuros"
   ],
-  "atualizado": "2026-09-25T12:28:43.815Z",
+  "atualizado": "2026-09-25T12:29:44.365Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 19 | TV ja na carteira: 9."
 }
