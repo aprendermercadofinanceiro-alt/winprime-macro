@@ -15,15 +15,14 @@
     "Euro Stoxx 50 Futuros",
     "Ouro",
     "Nasdaq 100 Futuros",
+    "Dow Jones Futuros",
     "DXY (dolar)",
     "DAX",
-    "DI Jan/29",
     "DI Jan/31",
     "DI Jan/33"
   ],
   "lista_neutros": [
     "IBEX 35 Futuros",
-    "Dow Jones Futuros",
     "S&P 500 Futuros",
     "FTSE 100",
     "S&P/ASX 200 Futuros",
@@ -34,7 +33,8 @@
     "ABEV3",
     "CXSE3",
     "IFNC",
-    "DI Jan/27"
+    "DI Jan/27",
+    "DI Jan/29"
   ],
   "lista_baixistas": [
     "Morgan Stanley",
@@ -51,6 +51,6 @@
     "PETR4",
     "VALE3"
   ],
-  "atualizado": "2026-09-25T13:50:43.699Z",
+  "atualizado": "2026-09-25T13:51:43.849Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 17 | TV fechados fora: 5 | TV ja na carteira: 12."
 }
