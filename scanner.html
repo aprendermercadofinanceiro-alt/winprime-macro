@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WINPRIME CAPITAL — Scanner Quantitativo Macro 3D</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;700;800;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --gold:#E8C15A; --gold2:#F6DE8B; --gold-dim:#b79b5e;
+    --green:#4fe08a; --red:#ff5d5d; --blue:#5aa9ff; --purple:#b98bff;
+    --bg:#05060b; --card:#0b0d16; --card2:#0e1120; --line:rgba(232,193,90,.16);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    background:
+      radial-gradient(1200px 500px at 15% -10%, rgba(232,193,90,.10), transparent 55%),
+      radial-gradient(900px 600px at 100% 110%, rgba(90,120,255,.06), transparent 55%),
+      var(--bg);
+    color:#e9e4d6; font-family:"Rajdhani",-apple-system,"Segoe UI",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; overflow-x:hidden; min-height:100%;
+  }
+  body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:0;
+    background-image:repeating-linear-gradient(0deg, rgba(255,255,255,.015) 0 1px, transparent 1px 3px);opacity:.5}
+  .wrap{position:relative;z-index:1;max-width:1320px;margin:0 auto;padding:18px 20px 40px}
+
+  /* ---------- HEADER ---------- */
+  header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;
+    padding:12px 18px;border-radius:16px;margin-bottom:16px;
+    background:linear-gradient(120deg,rgba(17,14,6,.9),rgba(8,9,15,.9));border:1px solid var(--line);
+    box-shadow:0 12px 40px rgba(0,0,0,.5)}
+  .logo{font-family:"Orbitron";font-weight:900;letter-spacing:3px;font-size:22px;
+    background:linear-gradient(90deg,#F6DE8B,#C9971F);-webkit-background-clip:text;background-clip:text;color:transparent}
+  .logo small{display:block;font-family:"Rajdhani";font-weight:600;letter-spacing:3px;font-size:10px;color:var(--gold-dim);-webkit-text-fill-color:var(--gold-dim)}
+  .hstats{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+  .hstat{font-family:"Orbitron";font-size:12px;color:#cbbf98}
+  .hstat b{display:block;font-size:16px;color:var(--gold2);letter-spacing:1px}
+  .hstat span{font-family:"Rajdhani";font-size:10px;letter-spacing:2px;color:var(--gold-dim);text-transform:uppercase}
+  .live{display:flex;align-items:center;gap:8px;font-family:"Orbitron";font-size:12px;color:var(--green);
+    background:rgba(79,224,138,.08);border:1px solid rgba(79,224,138,.3);border-radius:20px;padding:6px 12px}
+  .live .dot{width:8px;height:8px;border-radius:50%;background:var(--green);box-shadow:0 0 10px var(--green);animation:pulse 1.6s infinite}
+  @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+  .pill{font-family:"Orbitron";font-size:12px;letter-spacing:1px;padding:6px 14px;border-radius:20px;
+    background:linear-gradient(135deg,#F6DE8B,#C9971F);color:#1a1305;font-weight:800}
+
+  /* ---------- GRID ---------- */
+  .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:16px}
+  @media(max-width:960px){.grid{grid-template-columns:1fr}}
+  .card{background:linear-gradient(180deg,var(--card),var(--card2));border:1px solid var(--line);border-radius:18px;
+    box-shadow:0 18px 50px rgba(0,0,0,.5), inset 0 0 40px rgba(232,193,90,.03);position:relative;overflow:hidden}
+  .card .corner{position:absolute;width:22px;height:22px;border:2px solid var(--gold);opacity:.7}
+  .c-tl{top:10px;left:10px;border-right:0;border-bottom:0;border-top-left-radius:6px}
+  .c-br{bottom:10px;right:10px;border-left:0;border-top:0;border-bottom-right-radius:6px}
+  .card-h{display:flex;align-items:center;justify-content:space-between;padding:14px 18px;border-bottom:1px solid var(--line)}
+  .card-h .t{font-family:"Orbitron";font-size:13px;letter-spacing:1.5px;color:var(--gold2)}
+  .badge{font-family:"Orbitron";font-size:10px;letter-spacing:1px;padding:5px 10px;border-radius:14px;
+    background:rgba(232,193,90,.1);border:1px solid var(--line);color:var(--gold)}
+
+  /* ---------- 3D / GLOBE PANEL ---------- */
+  .stage{padding:8px 10px 4px;text-align:center;position:relative}
+  #globe{width:280px;height:280px;margin:6px auto 0}
+  .verdict{margin:2px 14px 12px;padding:12px;border-radius:14px;text-align:center;
+    background:linear-gradient(180deg,rgba(232,193,90,.08),rgba(232,193,90,.02));border:1px solid var(--line)}
+  .verdict .v{font-family:"Orbitron";font-weight:800;font-size:22px;letter-spacing:1px;color:var(--gold2);text-shadow:0 0 24px rgba(232,193,90,.4)}
+  .verdict .s{font-size:13px;color:#cdbf98;letter-spacing:.5px;margin-top:3px}
+  .vcontrols{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin:0 14px 12px}
+  .vbtn{font-family:"Rajdhani";font-weight:700;font-size:12px;color:var(--gold2);background:rgba(232,193,90,.06);border:1px solid rgba(232,193,90,.4);border-radius:10px;padding:8px 12px;cursor:pointer;transition:.15s}
+  .vbtn:hover{background:rgba(232,193,90,.14)}
+  .vbtn.primary{background:linear-gradient(135deg,#F6DE8B,#C9971F);border:0;color:#1a1305;font-weight:800;box-shadow:0 6px 18px rgba(232,193,90,.25)}
+  .levels{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;padding:0 14px 16px}
+  .lev{background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:12px;padding:10px 6px;text-align:center}
+  .lev .k{font-family:"Rajdhani";font-size:9px;letter-spacing:1.5px;color:var(--gold-dim);text-transform:uppercase}
+  .lev .n{font-family:"Orbitron";font-size:15px;font-weight:700;margin-top:3px}
+  .lev.vwap .n{color:var(--gold2)} .lev.milhar .n{color:var(--purple)} .lev.ajuste .n{color:var(--blue)} .lev.poc .n{color:#e7d9a8}
+
+  /* ---------- TABS ---------- */
+  .tabs{display:flex;gap:4px;padding:8px 10px 0;flex-wrap:wrap}
+  .tab{font-family:"Rajdhani";font-weight:700;font-size:12.5px;letter-spacing:.5px;color:var(--gold-dim);
+    background:transparent;border:1px solid transparent;border-radius:10px 10px 0 0;padding:9px 13px;cursor:pointer;transition:.15s}
+  .tab:hover{color:var(--gold2)}
+  .tab.on{color:#1a1305;background:linear-gradient(135deg,#F6DE8B,#C9971F);font-weight:800}
+  .tabbody{padding:12px 14px 16px;min-height:360px}
+  .pane{display:none;animation:fade .35s ease}
+  .pane.on{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+
+  /* ---------- PLACARES ---------- */
+  .plc{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 15px;margin-bottom:9px;
+    border-radius:13px;background:linear-gradient(120deg,rgba(255,255,255,.025),rgba(255,255,255,.008));
+    border:1px solid var(--line);transform-style:preserve-3d;transition:.2s;cursor:default}
+  .plc:hover{transform:translateY(-2px) rotateX(3deg);border-color:rgba(232,193,90,.4);box-shadow:0 10px 26px rgba(0,0,0,.4)}
+  .plc .num{font-family:"Orbitron";font-size:13px;color:var(--gold-dim);width:20px}
+  .plc .nm{flex:1;font-family:"Rajdhani";font-weight:700;font-size:15px;color:#efe7cf}
+  .plc .pc{font-family:"Orbitron";font-weight:700;font-size:15px;min-width:78px;text-align:right}
+  .plc .pc.up{color:var(--green)} .plc .pc.dn{color:var(--red)}
+  .sig{font-family:"Orbitron";font-size:9px;letter-spacing:1px;padding:4px 9px;border-radius:10px;font-weight:800;min-width:64px;text-align:center}
+  .sig.buy{background:rgba(79,224,138,.14);color:var(--green);border:1px solid rgba(79,224,138,.4)}
+  .sig.sell{background:rgba(255,93,93,.14);color:var(--red);border:1px solid rgba(255,93,93,.4)}
+  .sig.neu{background:rgba(232,193,90,.14);color:var(--gold2);border:1px solid rgba(232,193,90,.4)}
+  .plc.live{border-color:rgba(79,224,138,.45);box-shadow:0 0 0 1px rgba(79,224,138,.15),0 8px 22px rgba(0,0,0,.35)}
+  .ltag{font-family:"Orbitron";font-size:8px;letter-spacing:1px;color:var(--green);border:1px solid rgba(79,224,138,.4);border-radius:8px;padding:1px 6px;margin-left:8px;vertical-align:middle}
+
+  /* ---------- ZONAS MILHAR ---------- */
+  .subttl{font-family:"Rajdhani";font-size:12px;color:var(--gold-dim);letter-spacing:1px;margin-bottom:10px}
+  .subttl b{color:var(--gold2)}
+  .milhar{display:flex;align-items:center;justify-content:space-between;padding:12px 14px;margin-bottom:8px;border-radius:12px;
+    background:linear-gradient(120deg,rgba(185,139,255,.06),rgba(255,255,255,.008));border:1px solid rgba(185,139,255,.2)}
+  .milhar .lab{font-family:"Orbitron";font-size:13px;color:var(--purple)}
+  .milhar .ft{font-family:"Rajdhani";font-size:12px;color:#c9c2d8}
+  .milhar .ft span{color:#8a83a0}
+  .milhar .dist{font-family:"Orbitron";font-size:11px;color:var(--gold);background:rgba(232,193,90,.1);border:1px solid var(--line);padding:4px 8px;border-radius:10px}
+  .mgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+  .mgrid .lev{padding:12px 6px}
+
+  /* ---------- TAPE READING ---------- */
+  .tape{display:flex;align-items:center;gap:10px;padding:12px 14px;margin-bottom:8px;border-radius:12px;
+    background:rgba(255,255,255,.015);border:1px solid var(--line);border-left:3px solid var(--green)}
+  .tape.sell{border-left-color:var(--red)}
+  .tape .hr{font-family:"Orbitron";font-size:11px;color:var(--gold-dim);min-width:64px}
+  .tape .act{font-family:"Orbitron";font-size:9px;letter-spacing:.5px;padding:3px 8px;border-radius:9px;font-weight:800}
+  .tape .act.buy{background:rgba(79,224,138,.15);color:var(--green)}
+  .tape .act.sell{background:rgba(255,93,93,.15);color:var(--red)}
+  .tape .px{font-family:"Orbitron";font-size:14px;color:#efe7cf;min-width:66px}
+  .tape .inst{flex:1;text-align:right;font-family:"Rajdhani";font-weight:700;font-size:13px;color:#cdbf98}
+  .tape .ct{font-family:"Orbitron";font-size:12px;color:var(--gold2);min-width:74px;text-align:right}
+
+  .an-hero{text-align:center;padding:16px;border-radius:14px;background:linear-gradient(180deg,rgba(232,193,90,.08),rgba(232,193,90,.02));border:1px solid var(--line);margin-bottom:12px}
+  .an-hero .k{font-family:"Rajdhani";font-size:11px;letter-spacing:2px;color:var(--gold-dim);text-transform:uppercase}
+  .an-hero .big{font-family:"Orbitron";font-weight:800;font-size:34px;letter-spacing:1px;margin:4px 0}
+  .an-hero .b2{font-family:"Orbitron";font-size:12px;letter-spacing:1px}
+  .an-row{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:11px;background:rgba(255,255,255,.02);border:1px solid var(--line);margin-bottom:7px;font-family:"Rajdhani";font-weight:600;font-size:14px}
+  .an-row .k{color:var(--gold-dim)} .an-row .v{font-family:"Orbitron";font-size:14px;color:#efe7cf}
+  .an-cav{font-size:11px;color:#8a7c58;line-height:1.5;margin-top:12px;padding:10px 12px;border-left:2px solid rgba(232,193,90,.35);background:rgba(232,193,90,.03);border-radius:0 8px 8px 0}
+  .soon{text-align:center;color:var(--gold-dim);padding:70px 20px;font-family:"Rajdhani";font-size:15px}
+  .soon .ic{font-size:34px;margin-bottom:10px;opacity:.6}
+  .foot{text-align:center;font-size:11px;color:#6b5d3a;margin-top:18px;letter-spacing:1px;font-family:"Rajdhani"}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">WINPRIME CAPITAL<small>SCANNER QUANTITATIVO MACRO · 3D</small></div>
+    <div class="hstats">
+      <div class="hstat"><b id="win">187.490</b><span>WIN <em id="winch" style="color:var(--red);font-style:normal">-0,22%</em></span></div>
+      <div class="hstat"><b>191.480 / 187.215</b><span>Máx / Mín</span></div>
+      <div class="pill">PLACAR&nbsp; 2 × 1</div>
+      <div class="live"><span class="dot"></span> AO VIVO <span id="clk" style="color:#cdbf98">--:--:--</span></div>
+    </div>
+  </header>
+
+  <div class="grid">
+
+    <!-- ESQUERDA: 3D + níveis -->
+    <div class="card">
+      <span class="corner c-tl"></span><span class="corner c-br"></span>
+      <div class="card-h"><div class="t">SENTIMENTO MACRO GLOBAL</div><div class="badge">MODELO WINPRIME</div></div>
+      <div class="stage">
+        <div id="globe"></div>
+      </div>
+      <div class="verdict">
+        <div class="v" id="vTxt">MERCADO LATERAL</div>
+        <div class="s" id="vSub">Descorrelacionado · Placar 2 × 1 · sem definição de tendência</div>
+      </div>
+      <div class="vcontrols">
+        <button class="vbtn primary" id="vStart">▶ Ativar voz</button>
+        <button class="vbtn" id="vToggle">🔊 Voz: ligada</button>
+        <button class="vbtn" id="vMode">🗣 só quando muda</button>
+        <button class="vbtn" id="vRep">↻ repetir</button>
+      </div>
+      <div class="levels">
+        <div class="lev vwap"><div class="k">VWAP Diária</div><div class="n">187.490</div></div>
+        <div class="lev milhar"><div class="k">Milhar Ativa</div><div class="n">187.216</div></div>
+        <div class="lev poc"><div class="k">POC M15</div><div class="n">187.410</div></div>
+        <div class="lev ajuste"><div class="k">Ajuste Ant.</div><div class="n">187.240</div></div>
+      </div>
+    </div>
+
+    <!-- DIREITA: abas -->
+    <div class="card">
+      <span class="corner c-tl"></span><span class="corner c-br"></span>
+      <div class="tabs">
+        <button class="tab on" data-p="placares">⚡ PLACARES</button>
+        <button class="tab" data-p="milhar">◎ ZONAS MILHAR</button>
+        <button class="tab" data-p="tape">☷ TAPE READING</button>
+        <button class="tab" data-p="analise">◈ ANÁLISE DIÁRIA</button>
+        <button class="tab" data-p="ia">✦ IA</button>
+        <button class="tab" data-p="agenda">▤ AGENDA 3★</button>
+      </div>
+      <div class="tabbody">
+
+        <!-- PLACARES -->
+        <div class="pane on" id="p-placares">
+          <div class="subttl">OS 7 PLACARES QUANTITATIVOS &nbsp;·&nbsp; <b>MERCADO LATERAL / DESCORRELACIONADO (Placar 2×1)</b></div>
+          <div id="plcList"></div>
+        </div>
+
+        <!-- ZONAS MILHAR -->
+        <div class="pane" id="p-milhar">
+          <div class="subttl">ZONAS DE MILHAR & TRAVAS DE HEDGE · Carrego diário <b>+215,7 pts</b> · Espessura 200 pts · <b>CANAL 200 PTS</b></div>
+          <div id="milharList"></div>
+          <div class="mgrid">
+            <div class="lev vwap"><div class="k">VWAP Diária</div><div class="n">187.490</div></div>
+            <div class="lev poc"><div class="k">POC M15 (Vol)</div><div class="n">187.410</div></div>
+            <div class="lev ajuste"><div class="k">Ajuste Anterior</div><div class="n">187.240</div></div>
+          </div>
+        </div>
+
+        <!-- TAPE READING -->
+        <div class="pane" id="p-tape">
+          <div class="subttl">RADAR DE TAPE READING (FLUXO INSTITUCIONAL) · ordens executadas <b>≥ 500 contratos</b></div>
+          <div id="tapeList"></div>
+        </div>
+
+        <!-- ANALISE DIARIA -->
+        <div class="pane" id="p-analise">
+          <div class="subttl">LEITURA DIÁRIA DO MINI ÍNDICE (WIN) · projeção de abertura</div>
+          <div id="analiseBox"></div>
+        </div>
+
+        <!-- IA -->
+        <div class="pane" id="p-ia">
+          <div class="soon"><div class="ic">✦</div>Módulo <b>IA</b> — me envie a foto/estrutura dessa aba que eu monto aqui.</div>
+        </div>
+
+        <!-- AGENDA -->
+        <div class="pane" id="p-agenda">
+          <div class="soon"><div class="ic">▤</div>Módulo <b>AGENDA 3★</b> — me envie a foto/estrutura dessa aba que eu monto aqui.</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="foot">WINPRIME CAPITAL · Scanner Quantitativo Macro — protótipo 3D (v1) · dados de exemplo das telas enviadas</div>
+</div>
+
+<script>
+/* ============ DADOS (extraídos das telas — o programador liga aos feeds reais) ============ */
+var PLACARES = [
+  {n:"Macro Global",     v:"lendo…",  dir:"up",  sig:"...", live:true},
+  {n:"VIX (Medo)",       v:"-4,88%",     dir:"up",  sig:"COMPRA"},   /* invertido: queda do VIX = compra */
+  {n:"Curva Juros DI",   v:"-0,52%",     dir:"up",  sig:"COMPRA"},   /* invertido */
+  {n:"DXY (Dólar)",      v:"-1,18%",     dir:"up",  sig:"COMPRA"},   /* invertido */
+  {n:"Líderes B3 (10h)", v:"+1,42%",     dir:"up",  sig:"COMPRA"},
+  {n:"IFNC (Bancos)",    v:"+1,65%",     dir:"up",  sig:"COMPRA"},
+  {n:"Gringos (NY)",     v:"+14.850 ctrs", dir:"up", sig:"COMPRA"}
+];
+var MILHARES = [
+  {k:"Milhar 187k", fundo:"187.016", topo:"187.216", larg:"200 pts", dist:"274 pts"},
+  {k:"Milhar 188k", fundo:"188.016", topo:"188.216", larg:"200 pts", dist:"528 pts"},
+  {k:"Milhar 186k", fundo:"186.016", topo:"186.216", larg:"200 pts", dist:"1274 pts"},
+  {k:"Milhar 189k", fundo:"189.016", topo:"189.216", larg:"200 pts", dist:"1528 pts"}
+];
+var TAPE = [
+  {hr:"14:26:45", act:"TOMOU (COMPRA)", side:"buy",  px:"187.490", inst:"JP MORGAN",       ct:"650 ctrs"},
+  {hr:"14:26:12", act:"TOMOU (COMPRA)", side:"buy",  px:"187.485", inst:"UBS SECURITIES",  ct:"500 ctrs"},
+  {hr:"14:24:30", act:"BATEU (VENDA)",  side:"sell", px:"187.510", inst:"BRADESCO",        ct:"800 ctrs"},
+  {hr:"14:22:15", act:"TOMOU (COMPRA)", side:"buy",  px:"187.495", inst:"MORGAN STANLEY",  ct:"1.200 ctrs"}
+];
+
+/* ============ RENDER ============ */
+function renderPlacares(){
+  var h="";
+  PLACARES.forEach(function(p,i){
+    var s=(p.sig||"").toUpperCase();
+    var sc=/COMPRA/.test(s)?"buy":(/VENDA/.test(s)?"sell":"neu");
+    var liveTag=p.live?' <span class="ltag">● AO VIVO</span>':'';
+    h+='<div class="plc'+(p.live?" live":"")+'"><div class="num">'+(i+1)+'</div>'+
+       '<div class="nm">'+p.n+liveTag+'</div>'+
+       '<div class="pc '+p.dir+'">'+p.v+'</div>'+
+       '<div class="sig '+sc+'">'+p.sig+'</div></div>';
+  });
+  document.getElementById("plcList").innerHTML=h;
+}
+function renderMilhar(){
+  var h="";
+  MILHARES.forEach(function(m){
+    h+='<div class="milhar"><div class="lab">'+m.k+'</div>'+
+       '<div class="ft"><span>Fundo</span> '+m.fundo+' &nbsp;→&nbsp; <span>Topo</span> '+m.topo+' &nbsp;·&nbsp; <span>Largura</span> '+m.larg+'</div>'+
+       '<div class="dist">'+m.dist+'</div></div>';
+  });
+  document.getElementById("milharList").innerHTML=h;
+}
+function renderTape(){
+  var h="";
+  TAPE.forEach(function(t){
+    h+='<div class="tape '+(t.side==="sell"?"sell":"")+'"><div class="hr">'+t.hr+'</div>'+
+       '<div class="act '+(t.side==="sell"?"sell":"buy")+'">'+t.act+'</div>'+
+       '<div class="px">'+t.px+'</div><div class="inst">'+t.inst+'</div>'+
+       '<div class="ct">'+t.ct+'</div></div>';
+  });
+  document.getElementById("tapeList").innerHTML=h;
+}
+renderPlacares(); renderMilhar(); renderTape();
+
+/* ============ ANÁLISE DIÁRIA DO MINI ÍNDICE + PROJEÇÃO DE ABERTURA ============ */
+/* LEVELS: níveis do WIN. O programador liga aos feeds reais do site (WIN/Ajuste/VWAP/Milhar/POC). */
+var LEVELS = { win:"187.490", ajuste:"187.240", vwap:"187.490", milharAtiva:"187.216", poc:"187.410", suporte:"187.216", resistencia:"188.016" };
+function pInt(s){ return parseInt(String(s).replace(/\D/g,""),10)||0; }
+function sinalPts(n){ return (n>=0?"+":"")+n.toLocaleString("pt-BR")+" pts"; }
+function renderAnalise(){
+  var box=document.getElementById("analiseBox"); if(!box) return;
+  var win=pInt(LEVELS.win), aj=pInt(LEVELS.ajuste), vw=pInt(LEVELS.vwap), ma=pInt(LEVELS.milharAtiva);
+  var gap=win-aj, gvw=win-vw, gma=win-ma;
+  var e=window.__ESTADO;
+  var bias = e===2?"ALTISTA":e===0?"BAIXISTA":(e===1?"LATERAL":"—");
+  var biasCor = e===2?"var(--green)":e===0?"var(--red)":"var(--gold2)";
+  var gapCor = gap>0?"var(--green)":gap<0?"var(--red)":"var(--gold2)";
+  var dirTxt = gap>0?"acima do ajuste (gap de alta)":gap<0?"abaixo do ajuste (gap de baixa)":"no ajuste";
+  var h="";
+  h+='<div class="an-hero"><div class="k">Abertura projetada vs Ajuste (com base no atual)</div>'+
+     '<div class="big" style="color:'+gapCor+'">'+sinalPts(gap)+'</div>'+
+     '<div class="b2" style="color:'+biasCor+'">Viés macro AO VIVO: '+bias+'</div></div>';
+  h+='<div class="an-row"><span class="k">WIN (mini índice) agora</span><span class="v">'+LEVELS.win+'</span></div>';
+  h+='<div class="an-row"><span class="k">Ajuste anterior</span><span class="v">'+LEVELS.ajuste+' · '+dirTxt+'</span></div>';
+  h+='<div class="an-row"><span class="k">vs VWAP diária ('+LEVELS.vwap+')</span><span class="v">'+sinalPts(gvw)+'</span></div>';
+  h+='<div class="an-row"><span class="k">vs Milhar ativa ('+LEVELS.milharAtiva+')</span><span class="v">'+sinalPts(gma)+'</span></div>';
+  h+='<div class="an-row"><span class="k">Suporte / Resistência (milhar)</span><span class="v">'+LEVELS.suporte+' / '+LEVELS.resistencia+'</span></div>';
+  h+='<div class="an-cav"><b>Projeção, não garantia.</b> O número em destaque é o gap atual do WIN em relação ao ajuste — muda até a abertura conforme o mercado externo. O viés vem do placar macro ao vivo. Conteúdo educacional do modelo WINPRIME; não é recomendação de compra ou venda.</div>';
+  box.innerHTML=h;
+}
+renderAnalise();
+
+/* ============ VOZ / ALERTA (igual ao painel dos alunos) ============ */
+var vozAtiva=true, falarSempre=false, vozSel=null, vozOn=false;
+function escolherVoz(){ try{ var vs=speechSynthesis.getVoices(); var pt=vs.filter(function(v){return /^pt/i.test(v.lang);});
+  var fem=/(maria|luciana|francisca|helena|fernanda|joana|female|mulher|google português do brasil)/i;
+  vozSel=pt.filter(function(v){return fem.test(v.name);})[0]||pt.filter(function(v){return /pt.?BR/i.test(v.lang);})[0]||pt[0]||null; }catch(e){} }
+if("speechSynthesis" in window){ try{ speechSynthesis.onvoiceschanged=escolherVoz; }catch(e){} escolherVoz(); }
+function falar(t){ if(!vozAtiva||!vozOn||!("speechSynthesis" in window)) return;
+  try{ speechSynthesis.cancel(); var u=new SpeechSynthesisUtterance(t); u.lang="pt-BR"; if(vozSel)u.voice=vozSel; u.rate=0.98; u.pitch=1.12; speechSynthesis.speak(u);}catch(e){} }
+function fraseMacro(d){
+  var e=d.estado; var ctx=e===2?"em tendência de alta":e===0?"em tendência de baixa":"descorrelacionado, sem definição de tendência";
+  var gap=pInt(LEVELS.win)-pInt(LEVELS.ajuste);
+  var abre=gap>0?("abertura projetada de "+gap+" pontos acima do ajuste"):gap<0?("abertura projetada de "+Math.abs(gap)+" pontos abaixo do ajuste"):"abertura projetada próxima do ajuste";
+  return "Querido aluno, o mercado macro está "+ctx+". "+abre+". Lembre-se, paciência recompensa.";
+}
+document.getElementById("vStart").onclick=function(){ vozOn=true; this.textContent="● voz ativa"; this.classList.remove("primary"); if(window.__ULTD) falar(fraseMacro(window.__ULTD)); else falar("Alerta de voz do scanner macro ativado."); };
+document.getElementById("vToggle").onclick=function(){ vozAtiva=!vozAtiva; this.textContent=vozAtiva?"🔊 Voz: ligada":"🔇 Voz: desligada"; if(!vozAtiva && "speechSynthesis" in window) try{speechSynthesis.cancel();}catch(e){} };
+document.getElementById("vMode").onclick=function(){ falarSempre=!falarSempre; this.textContent=falarSempre?"🗣 toda leitura":"🗣 só quando muda"; };
+document.getElementById("vRep").onclick=function(){ vozOn=true; if(window.__ULTD) falar(fraseMacro(window.__ULTD)); };
+
+/* ============ MACRO GLOBAL AO VIVO (liga no estado.json do leitor WINPRIME) ============ */
+var MAP_EST = {
+  2:{w:"MERCADO ALTISTA",  s:"Tendência de alta · sinal de COMPRA",             sig:"COMPRA"},
+  1:{w:"MERCADO LATERAL",  s:"Descorrelacionado · sem definição de tendência", sig:"LATERAL"},
+  0:{w:"MERCADO BAIXISTA", s:"Tendência de baixa · sinal de VENDA",              sig:"VENDA"}
+};
+function pctForca(d){
+  var net=(d.altistas||0)-(d.baixistas||0);
+  var base=Math.max(1,(d.altistas||0)+(d.baixistas||0));
+  var v=Math.round(net/base*100);
+  return (v>=0?"+":"")+v+"%";
+}
+function aplicarMacro(d, freshMs){
+  var e=d.estado; var m=MAP_EST[e]||MAP_EST[1];
+  window.__ESTADO=e;
+  PLACARES[0].v   = pctForca(d)+"  ("+(d.altistas||0)+"↑ "+(d.baixistas||0)+"↓)";
+  PLACARES[0].dir = (e===0?"dn":"up");
+  PLACARES[0].sig = m.sig;
+  renderPlacares(); renderAnalise();
+  var pausado = freshMs>150000;
+  var vt=document.getElementById("vTxt"), vs=document.getElementById("vSub");
+  if(pausado){ vt.textContent="SEM SINAL (PAUSADO)"; vt.style.color="#e0b64d"; vs.textContent="Leitor parado — reative o scanner macro"; }
+  else{ vt.textContent=m.w; vt.style.color=(e===2?"var(--green)":e===0?"var(--red)":"var(--gold2)"); vs.textContent=m.s+" · "+(d.total||0)+" ativos abertos"; }
+  var mudou=(window.__ULTEV!=null && window.__ULTEV!==e);
+  window.__ULTD=d;
+  if(!pausado && vozOn && (falarSempre || mudou)) falar(fraseMacro(d));
+  window.__ULTEV=e;
+}
+function consultarMacro(){
+  var RAW="https://raw.githubusercontent.com/aprendermercadofinanceiro-alt/winprime-macro/main/estado.json";
+  var API="https://api.github.com/repos/aprendermercadofinanceiro-alt/winprime-macro/contents/estado.json?ref=main";
+  var W=window.__WM||(window.__WM={apiNext:0});
+  function fRaw(){ return fetch(RAW+"?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); }
+  function fApi(){ var now=Date.now(); if(now<W.apiNext) return Promise.resolve(null); W.apiNext=now+55000;
+    return fetch(API,{cache:"no-store",headers:{Accept:"application/vnd.github.raw"}}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); }
+  Promise.all([fRaw(),fApi()]).then(function(res){
+    var arr=res.filter(Boolean); if(!arr.length) return;
+    arr.sort(function(a,b){ return new Date(b.atualizado)-new Date(a.atualizado); });
+    var d=arr[0]; var fresh=Date.now()-new Date(d.atualizado).getTime();
+    aplicarMacro(d, fresh);
+  });
+}
+consultarMacro(); setInterval(consultarMacro, 30000);
+
+/* ============ ABAS ============ */
+document.querySelectorAll(".tab").forEach(function(t){
+  t.onclick=function(){
+    document.querySelectorAll(".tab").forEach(function(x){x.classList.remove("on");});
+    document.querySelectorAll(".pane").forEach(function(x){x.classList.remove("on");});
+    t.classList.add("on");
+    document.getElementById("p-"+t.getAttribute("data-p")).classList.add("on");
+  };
+});
+
+/* ============ RELÓGIO ============ */
+setInterval(function(){ document.getElementById("clk").textContent=new Date().toLocaleTimeString("pt-BR"); },1000);
+</script>
+
+<!-- ============ GLOBO 3D (Three.js) ============ -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script>
+(function(){
+  function boot(){
+    var el=document.getElementById("globe"); if(!el) return true;
+    if(typeof THREE==="undefined") return false;
+    try{
+      var W=el.clientWidth||280,H=el.clientHeight||280;
+      var sc=new THREE.Scene();
+      var cam=new THREE.PerspectiveCamera(42,W/H,0.1,100); cam.position.z=3.0;
+      var rd=new THREE.WebGLRenderer({alpha:true,antialias:true}); rd.setSize(W,H); rd.setPixelRatio(Math.min(2,window.devicePixelRatio||1)); el.appendChild(rd.domElement);
+      var cnv=document.createElement("canvas"); cnv.width=cnv.height=32; var cx=cnv.getContext("2d");
+      var gd=cx.createRadialGradient(16,16,0,16,16,16); gd.addColorStop(0,"#ffffff"); gd.addColorStop(.35,"#ffe9c0"); gd.addColorStop(1,"rgba(200,160,255,0)");
+      cx.fillStyle=gd; cx.beginPath(); cx.arc(16,16,16,0,7); cx.fill(); var tex=new THREE.CanvasTexture(cnv);
+      var stars=[]; for(var i=0;i<320;i++){ var v=new THREE.Vector3(Math.random()-.5,Math.random()-.5,Math.random()-.5); v.normalize().multiplyScalar(8+Math.random()*10); stars.push(v); }
+      var sm=new THREE.PointsMaterial({size:0.05,map:tex,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,color:0x9a92b8,opacity:0.5});
+      sc.add(new THREE.Points(new THREE.BufferGeometry().setFromPoints(stars),sm));
+      var grp=new THREE.Group(); sc.add(grp); grp.rotation.x=0.35; grp.rotation.z=0.12;
+      function sph(n,r){var a=[];var phi=Math.PI*(3-Math.sqrt(5));for(var i=0;i<n;i++){var y=1-(i/(n-1))*2;var rr=Math.sqrt(1-y*y);var th=phi*i;a.push(new THREE.Vector3(Math.cos(th)*rr*r,y*r,Math.sin(th)*rr*r));}return a;}
+      function noise(p){ return Math.sin(p.x*2.7+p.y*1.9)*0.5+Math.sin(p.y*2.1+p.z*3.1)*0.32+Math.sin(p.z*3.3+p.x*1.5)*0.22+Math.sin((p.x-p.y+p.z)*4.9)*0.18+Math.sin((p.x+p.y)*6.1)*0.12; }
+      var ip=sph(6400,1); var opos=[],lpos=[];
+      for(var i=0;i<ip.length;i++){ var p=ip[i]; if(noise(p)>0.04){ lpos.push(p.x,p.y,p.z); } else { opos.push(p.x,p.y,p.z); } }
+      var ocean=opos.reduce(function(a,v,i){if(i%3===0)a.push(new THREE.Vector3(opos[i],opos[i+1],opos[i+2]));return a;},[]);
+      var mo=new THREE.PointsMaterial({size:0.028,map:tex,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,color:0x2b5566,opacity:0.5});
+      grp.add(new THREE.Points(new THREE.BufferGeometry().setFromPoints(ocean),mo));
+      var lg=new THREE.BufferGeometry(); lg.setAttribute("position",new THREE.Float32BufferAttribute(lpos,3));
+      var mlnd=new THREE.PointsMaterial({size:0.09,map:tex,transparent:true,depthWrite:false,blending:THREE.AdditiveBlending,color:0xe0b64d,opacity:1.0});
+      grp.add(new THREE.Points(lg,mlnd));
+      var ring=new THREE.Mesh(new THREE.RingGeometry(1.25,1.28,96), new THREE.MeshBasicMaterial({color:0xe0b64d,transparent:true,opacity:.35,side:THREE.DoubleSide}));
+      ring.rotation.x=Math.PI/2.3; grp.add(ring);
+      var EMAP={2:[0.31,0.88,0.54],0:[1.0,0.36,0.36],1:[0.90,0.72,0.28]}; var glow=0;
+      function loop(){requestAnimationFrame(loop); grp.rotation.y+=0.0016;
+        var e=window.__ESTADO; var col=EMAP[(e===2||e===0)?e:1];
+        var sp=window.speechSynthesis&&window.speechSynthesis.speaking; glow+=((sp?1:0)-glow)*0.08;
+        var t=(performance.now()||Date.now())/1000; var g=0.80+0.20*(0.5+0.5*Math.sin(t*1.1));
+        mlnd.color.setRGB(Math.min(1,col[0]*g+0.12*glow),Math.min(1,col[1]*g+0.12*glow),Math.min(1,col[2]*g+0.12*glow));
+        mlnd.size=0.09+0.035*glow;
+        ring.material.color.setRGB(col[0],col[1],col[2]); ring.material.opacity=0.30+0.45*glow;
+        rd.render(sc,cam);}
+      loop(); return true;
+    }catch(e){ el.innerHTML="<div style=\"width:180px;height:180px;border-radius:50%;margin:40px auto;background:radial-gradient(circle at 40% 40%,#5a3d12,#2a1a5a 70%,#050608);box-shadow:0 0 40px rgba(224,182,77,.5)\"></div>"; return true; }
+  }
+  var tries=0; var iv=setInterval(function(){ tries++; if(boot()||tries>50){ clearInterval(iv); } },200);
+})();
+</script>
+</body>
+</html>
