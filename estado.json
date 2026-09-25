@@ -39,6 +39,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-09-25T20:14:44.537Z",
+  "atualizado": "2026-09-25T20:15:43.863Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 12 | TV fechados fora: 16 | TV ja na carteira: 6."
 }
