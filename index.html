@@ -190,6 +190,7 @@ function consultar(){
   var API = "https://api.github.com/repos/aprendermercadofinanceiro-alt/winprime-macro/contents/estado.json?ref=main";
   var W = window.__WPST || (window.__WPST = {apiNext:0, cooldown:0, ultAt:0});
   function fRaw(){ return fetch(RAW + "?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }); }
+  function fGh(){ return fetch("https://raw.githack.com/aprendermercadofinanceiro-alt/winprime-macro/main/estado.json?t=" + Date.now(), {cache:"no-store"}).then(function(r){ return r.ok ? r.json() : null; }).catch(function(){ return null; }); }
   function fApi(){
     var now = Date.now();
     if(now < W.cooldown || now < W.apiNext) return Promise.resolve(null);
@@ -201,7 +202,7 @@ function consultar(){
       return r.ok ? r.json() : null;
     }).catch(function(){ return null; });
   }
-  Promise.all([fRaw(), fApi()]).then(function(res){
+  Promise.all([fRaw(), fGh(), fApi()]).then(function(res){
     var arr = res.filter(Boolean);
     if(!arr.length){ if(typeof setStatus === "function") setStatus("reconectando…", true); return; }
     arr.sort(function(a,b){ return new Date(b.atualizado) - new Date(a.atualizado); });
@@ -264,7 +265,7 @@ body.pausado::after{content:"";position:fixed;inset:0;border:5px solid #e0b64d;p
 <div id="wpLive" class="wp-live viva"></div>
 <script>
 (function(){
-  var LIM=150;
+  var LIM=200;
   function tick(){ if(window.janelaFechada&&window.janelaFechada())return;
     try{
       var t=window.__WPST&&window.__WPST.ultAt;
