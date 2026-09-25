@@ -14,10 +14,10 @@
     "Prata",
     "Euro Stoxx 50 Futuros",
     "Ouro",
+    "IBEX 35 Futuros",
     "S&P 500 VIX Futuros",
     "DAX",
     "ITUB4",
-    "BBDC4",
     "DI Jan/29",
     "DI Jan/31",
     "DI Jan/33",
@@ -27,7 +27,6 @@
   "lista_neutros": [
     "Dow Jones Futuros",
     "S&P 500 Futuros",
-    "IBEX 35 Futuros",
     "Nasdaq 100 Futuros",
     "Mini Ibovespa Futuros",
     "Ibovespa",
@@ -35,6 +34,7 @@
     "iShares MSCI Brazil Capped",
     "Morgan Stanley",
     "DXY (dolar)",
+    "BBDC4",
     "BOVA11",
     "BBAS3",
     "CXSE3",
@@ -52,6 +52,6 @@
     "PETR4",
     "ABEV3"
   ],
-  "atualizado": "2026-09-25T15:59:54.942Z",
+  "atualizado": "2026-09-25T16:00:43.875Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
