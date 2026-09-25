@@ -37,21 +37,21 @@
     "Ibovespa",
     "S&P/ASX 200 Futuros",
     "iShares MSCI Brazil Capped",
+    "Morgan Stanley",
     "DXY (dolar)",
     "Nikkei 225",
     "WEGE3",
     "BOVA11",
-    "ABEV3",
     "DI Jan/27"
   ],
   "lista_baixistas": [
     "Petróleo Brent",
     "Petróleo WTI",
-    "Morgan Stanley",
     "Hang Seng Futuros",
     "PETR3",
-    "PETR4"
+    "PETR4",
+    "ABEV3"
   ],
-  "atualizado": "2026-09-25T16:39:44.174Z",
+  "atualizado": "2026-09-25T16:40:44.462Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 12."
 }
