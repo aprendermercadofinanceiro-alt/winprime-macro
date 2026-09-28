@@ -23,6 +23,6 @@
     "Nasdaq 100 Futuros",
     "Ouro"
   ],
-  "atualizado": "2026-09-28T21:36:34.116Z",
+  "atualizado": "2026-09-28T21:37:33.954Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 0 | TV fechados fora: 29 | TV ja na carteira: 5."
 }
