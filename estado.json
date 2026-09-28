@@ -35,6 +35,6 @@
     "DI Jan/31",
     "DI Jan/33"
   ],
-  "atualizado": "2026-09-28T20:40:34.113Z",
+  "atualizado": "2026-09-28T20:41:34.147Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 7 | TV fechados fora: 21 | TV ja na carteira: 6."
 }
