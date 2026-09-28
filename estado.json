@@ -27,6 +27,6 @@
     "Hang Seng",
     "Nikkei 225"
   ],
-  "atualizado": "2026-09-28T09:24:34.115Z",
+  "atualizado": "2026-09-28T09:25:34.840Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 10 | TV fechados fora: 24 | TV ja na carteira: 0."
 }
