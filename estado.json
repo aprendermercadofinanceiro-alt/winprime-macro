@@ -27,6 +27,6 @@
     "S&P 500",
     "VIX"
   ],
-  "atualizado": "2026-09-28T08:26:34.186Z",
+  "atualizado": "2026-09-28T08:27:34.459Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 10 | TV fechados fora: 24 | TV ja na carteira: 0."
 }
