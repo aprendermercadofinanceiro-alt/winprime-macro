@@ -1,9 +1,9 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -4,
-  "altistas": 8,
-  "neutros": 16,
+  "soma": -5,
+  "altistas": 7,
+  "neutros": 17,
   "baixistas": 12,
   "total": 36,
   "fechados": 10,
@@ -17,7 +17,6 @@
     "S&P 500 VIX Futuros",
     "DAX",
     "DI Jan/29",
-    "JP Morgan",
     "UBS"
   ],
   "lista_neutros": [
@@ -36,6 +35,7 @@
     "DI Jan/31",
     "DI Jan/33",
     "Morgan Stanley",
+    "JP Morgan",
     "EWZ"
   ],
   "lista_baixistas": [
@@ -52,6 +52,6 @@
     "CXSE3",
     "VALE3"
   ],
-  "atualizado": "2026-09-29T14:01:34.199Z",
+  "atualizado": "2026-09-29T14:02:34.153Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 22 | TV fechados fora: 3 | TV ja na carteira: 9."
 }
