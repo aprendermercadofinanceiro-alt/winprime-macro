@@ -25,7 +25,7 @@
     "Nasdaq 100 Futuros",
     "S&P/ASX 200 Futuros",
     "DAX Futuros",
-    "Prata",
+    "S&P 500 Futuros",
     "Ibovespa",
     "Mini Ibovespa Futuros",
     "S&P 500 VIX Futuros",
@@ -39,7 +39,7 @@
     "EWZ"
   ],
   "lista_baixistas": [
-    "S&P 500 Futuros",
+    "Prata",
     "Dow Jones Futuros",
     "Petróleo Brent",
     "Petróleo WTI",
@@ -51,6 +51,6 @@
     "Morgan Stanley",
     "JP Morgan"
   ],
-  "atualizado": "2026-09-29T18:23:33.906Z",
+  "atualizado": "2026-09-29T18:24:34.013Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 20 | TV fechados fora: 5 | TV ja na carteira: 9."
 }
