@@ -1,9 +1,9 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -12,
-  "altistas": 4,
-  "neutros": 16,
+  "soma": -11,
+  "altistas": 5,
+  "neutros": 15,
   "baixistas": 16,
   "total": 36,
   "fechados": 12,
@@ -12,6 +12,7 @@
   "tv_duplicados": 9,
   "lista_altistas": [
     "Nikkei 225",
+    "ITUB4",
     "BBAS3",
     "IFNC",
     "DI Jan/29"
@@ -24,7 +25,6 @@
     "Ibovespa",
     "Mini Ibovespa Futuros",
     "DAX",
-    "ITUB4",
     "BOVA11",
     "PETR4",
     "ABEV3",
@@ -52,6 +52,6 @@
     "Morgan Stanley",
     "JP Morgan"
   ],
-  "atualizado": "2026-09-29T16:54:34.574Z",
+  "atualizado": "2026-09-29T16:55:34.125Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 21 | TV fechados fora: 4 | TV ja na carteira: 9."
 }
