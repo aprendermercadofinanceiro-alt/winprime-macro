@@ -30,6 +30,6 @@
     "Topix 100",
     "KOSPI 200"
   ],
-  "atualizado": "2026-09-29T01:09:34.458Z",
+  "atualizado": "2026-09-29T01:10:34.301Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 4 | TV fechados fora: 24 | TV ja na carteira: 6."
 }
