@@ -1,10 +1,10 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 6,
+  "soma": 7,
   "altistas": 8,
-  "neutros": 6,
-  "baixistas": 2,
+  "neutros": 7,
+  "baixistas": 1,
   "total": 16,
   "fechados": 36,
   "tv_somados": 7,
@@ -26,12 +26,12 @@
     "S&P 500 Futuros",
     "Dow Jones Futuros",
     "Petróleo WTI",
-    "DXY (dolar)"
-  ],
-  "lista_baixistas": [
-    "China H (HSCEI)",
+    "DXY (dolar)",
     "Hang Seng"
   ],
-  "atualizado": "2026-09-30T01:30:34.142Z",
+  "lista_baixistas": [
+    "China H (HSCEI)"
+  ],
+  "atualizado": "2026-09-30T01:31:34.075Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 7 | TV fechados fora: 22 | TV ja na carteira: 5."
 }
