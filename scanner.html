@@ -133,6 +133,14 @@
   .an-row{display:flex;justify-content:space-between;align-items:center;padding:10px 14px;border-radius:11px;background:rgba(255,255,255,.02);border:1px solid var(--line);margin-bottom:7px;font-family:"Rajdhani";font-weight:600;font-size:14px}
   .an-row .k{color:var(--gold-dim)} .an-row .v{font-family:"Orbitron";font-size:14px;color:#efe7cf}
   .an-cav{font-size:11px;color:#8a7c58;line-height:1.5;margin-top:12px;padding:10px 12px;border-left:2px solid rgba(232,193,90,.35);background:rgba(232,193,90,.03);border-radius:0 8px 8px 0}
+  .thermos{margin-top:16px}
+  .thermo-wrap{display:flex;gap:18px;justify-content:center;padding:16px 10px 20px;flex-wrap:wrap}
+  .thermo{flex:1;min-width:210px;max-width:330px;text-align:center;background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:16px;padding:14px 10px 16px}
+  .thermo-ttl{font-family:"Orbitron";font-size:12px;letter-spacing:1.5px;color:var(--gold2);margin-bottom:4px}
+  .thermo svg{display:block;margin:2px auto}
+  .thermo-val{font-family:"Orbitron";font-weight:800;font-size:30px;margin-top:4px}
+  .thermo-lab{font-family:"Orbitron";font-size:12px;letter-spacing:1px;margin-top:2px}
+  .thermo-brk{font-family:"Rajdhani";font-weight:600;font-size:13px;color:#cdbf98;margin-top:6px}
   .soon{text-align:center;color:var(--gold-dim);padding:70px 20px;font-family:"Rajdhani";font-size:15px}
   .soon .ic{font-size:34px;margin-bottom:10px;opacity:.6}
   .foot{text-align:center;font-size:11px;color:#6b5d3a;margin-top:18px;letter-spacing:1px;font-family:"Rajdhani"}
@@ -234,6 +242,42 @@
     </div>
   </div>
 
+  <div class="card thermos">
+    <span class="corner c-tl"></span><span class="corner c-br"></span>
+    <div class="card-h"><div class="t">TERMÔMETROS DE MERCADO</div><div class="badge">AO VIVO · placar estatístico</div></div>
+    <div class="thermo-wrap">
+      <div class="thermo">
+        <div class="thermo-ttl">🌎 MACRO GLOBAL</div>
+        <svg viewBox="0 0 120 232" width="120" height="232" xmlns="http://www.w3.org/2000/svg">
+          <text x="58" y="30" fill="#4fe08a" font-size="9" font-family="Orbitron">+100 ALTA</text>
+          <text x="58" y="118" fill="#E8C15A" font-size="9" font-family="Orbitron">0 NEUTRO</text>
+          <text x="58" y="198" fill="#ff5d5d" font-size="9" font-family="Orbitron">-100 BAIXA</text>
+          <rect x="36" y="22" width="16" height="170" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(232,193,90,.25)"/>
+          <circle cx="44" cy="202" r="17" fill="rgba(255,255,255,.05)" stroke="rgba(232,193,90,.25)"/>
+          <rect id="mercMacro" x="39" y="190" width="10" height="0" rx="5" fill="#E8C15A"/>
+          <circle id="bulbMacro" cx="44" cy="202" r="13" fill="#E8C15A"/>
+        </svg>
+        <div class="thermo-val" id="valMacro">0°</div>
+        <div class="thermo-lab" id="labMacro">—</div>
+        <div class="thermo-brk" id="brkMacro">—</div>
+      </div>
+      <div class="thermo">
+        <div class="thermo-ttl">🇧🇷 MICRO (B3)</div>
+        <svg viewBox="0 0 120 232" width="120" height="232" xmlns="http://www.w3.org/2000/svg">
+          <text x="58" y="30" fill="#4fe08a" font-size="9" font-family="Orbitron">+100 ALTA</text>
+          <text x="58" y="118" fill="#E8C15A" font-size="9" font-family="Orbitron">0 NEUTRO</text>
+          <text x="58" y="198" fill="#ff5d5d" font-size="9" font-family="Orbitron">-100 BAIXA</text>
+          <rect x="36" y="22" width="16" height="170" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(232,193,90,.25)"/>
+          <circle cx="44" cy="202" r="17" fill="rgba(255,255,255,.05)" stroke="rgba(232,193,90,.25)"/>
+          <rect id="mercMicro" x="39" y="190" width="10" height="0" rx="5" fill="#E8C15A"/>
+          <circle id="bulbMicro" cx="44" cy="202" r="13" fill="#E8C15A"/>
+        </svg>
+        <div class="thermo-val" id="valMicro">0°</div>
+        <div class="thermo-lab" id="labMicro">—</div>
+        <div class="thermo-brk" id="brkMicro">—</div>
+      </div>
+    </div>
+  </div>
   <div class="foot">WINPRIME CAPITAL · Scanner Quantitativo Macro — protótipo 3D (v1) · dados de exemplo das telas enviadas</div>
 </div>
 
@@ -324,6 +368,29 @@ function renderAnalise(){
 }
 renderAnalise();
 
+/* ============ TERMÔMETROS MACRO & MICRO (derivados do placar estatístico ao vivo) ============ */
+var MICRO_RE=/wege|itub|bbdc|bradesco|\bibov\b|bova|bbas|banco do brasil|petr|abev|ambev|cxse|vale|ifnc|di\s*jan|di1f|juros|morgan|jpm|jp\s*morgan|\bubs\b|\bewz\b|l[ií]deres/i;
+var MACRO_RE=/nasdaq|ndx|s&?p|spx|dow|dji|vix|dxy|d[oó]lar|dollar|\bdax\b|stoxx|sx5e|asx|xjo|ibex|hscei|china|hang|\bhsi\b|ftse|ukx|nikkei|nk225|topix|kospi/i;
+function catTemp(d){
+  var macro={a:0,b:0,n:0}, micro={a:0,b:0,n:0};
+  function pick(name){ if(MICRO_RE.test(name)) return micro; if(MACRO_RE.test(name)) return macro; return macro; }
+  (d.lista_altistas||[]).forEach(function(n){ pick(n).a++; });
+  (d.lista_baixistas||[]).forEach(function(n){ pick(n).b++; });
+  (d.lista_neutros||[]).forEach(function(n){ pick(n).n++; });
+  return {macro:macro, micro:micro};
+}
+function setTermo(pfx,c){
+  var dir=c.a+c.b; var temp=dir===0?0:Math.round((c.a-c.b)/dir*100);
+  var topY=24, botY=190, span=botY-topY; var pct=(temp+100)/200; var h=Math.max(0,pct*span); var y=botY-h;
+  var col=temp>=30?"#4fe08a":temp<=-30?"#ff5d5d":"#E8C15A";
+  var m=document.getElementById("merc"+pfx); if(m){ m.setAttribute("y",y); m.setAttribute("height",h); m.setAttribute("fill",col); }
+  var b=document.getElementById("bulb"+pfx); if(b) b.setAttribute("fill",col);
+  var v=document.getElementById("val"+pfx); if(v){ v.textContent=(temp>=0?"+":"")+temp+"°"; v.style.color=col; }
+  var l=document.getElementById("lab"+pfx); if(l){ l.textContent=temp>=30?"QUENTE · ALTISTA":temp<=-30?"FRIO · BAIXISTA":"MORNO · LATERAL"; l.style.color=col; }
+  var k=document.getElementById("brk"+pfx); if(k) k.textContent=c.a+"↑ · "+c.n+"→ · "+c.b+"↓";
+}
+function renderThermos(d){ var t=catTemp(d); setTermo("Macro",t.macro); setTermo("Micro",t.micro); }
+
 /* ============ VOZ / ALERTA (igual ao painel dos alunos) ============ */
 var vozAtiva=true, falarSempre=false, vozSel=null, vozOn=false;
 function escolherVoz(){ try{ var vs=speechSynthesis.getVoices(); var pt=vs.filter(function(v){return /^pt/i.test(v.lang);});
@@ -361,8 +428,8 @@ function aplicarMacro(d, freshMs){
   PLACARES[0].v   = pctForca(d)+"  ("+(d.altistas||0)+"↑ "+(d.baixistas||0)+"↓)";
   PLACARES[0].dir = (e===0?"dn":"up");
   PLACARES[0].sig = m.sig;
-  renderPlacares(); renderAnalise();
-  var pausado = freshMs>150000;
+  renderPlacares(); renderAnalise(); renderThermos(d);
+  var pausado = freshMs>200000;
   var vt=document.getElementById("vTxt"), vs=document.getElementById("vSub");
   if(pausado){ vt.textContent="SEM SINAL (PAUSADO)"; vt.style.color="#e0b64d"; vs.textContent="Leitor parado — reative o scanner macro"; }
   else{ vt.textContent=m.w; vt.style.color=(e===2?"var(--green)":e===0?"var(--red)":"var(--gold2)"); vs.textContent=m.s+" · "+(d.total||0)+" ativos abertos"; }
@@ -376,9 +443,10 @@ function consultarMacro(){
   var API="https://api.github.com/repos/aprendermercadofinanceiro-alt/winprime-macro/contents/estado.json?ref=main";
   var W=window.__WM||(window.__WM={apiNext:0});
   function fRaw(){ return fetch(RAW+"?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); }
+  function fGh(){ return fetch("https://raw.githack.com/aprendermercadofinanceiro-alt/winprime-macro/main/estado.json?t="+Date.now(),{cache:"no-store"}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); }
   function fApi(){ var now=Date.now(); if(now<W.apiNext) return Promise.resolve(null); W.apiNext=now+55000;
     return fetch(API,{cache:"no-store",headers:{Accept:"application/vnd.github.raw"}}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;}); }
-  Promise.all([fRaw(),fApi()]).then(function(res){
+  Promise.all([fRaw(),fGh(),fApi()]).then(function(res){
     var arr=res.filter(Boolean); if(!arr.length) return;
     arr.sort(function(a,b){ return new Date(b.atualizado)-new Date(a.atualizado); });
     var d=arr[0]; var fresh=Date.now()-new Date(d.atualizado).getTime();
