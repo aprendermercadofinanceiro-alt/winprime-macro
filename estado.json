@@ -6,7 +6,7 @@
   "neutros": 3,
   "baixistas": 8,
   "total": 17,
-  "fechados": 32,
+  "fechados": 31,
   "tv_somados": 4,
   "tv_fechados": 22,
   "tv_duplicados": 7,
@@ -33,6 +33,6 @@
     "DXY (dolar)",
     "DAX"
   ],
-  "atualizado": "2026-10-01T09:14:32.550Z",
+  "atualizado": "2026-10-01T09:15:32.556Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 4 | TV fechados fora: 22 | TV ja na carteira: 7."
 }
