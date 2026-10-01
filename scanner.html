@@ -137,7 +137,8 @@
   .thermo-wrap{display:flex;gap:18px;justify-content:center;padding:16px 10px 20px;flex-wrap:wrap}
   .thermo{flex:1;min-width:210px;max-width:330px;text-align:center;background:rgba(255,255,255,.02);border:1px solid var(--line);border-radius:16px;padding:14px 10px 16px}
   .thermo-ttl{font-family:"Orbitron";font-size:12px;letter-spacing:1.5px;color:var(--gold2);margin-bottom:4px}
-  .thermo svg{display:block;margin:2px auto}
+  .thermo svg{display:block;margin:2px auto;width:100%;max-width:270px;height:auto}
+  #needleMacro,#needleMicro{transition:transform .9s cubic-bezier(.2,.85,.25,1)}
   .thermo-val{font-family:"Orbitron";font-weight:800;font-size:30px;margin-top:4px}
   .thermo-lab{font-family:"Orbitron";font-size:12px;letter-spacing:1px;margin-top:2px}
   .thermo-brk{font-family:"Rajdhani";font-weight:600;font-size:13px;color:#cdbf98;margin-top:6px}
@@ -248,14 +249,25 @@
     <div class="thermo-wrap">
       <div class="thermo">
         <div class="thermo-ttl">🌎 MACRO GLOBAL</div>
-        <svg viewBox="0 0 120 232" width="120" height="232" xmlns="http://www.w3.org/2000/svg">
-          <text x="58" y="30" fill="#4fe08a" font-size="9" font-family="Orbitron">+100 ALTA</text>
-          <text x="58" y="118" fill="#E8C15A" font-size="9" font-family="Orbitron">0 NEUTRO</text>
-          <text x="58" y="198" fill="#ff5d5d" font-size="9" font-family="Orbitron">-100 BAIXA</text>
-          <rect x="36" y="22" width="16" height="170" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(232,193,90,.25)"/>
-          <circle cx="44" cy="202" r="17" fill="rgba(255,255,255,.05)" stroke="rgba(232,193,90,.25)"/>
-          <rect id="mercMacro" x="39" y="190" width="10" height="0" rx="5" fill="#E8C15A"/>
-          <circle id="bulbMacro" cx="44" cy="202" r="13" fill="#E8C15A"/>
+        <svg viewBox="0 0 240 158" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gRedMacro" x1="0" x2="1"><stop offset="0" stop-color="#ff3b3b"/><stop offset="1" stop-color="#ff8a66"/></linearGradient>
+            <linearGradient id="gGoldMacro" x1="0" x2="1"><stop offset="0" stop-color="#e0a93a"/><stop offset="1" stop-color="#F6DE8B"/></linearGradient>
+            <linearGradient id="gGreenMacro" x1="0" x2="1"><stop offset="0" stop-color="#7be3a0"/><stop offset="1" stop-color="#2fd389"/></linearGradient>
+            <radialGradient id="hubMacro" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#fff4d2"/><stop offset=".45" stop-color="#E8C15A"/><stop offset="1" stop-color="#5e4411"/></radialGradient>
+            <filter id="glowMacro" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <filter id="shMacro" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="2.5" stdDeviation="2.5" flood-color="#000" flood-opacity=".55"/></filter>
+          </defs>
+          <path d="M20,130 A100,100 0 0,1 220,130" fill="none" stroke="#161925" stroke-width="22" stroke-linecap="round"/>
+          <path d="M20,130 A100,100 0 0,1 74.6,40.9" fill="none" stroke="url(#gRedMacro)" stroke-width="18" stroke-linecap="round" filter="url(#shMacro)"/>
+          <path d="M74.6,40.9 A100,100 0 0,1 165.4,40.9" fill="none" stroke="url(#gGoldMacro)" stroke-width="18"/>
+          <path d="M165.4,40.9 A100,100 0 0,1 220,130" fill="none" stroke="url(#gGreenMacro)" stroke-width="18" stroke-linecap="round"/>
+          <text x="14" y="150" fill="#ff6b6b" font-size="10" font-family="Orbitron">BAIXA</text>
+          <text x="102" y="18" fill="#E8C15A" font-size="10" font-family="Orbitron">NEUTRO</text>
+          <text x="196" y="150" fill="#4fe08a" font-size="10" font-family="Orbitron">ALTA</text>
+          <g id="needleMacro" transform="rotate(0 120 130)"><polygon points="114,131 126,131 120,44" fill="#f4efe0" filter="url(#glowMacro)"/></g>
+          <circle cx="120" cy="130" r="14" fill="url(#hubMacro)" stroke="#241a0a" stroke-width="1.5" filter="url(#shMacro)"/>
+          <circle cx="120" cy="130" r="4.5" fill="#140f04"/>
         </svg>
         <div class="thermo-val" id="valMacro">0°</div>
         <div class="thermo-lab" id="labMacro">—</div>
@@ -263,14 +275,25 @@
       </div>
       <div class="thermo">
         <div class="thermo-ttl">🇧🇷 MICRO (B3)</div>
-        <svg viewBox="0 0 120 232" width="120" height="232" xmlns="http://www.w3.org/2000/svg">
-          <text x="58" y="30" fill="#4fe08a" font-size="9" font-family="Orbitron">+100 ALTA</text>
-          <text x="58" y="118" fill="#E8C15A" font-size="9" font-family="Orbitron">0 NEUTRO</text>
-          <text x="58" y="198" fill="#ff5d5d" font-size="9" font-family="Orbitron">-100 BAIXA</text>
-          <rect x="36" y="22" width="16" height="170" rx="8" fill="rgba(255,255,255,.05)" stroke="rgba(232,193,90,.25)"/>
-          <circle cx="44" cy="202" r="17" fill="rgba(255,255,255,.05)" stroke="rgba(232,193,90,.25)"/>
-          <rect id="mercMicro" x="39" y="190" width="10" height="0" rx="5" fill="#E8C15A"/>
-          <circle id="bulbMicro" cx="44" cy="202" r="13" fill="#E8C15A"/>
+        <svg viewBox="0 0 240 158" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="gRedMicro" x1="0" x2="1"><stop offset="0" stop-color="#ff3b3b"/><stop offset="1" stop-color="#ff8a66"/></linearGradient>
+            <linearGradient id="gGoldMicro" x1="0" x2="1"><stop offset="0" stop-color="#e0a93a"/><stop offset="1" stop-color="#F6DE8B"/></linearGradient>
+            <linearGradient id="gGreenMicro" x1="0" x2="1"><stop offset="0" stop-color="#7be3a0"/><stop offset="1" stop-color="#2fd389"/></linearGradient>
+            <radialGradient id="hubMicro" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#fff4d2"/><stop offset=".45" stop-color="#E8C15A"/><stop offset="1" stop-color="#5e4411"/></radialGradient>
+            <filter id="glowMicro" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="2.5" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+            <filter id="shMicro" x="-50%" y="-50%" width="200%" height="200%"><feDropShadow dx="0" dy="2.5" stdDeviation="2.5" flood-color="#000" flood-opacity=".55"/></filter>
+          </defs>
+          <path d="M20,130 A100,100 0 0,1 220,130" fill="none" stroke="#161925" stroke-width="22" stroke-linecap="round"/>
+          <path d="M20,130 A100,100 0 0,1 74.6,40.9" fill="none" stroke="url(#gRedMicro)" stroke-width="18" stroke-linecap="round" filter="url(#shMicro)"/>
+          <path d="M74.6,40.9 A100,100 0 0,1 165.4,40.9" fill="none" stroke="url(#gGoldMicro)" stroke-width="18"/>
+          <path d="M165.4,40.9 A100,100 0 0,1 220,130" fill="none" stroke="url(#gGreenMicro)" stroke-width="18" stroke-linecap="round"/>
+          <text x="14" y="150" fill="#ff6b6b" font-size="10" font-family="Orbitron">BAIXA</text>
+          <text x="102" y="18" fill="#E8C15A" font-size="10" font-family="Orbitron">NEUTRO</text>
+          <text x="196" y="150" fill="#4fe08a" font-size="10" font-family="Orbitron">ALTA</text>
+          <g id="needleMicro" transform="rotate(0 120 130)"><polygon points="114,131 126,131 120,44" fill="#f4efe0" filter="url(#glowMicro)"/></g>
+          <circle cx="120" cy="130" r="14" fill="url(#hubMicro)" stroke="#241a0a" stroke-width="1.5" filter="url(#shMicro)"/>
+          <circle cx="120" cy="130" r="4.5" fill="#140f04"/>
         </svg>
         <div class="thermo-val" id="valMicro">0°</div>
         <div class="thermo-lab" id="labMicro">—</div>
@@ -381,24 +404,23 @@ function catTemp(d){
 }
 function setTermo(pfx,c){
   var dir=c.a+c.b, open=c.a+c.b+c.n;
-  var topY=24, botY=190, span=botY-topY;
-  var m=document.getElementById("merc"+pfx), b=document.getElementById("bulb"+pfx),
-      v=document.getElementById("val"+pfx), l=document.getElementById("lab"+pfx), k=document.getElementById("brk"+pfx);
+  var nd=document.getElementById("needle"+pfx);
+  var poly=nd?nd.querySelector("polygon"):null;
+  var v=document.getElementById("val"+pfx), l=document.getElementById("lab"+pfx), k=document.getElementById("brk"+pfx);
   if(k) k.textContent=c.a+"↑ · "+c.n+"→ · "+c.b+"↓";
+  function point(ang){ if(nd) nd.setAttribute("transform","rotate("+ang+" 120 130)"); }
   // poucos ativos abertos -> leitura nao confiavel (ex.: fora do pregao da B3)
   if(open===0 || dir<3){
-    var gray="#8a8f9c", hM=span*0.5, yM=botY-hM;
-    if(m){ m.setAttribute("y",yM); m.setAttribute("height",hM); m.setAttribute("fill",gray); }
-    if(b) b.setAttribute("fill",gray);
+    point(0); var gray="#8a8f9c";
+    if(poly) poly.setAttribute("fill",gray);
     if(v){ v.textContent="—"; v.style.color=gray; }
     if(l){ l.textContent=(open===0?"MERCADO FECHADO":"AGUARDANDO ABERTURA"); l.style.color=gray; }
     return;
   }
   var temp=Math.round((c.a-c.b)/dir*100);
-  var pct=(temp+100)/200; var h=Math.max(0,pct*span); var y=botY-h;
+  point(temp*0.9);  // -100 -> -90 (esquerda/BAIXA) ; +100 -> +90 (direita/ALTA)
   var col=temp>=30?"#4fe08a":temp<=-30?"#ff5d5d":"#E8C15A";
-  if(m){ m.setAttribute("y",y); m.setAttribute("height",h); m.setAttribute("fill",col); }
-  if(b) b.setAttribute("fill",col);
+  if(poly) poly.setAttribute("fill","#f4efe0");
   if(v){ v.textContent=(temp>=0?"+":"")+temp+"°"; v.style.color=col; }
   if(l){ l.textContent=temp>=30?"QUENTE · ALTISTA":temp<=-30?"FRIO · BAIXISTA":"MORNO · LATERAL"; l.style.color=col; }
 }
