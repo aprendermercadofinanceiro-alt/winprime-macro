@@ -1,10 +1,10 @@
 {
   "estado": 1,
   "aberto": true,
-  "soma": -2,
+  "soma": -1,
   "altistas": 6,
-  "neutros": 6,
-  "baixistas": 8,
+  "neutros": 7,
+  "baixistas": 7,
   "total": 20,
   "fechados": 23,
   "tv_somados": 4,
@@ -19,6 +19,7 @@
     "KOSPI 200"
   ],
   "lista_neutros": [
+    "iShares MSCI Brazil Capped",
     "Mini Ibovespa Futuros",
     "Nasdaq 100 Futuros",
     "Ouro",
@@ -27,7 +28,6 @@
     "TOPIX"
   ],
   "lista_baixistas": [
-    "iShares MSCI Brazil Capped",
     "S&P 500 VIX Futuros",
     "Euro Stoxx 50 Futuros",
     "IBEX 35 Futuros",
@@ -36,6 +36,6 @@
     "Morgan Stanley",
     "DAX"
   ],
-  "atualizado": "2026-10-01T14:07:32.535Z",
+  "atualizado": "2026-10-01T14:08:32.550Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 4 | TV fechados fora: 19 | TV ja na carteira: 10."
 }
