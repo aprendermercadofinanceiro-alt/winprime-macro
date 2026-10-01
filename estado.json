@@ -34,6 +34,6 @@
     "IBEX 35 Futuros",
     "Morgan Stanley"
   ],
-  "atualizado": "2026-10-01T15:04:32.533Z",
+  "atualizado": "2026-10-01T15:05:32.565Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 0 | TV fechados fora: 0 | TV ja na carteira: 0."
 }
