@@ -36,6 +36,6 @@
     "Morgan Stanley",
     "DAX"
   ],
-  "atualizado": "2026-10-01T14:17:32.534Z",
+  "atualizado": "2026-10-01T14:18:32.546Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 4 | TV fechados fora: 19 | TV ja na carteira: 10."
 }
