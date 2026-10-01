@@ -380,14 +380,27 @@ function catTemp(d){
   return {macro:macro, micro:micro};
 }
 function setTermo(pfx,c){
-  var dir=c.a+c.b; var temp=dir===0?0:Math.round((c.a-c.b)/dir*100);
-  var topY=24, botY=190, span=botY-topY; var pct=(temp+100)/200; var h=Math.max(0,pct*span); var y=botY-h;
+  var dir=c.a+c.b, open=c.a+c.b+c.n;
+  var topY=24, botY=190, span=botY-topY;
+  var m=document.getElementById("merc"+pfx), b=document.getElementById("bulb"+pfx),
+      v=document.getElementById("val"+pfx), l=document.getElementById("lab"+pfx), k=document.getElementById("brk"+pfx);
+  if(k) k.textContent=c.a+"↑ · "+c.n+"→ · "+c.b+"↓";
+  // poucos ativos abertos -> leitura nao confiavel (ex.: fora do pregao da B3)
+  if(open===0 || dir<3){
+    var gray="#8a8f9c", hM=span*0.5, yM=botY-hM;
+    if(m){ m.setAttribute("y",yM); m.setAttribute("height",hM); m.setAttribute("fill",gray); }
+    if(b) b.setAttribute("fill",gray);
+    if(v){ v.textContent="—"; v.style.color=gray; }
+    if(l){ l.textContent=(open===0?"MERCADO FECHADO":"AGUARDANDO ABERTURA"); l.style.color=gray; }
+    return;
+  }
+  var temp=Math.round((c.a-c.b)/dir*100);
+  var pct=(temp+100)/200; var h=Math.max(0,pct*span); var y=botY-h;
   var col=temp>=30?"#4fe08a":temp<=-30?"#ff5d5d":"#E8C15A";
-  var m=document.getElementById("merc"+pfx); if(m){ m.setAttribute("y",y); m.setAttribute("height",h); m.setAttribute("fill",col); }
-  var b=document.getElementById("bulb"+pfx); if(b) b.setAttribute("fill",col);
-  var v=document.getElementById("val"+pfx); if(v){ v.textContent=(temp>=0?"+":"")+temp+"°"; v.style.color=col; }
-  var l=document.getElementById("lab"+pfx); if(l){ l.textContent=temp>=30?"QUENTE · ALTISTA":temp<=-30?"FRIO · BAIXISTA":"MORNO · LATERAL"; l.style.color=col; }
-  var k=document.getElementById("brk"+pfx); if(k) k.textContent=c.a+"↑ · "+c.n+"→ · "+c.b+"↓";
+  if(m){ m.setAttribute("y",y); m.setAttribute("height",h); m.setAttribute("fill",col); }
+  if(b) b.setAttribute("fill",col);
+  if(v){ v.textContent=(temp>=0?"+":"")+temp+"°"; v.style.color=col; }
+  if(l){ l.textContent=temp>=30?"QUENTE · ALTISTA":temp<=-30?"FRIO · BAIXISTA":"MORNO · LATERAL"; l.style.color=col; }
 }
 function renderThermos(d){ var t=catTemp(d); setTermo("Macro",t.macro); setTermo("Micro",t.micro); }
 
