@@ -1,9 +1,9 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 12,
-  "altistas": 18,
-  "neutros": 13,
+  "soma": 11,
+  "altistas": 17,
+  "neutros": 14,
   "baixistas": 6,
   "total": 37,
   "fechados": 7,
@@ -27,7 +27,6 @@
     "Nikkei 225",
     "WEGE3",
     "BBAS3",
-    "PETR4",
     "ABEV3"
   ],
   "lista_neutros": [
@@ -36,6 +35,7 @@
     "iShares MSCI Brazil Capped",
     "BOVA11",
     "PETR3",
+    "PETR4",
     "CXSE3",
     "VALE3",
     "IFNC",
@@ -53,6 +53,6 @@
     "BBDC4",
     "JP Morgan"
   ],
-  "atualizado": "2026-10-02T14:19:33.785Z",
+  "atualizado": "2026-10-02T14:20:33.749Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 3 | TV ja na carteira: 11."
 }
