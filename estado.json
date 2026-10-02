@@ -1,10 +1,10 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 22,
+  "soma": 23,
   "altistas": 24,
-  "neutros": 9,
-  "baixistas": 2,
+  "neutros": 10,
+  "baixistas": 1,
   "total": 35,
   "fechados": 13,
   "tv_somados": 19,
@@ -45,12 +45,12 @@
     "Hang Seng",
     "DI Jan/27",
     "DI Jan/29",
-    "DI Jan/31"
+    "DI Jan/31",
+    "DI Jan/33"
   ],
   "lista_baixistas": [
-    "DI Jan/33",
     "JP Morgan"
   ],
-  "atualizado": "2026-10-02T19:01:34.003Z",
+  "atualizado": "2026-10-02T19:02:33.919Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 5 | TV ja na carteira: 9."
 }
