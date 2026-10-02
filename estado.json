@@ -1,10 +1,10 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 28,
+  "soma": 29,
   "altistas": 29,
-  "neutros": 4,
-  "baixistas": 1,
+  "neutros": 5,
+  "baixistas": 0,
   "total": 34,
   "fechados": 14,
   "tv_somados": 18,
@@ -45,11 +45,10 @@
     "Ouro",
     "DAX Futuros",
     "DXY (dolar)",
-    "DI Jan/33"
-  ],
-  "lista_baixistas": [
+    "DI Jan/33",
     "JP Morgan"
   ],
-  "atualizado": "2026-10-02T19:53:33.780Z",
+  "lista_baixistas": [],
+  "atualizado": "2026-10-02T19:54:34.032Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 6 | TV ja na carteira: 9."
 }
