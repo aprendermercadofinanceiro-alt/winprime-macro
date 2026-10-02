@@ -1,9 +1,9 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 17,
-  "altistas": 17,
-  "neutros": 5,
+  "soma": 16,
+  "altistas": 16,
+  "neutros": 6,
   "baixistas": 0,
   "total": 22,
   "fechados": 30,
@@ -26,17 +26,17 @@
     "DI Jan/27",
     "DI Jan/29",
     "DI Jan/31",
-    "Morgan Stanley",
-    "UBS"
+    "Morgan Stanley"
   ],
   "lista_neutros": [
     "Ouro",
     "DAX Futuros",
     "DXY (dolar)",
     "DI Jan/33",
-    "JP Morgan"
+    "JP Morgan",
+    "UBS"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-10-02T20:15:34.067Z",
+  "atualizado": "2026-10-02T20:16:33.880Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 11 | TV fechados fora: 17 | TV ja na carteira: 5."
 }
