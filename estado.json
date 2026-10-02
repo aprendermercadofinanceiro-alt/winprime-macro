@@ -3,12 +3,12 @@
   "aberto": true,
   "soma": 25,
   "altistas": 26,
-  "neutros": 8,
+  "neutros": 7,
   "baixistas": 1,
-  "total": 35,
-  "fechados": 13,
-  "tv_somados": 19,
-  "tv_fechados": 5,
+  "total": 34,
+  "fechados": 14,
+  "tv_somados": 18,
+  "tv_fechados": 6,
   "tv_duplicados": 9,
   "lista_altistas": [
     "iShares MSCI Brazil Capped",
@@ -43,7 +43,6 @@
     "DAX Futuros",
     "Petróleo WTI",
     "DXY (dolar)",
-    "Hang Seng",
     "DI Jan/27",
     "DI Jan/31",
     "DI Jan/33"
@@ -51,6 +50,6 @@
   "lista_baixistas": [
     "JP Morgan"
   ],
-  "atualizado": "2026-10-02T19:14:33.812Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 5 | TV ja na carteira: 9."
+  "atualizado": "2026-10-02T19:15:33.732Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 6 | TV ja na carteira: 9."
 }
