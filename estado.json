@@ -1,10 +1,10 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 6,
+  "soma": 5,
   "altistas": 15,
-  "neutros": 13,
-  "baixistas": 9,
+  "neutros": 12,
+  "baixistas": 10,
   "total": 37,
   "fechados": 7,
   "tv_somados": 19,
@@ -33,7 +33,6 @@
     "IBEX 35 Futuros",
     "DXY (dolar)",
     "BOVA11",
-    "PETR3",
     "PETR4",
     "CXSE3",
     "IFNC",
@@ -51,8 +50,9 @@
     "Petróleo WTI",
     "ITUB4",
     "BBDC4",
+    "PETR3",
     "JP Morgan"
   ],
-  "atualizado": "2026-10-02T15:07:33.700Z",
+  "atualizado": "2026-10-02T15:08:33.699Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 3 | TV ja na carteira: 11."
 }
