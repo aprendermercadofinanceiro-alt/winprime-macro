@@ -36,8 +36,8 @@
     "Ouro",
     "iShares MSCI Brazil Capped",
     "BOVA11",
-    "PETR4",
     "CXSE3",
+    "IFNC",
     "DI Jan/27",
     "DI Jan/29",
     "DI Jan/31",
@@ -51,8 +51,8 @@
     "ITUB4",
     "BBDC4",
     "PETR3",
-    "IFNC"
+    "PETR4"
   ],
-  "atualizado": "2026-10-02T14:29:34.206Z",
+  "atualizado": "2026-10-02T14:30:33.819Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 3 | TV ja na carteira: 11."
 }
