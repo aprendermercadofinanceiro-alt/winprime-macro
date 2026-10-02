@@ -12,21 +12,21 @@
   "tv_duplicados": 10,
   "lista_altistas": [
     "Nasdaq 100 Futuros",
+    "Euro Stoxx 50 Futuros",
     "Morgan Stanley",
     "S&P 500 Futuros",
-    "Dow Jones Futuros",
-    "Euro Stoxx 50 Futuros",
     "S&P/ASX 200 Futuros",
     "IBEX 35 Futuros",
+    "Dow Jones Futuros",
     "S&P 500 VIX Futuros",
     "DAX",
     "Nikkei 225",
     "WEGE3"
   ],
   "lista_neutros": [
-    "iShares MSCI Brazil Capped",
     "DXY (dolar)",
     "BBAS3",
+    "PETR3",
     "PETR4",
     "ABEV3",
     "CXSE3",
@@ -36,22 +36,22 @@
     "UBS"
   ],
   "lista_baixistas": [
+    "iShares MSCI Brazil Capped",
     "Mini Ibovespa Futuros",
     "Ibovespa",
-    "Prata",
     "Ouro",
-    "Hang Seng Futuros",
     "Petróleo Brent",
+    "Prata",
     "Petróleo WTI",
+    "Hang Seng Futuros",
     "ITUB4",
     "BBDC4",
     "BOVA11",
-    "PETR3",
     "IFNC",
     "DI Jan/31",
     "DI Jan/33",
     "JP Morgan"
   ],
-  "atualizado": "2026-10-02T15:46:05.589Z",
+  "atualizado": "2026-10-02T15:46:36.540Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 4 | TV ja na carteira: 10."
 }
