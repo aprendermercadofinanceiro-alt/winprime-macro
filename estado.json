@@ -37,6 +37,6 @@
     "JP Morgan"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-10-05T20:22:44.640Z",
+  "atualizado": "2026-10-05T20:23:44.642Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 11 | TV fechados fora: 17 | TV ja na carteira: 5."
 }
