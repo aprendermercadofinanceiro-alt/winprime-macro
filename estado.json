@@ -40,8 +40,8 @@
     "S&P 500 Futuros",
     "DAX",
     "Nikkei 225",
+    "WEGE3",
     "VALE3",
-    "JP Morgan",
     "UBS"
   ],
   "lista_baixistas": [
@@ -51,8 +51,8 @@
     "Petróleo Brent",
     "Petróleo WTI",
     "DXY (dolar)",
-    "WEGE3"
+    "JP Morgan"
   ],
-  "atualizado": "2026-10-05T13:57:44.719Z",
+  "atualizado": "2026-10-05T13:58:45.165Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 3 | TV ja na carteira: 11."
 }
