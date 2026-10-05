@@ -32,6 +32,6 @@
     "Nikkei 225"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-10-05T20:48:44.602Z",
+  "atualizado": "2026-10-05T20:49:44.623Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 22 | TV ja na carteira: 5."
 }
