@@ -1,14 +1,14 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 7,
+  "soma": 9,
   "altistas": 9,
   "neutros": 8,
-  "baixistas": 2,
-  "total": 19,
-  "fechados": 33,
-  "tv_somados": 8,
-  "tv_fechados": 20,
+  "baixistas": 0,
+  "total": 17,
+  "fechados": 35,
+  "tv_somados": 6,
+  "tv_fechados": 22,
   "tv_duplicados": 5,
   "lista_altistas": [
     "S&P 500 Futuros",
@@ -31,10 +31,7 @@
     "Nikkei 225",
     "DI Jan/27"
   ],
-  "lista_baixistas": [
-    "IBOV",
-    "IFNC"
-  ],
-  "atualizado": "2026-10-06T20:39:44.921Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 8 | TV fechados fora: 20 | TV ja na carteira: 5."
+  "lista_baixistas": [],
+  "atualizado": "2026-10-06T20:40:44.671Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 22 | TV ja na carteira: 5."
 }
