@@ -38,6 +38,6 @@
     "IFNC",
     "JP Morgan"
   ],
-  "atualizado": "2026-10-06T20:18:44.866Z",
+  "atualizado": "2026-10-06T20:19:44.471Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 11 | TV fechados fora: 17 | TV ja na carteira: 5."
 }
