@@ -36,6 +36,6 @@
     "IBOV",
     "IFNC"
   ],
-  "atualizado": "2026-10-06T20:26:44.820Z",
+  "atualizado": "2026-10-06T20:27:44.668Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 9 | TV fechados fora: 19 | TV ja na carteira: 5."
 }
