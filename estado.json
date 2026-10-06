@@ -1,10 +1,10 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 9,
+  "soma": 8,
   "altistas": 11,
-  "neutros": 9,
-  "baixistas": 2,
+  "neutros": 8,
+  "baixistas": 3,
   "total": 22,
   "fechados": 30,
   "tv_somados": 11,
@@ -31,13 +31,13 @@
     "DXY (dolar)",
     "Euro Stoxx 50",
     "Nikkei 225",
-    "DI Jan/27",
-    "JP Morgan"
+    "DI Jan/27"
   ],
   "lista_baixistas": [
     "IBOV",
-    "IFNC"
+    "IFNC",
+    "JP Morgan"
   ],
-  "atualizado": "2026-10-06T20:15:44.577Z",
+  "atualizado": "2026-10-06T20:16:44.675Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 11 | TV fechados fora: 17 | TV ja na carteira: 5."
 }
