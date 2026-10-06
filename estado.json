@@ -24,9 +24,9 @@
     "Euro Stoxx 50",
     "IBEX 35",
     "Nikkei 225",
-    "WEGE3",
     "ITUB4",
     "BBDC4",
+    "BOVA11",
     "CXSE3",
     "IFNC",
     "DI Jan/29",
@@ -39,7 +39,7 @@
     "FTSE 100",
     "Prata",
     "DXY (dolar)",
-    "BOVA11",
+    "WEGE3",
     "ABEV3",
     "DI Jan/27",
     "JP Morgan"
@@ -53,6 +53,6 @@
     "PETR4",
     "VALE3"
   ],
-  "atualizado": "2026-10-06T13:52:12.459Z",
+  "atualizado": "2026-10-06T13:52:43.735Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 21 | TV fechados fora: 3 | TV ja na carteira: 9."
 }
