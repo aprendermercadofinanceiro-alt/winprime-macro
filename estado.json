@@ -27,6 +27,6 @@
     "KOSPI 200"
   ],
   "lista_baixistas": [],
-  "atualizado": "2026-10-06T00:10:44.691Z",
+  "atualizado": "2026-10-06T00:11:45.055Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 2 | TV fechados fora: 26 | TV ja na carteira: 5."
 }
