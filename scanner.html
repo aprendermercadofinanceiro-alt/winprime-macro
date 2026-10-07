@@ -464,7 +464,7 @@ function aplicarMacro(d, freshMs){
   PLACARES[0].dir = (e===0?"dn":"up");
   PLACARES[0].sig = m.sig;
   renderPlacares(); renderAnalise(); renderThermos(d);
-  var pausado = freshMs>200000;
+  var pausado = freshMs>330000;
   var vt=document.getElementById("vTxt"), vs=document.getElementById("vSub");
   if(pausado){ vt.textContent="SEM SINAL (PAUSADO)"; vt.style.color="#e0b64d"; vs.textContent="Leitor parado — reative o scanner macro"; }
   else{ vt.textContent=m.w; vt.style.color=(e===2?"var(--green)":e===0?"var(--red)":"var(--gold2)"); vs.textContent=m.s+" · "+(d.total||0)+" ativos abertos"; }
