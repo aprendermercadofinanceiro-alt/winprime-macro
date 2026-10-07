@@ -12,8 +12,8 @@
   "tv_duplicados": 9,
   "lista_altistas": [
     "Petróleo Brent",
-    "KOSPI 200 Futuros",
-    "Petróleo WTI"
+    "Petróleo WTI",
+    "KOSPI 200 Futuros"
   ],
   "lista_neutros": [],
   "lista_baixistas": [
@@ -32,6 +32,6 @@
     "DAX",
     "Nikkei 225"
   ],
-  "atualizado": "2026-10-07T12:07:28.578Z",
+  "atualizado": "2026-10-07T12:07:57.698Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 2 | TV fechados fora: 22 | TV ja na carteira: 9."
 }
