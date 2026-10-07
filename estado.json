@@ -3,9 +3,9 @@
   "aberto": true,
   "soma": 1,
   "altistas": 2,
-  "neutros": 8,
+  "neutros": 9,
   "baixistas": 1,
-  "total": 11,
+  "total": 12,
   "fechados": 37,
   "tv_somados": 2,
   "tv_fechados": 26,
@@ -15,6 +15,7 @@
     "Petróleo WTI"
   ],
   "lista_neutros": [
+    "S&P 500 Futuros",
     "Prata",
     "Nasdaq 100 Futuros",
     "Dow Jones Futuros",
@@ -27,6 +28,6 @@
   "lista_baixistas": [
     "KOSPI 200"
   ],
-  "atualizado": "2026-10-07T00:08:44.704Z",
+  "atualizado": "2026-10-07T00:09:44.750Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 2 | TV fechados fora: 26 | TV ja na carteira: 5."
 }
