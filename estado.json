@@ -26,7 +26,7 @@
     "Ibovespa",
     "DXY (dolar)",
     "Nikkei 225",
-    "WEGE3",
+    "ABEV3",
     "CXSE3",
     "IFNC",
     "DI Jan/27",
@@ -42,13 +42,13 @@
     "Nasdaq 100 Futuros",
     "Hang Seng Futuros",
     "Prata",
+    "WEGE3",
     "ITUB4",
     "BBDC4",
     "BOVA11",
     "BBAS3",
-    "ABEV3",
     "VALE3"
   ],
-  "atualizado": "2026-10-08T13:19:14.545Z",
+  "atualizado": "2026-10-08T13:20:14.512Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 16 | TV fechados fora: 7 | TV ja na carteira: 10."
 }
