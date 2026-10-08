@@ -40,6 +40,6 @@
     "Morgan Stanley",
     "UBS"
   ],
-  "atualizado": "2026-10-08T20:16:14.811Z",
+  "atualizado": "2026-10-08T20:17:14.494Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 11 | TV fechados fora: 16 | TV ja na carteira: 6."
 }
