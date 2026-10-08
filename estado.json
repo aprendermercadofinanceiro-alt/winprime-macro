@@ -53,6 +53,6 @@
     "BBAS3",
     "UBS"
   ],
-  "atualizado": "2026-10-08T14:12:14.895Z",
+  "atualizado": "2026-10-08T14:13:14.940Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 3 | TV ja na carteira: 12."
 }
