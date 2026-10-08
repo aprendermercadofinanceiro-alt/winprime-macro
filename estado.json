@@ -36,6 +36,6 @@
     "Euro Stoxx 50",
     "IBEX 35"
   ],
-  "atualizado": "2026-10-08T12:23:14.897Z",
+  "atualizado": "2026-10-08T12:24:14.591Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 10 | TV fechados fora: 19 | TV ja na carteira: 4."
 }
