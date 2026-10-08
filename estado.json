@@ -40,8 +40,8 @@
     "Nikkei 225",
     "BBDC4",
     "BBAS3",
-    "DI Jan/27",
-    "JP Morgan"
+    "VALE3",
+    "DI Jan/27"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
@@ -50,9 +50,9 @@
     "Nasdaq 100 Futuros",
     "Morgan Stanley",
     "Prata",
-    "VALE3",
+    "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-10-08T14:29:14.609Z",
+  "atualizado": "2026-10-08T14:30:14.696Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 3 | TV ja na carteira: 12."
 }
