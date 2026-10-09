@@ -37,6 +37,6 @@
     "Petróleo Brent",
     "Nikkei 225"
   ],
-  "atualizado": "2026-10-09T12:39:14.453Z",
+  "atualizado": "2026-10-09T12:40:14.732Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 8 | TV fechados fora: 18 | TV ja na carteira: 7."
 }
