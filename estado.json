@@ -32,6 +32,6 @@
     "Topix 100",
     "Nikkei 225"
   ],
-  "atualizado": "2026-10-09T03:22:14.845Z",
+  "atualizado": "2026-10-09T03:23:15.260Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 4 | TV fechados fora: 23 | TV ja na carteira: 6."
 }
