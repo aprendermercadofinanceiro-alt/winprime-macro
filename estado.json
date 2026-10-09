@@ -53,6 +53,6 @@
     "ABEV3",
     "CXSE3"
   ],
-  "atualizado": "2026-10-09T15:51:15.020Z",
+  "atualizado": "2026-10-09T15:52:14.701Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 21 | TV fechados fora: 3 | TV ja na carteira: 9."
 }
