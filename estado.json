@@ -18,10 +18,10 @@
     "Ouro",
     "FTSE 100",
     "Mini Ibovespa Futuros",
-    "Petróleo Brent",
     "S&P/ASX 200 Futuros",
     "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
+    "Petróleo Brent",
     "S&P 500 VIX Futuros",
     "DAX",
     "Euro Stoxx 50",
@@ -38,7 +38,7 @@
     "UBS"
   ],
   "lista_neutros": [
-    "Dow Jones Futuros\nDow Jones\n 51,644.00+151.00  (+0.29%)\n - Dados em Atraso\n06:00\n08:00\n51,600.00\n51,500.00\n51,450.00\n51,550.00\n\nResumo Técnico\n\n5 min:\nCompra Forte\n15 min:\nCompra Forte\n30 min:\nCompra Forte\nHora:\nCompra Forte\nDiário:\nNeutro\nMensal:\nCompra Forte",
+    "Dow Jones Futuros",
     "Morgan Stanley",
     "Petróleo WTI",
     "DXY (dolar)",
@@ -54,6 +54,6 @@
     "CXSE3",
     "VALE3"
   ],
-  "atualizado": "2026-10-09T14:42:38.929Z",
+  "atualizado": "2026-10-09T14:43:08.808Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 21 | TV fechados fora: 2 | TV ja na carteira: 10."
 }
