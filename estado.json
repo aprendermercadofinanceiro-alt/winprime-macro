@@ -1,14 +1,14 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 16,
-  "altistas": 23,
+  "soma": 15,
+  "altistas": 22,
   "neutros": 6,
   "baixistas": 7,
-  "total": 36,
-  "fechados": 9,
-  "tv_somados": 20,
-  "tv_fechados": 4,
+  "total": 35,
+  "fechados": 10,
+  "tv_somados": 19,
+  "tv_fechados": 5,
   "tv_duplicados": 9,
   "lista_altistas": [
     "iShares MSCI Brazil Capped",
@@ -21,7 +21,6 @@
     "Nasdaq 100 Futuros",
     "S&P 500 VIX Futuros",
     "Euro Stoxx 50",
-    "Hang Seng",
     "ITUB4",
     "BBDC4",
     "BOVA11",
@@ -52,6 +51,6 @@
     "ABEV3",
     "CXSE3"
   ],
-  "atualizado": "2026-10-09T19:15:14.884Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 20 | TV fechados fora: 4 | TV ja na carteira: 9."
+  "atualizado": "2026-10-09T19:16:14.507Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 5 | TV ja na carteira: 9."
 }
