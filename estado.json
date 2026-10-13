@@ -16,12 +16,12 @@
     "Ouro",
     "S&P/ASX 200 Futuros",
     "Dow Jones Futuros",
-    "DAX"
+    "DXY (dolar)"
   ],
   "lista_neutros": [
     "Prata",
     "S&P 500 Futuros",
-    "DXY (dolar)",
+    "DAX",
     "Euro Stoxx 50",
     "IBEX 35",
     "Nikkei 225"
@@ -32,6 +32,6 @@
     "Petróleo Brent",
     "Petróleo WTI"
   ],
-  "atualizado": "2026-10-13T11:23:14.678Z",
+  "atualizado": "2026-10-13T11:24:14.636Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 4 | TV fechados fora: 23 | TV ja na carteira: 6."
 }
