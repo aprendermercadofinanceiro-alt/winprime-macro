@@ -26,6 +26,6 @@
     "Nasdaq 100 Futuros",
     "DXY (dolar)"
   ],
-  "atualizado": "2026-10-14T22:32:19.666Z",
+  "atualizado": "2026-10-14T22:33:19.619Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 0 | TV fechados fora: 28 | TV ja na carteira: 5."
 }
