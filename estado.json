@@ -19,18 +19,19 @@
     "JP Morgan"
   ],
   "lista_neutros": [
-    "Euro Stoxx 50 Futuros",
     "IBEX 35 Futuros",
     "DAX Futuros",
     "Mini Ibovespa Futuros",
     "WEGE3",
     "BOVA11",
+    "CXSE3",
     "DI Jan/27",
     "DI Jan/29",
     "DI Jan/31"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
+    "Euro Stoxx 50 Futuros",
     "Dow Jones Futuros",
     "S&P/ASX 200 Futuros",
     "S&P 500 Futuros",
@@ -46,12 +47,11 @@
     "ITUB4",
     "BBDC4",
     "BBAS3",
-    "CXSE3",
     "VALE3",
     "IFNC",
     "DI Jan/33",
     "UBS"
   ],
-  "atualizado": "2026-10-14T17:11:42.745Z",
+  "atualizado": "2026-10-14T17:12:42.626Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
