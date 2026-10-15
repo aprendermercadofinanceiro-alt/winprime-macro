@@ -6,7 +6,7 @@
   "neutros": 3,
   "baixistas": 5,
   "total": 15,
-  "fechados": 35,
+  "fechados": 34,
   "tv_somados": 2,
   "tv_fechados": 24,
   "tv_duplicados": 7,
@@ -31,6 +31,6 @@
     "Petróleo Brent",
     "DAX"
   ],
-  "atualizado": "2026-10-15T09:14:20.335Z",
+  "atualizado": "2026-10-15T09:15:19.746Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 2 | TV fechados fora: 24 | TV ja na carteira: 7."
 }
