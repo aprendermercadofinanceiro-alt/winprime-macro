@@ -7,17 +7,17 @@
   "baixistas": 7,
   "total": 12,
   "fechados": 36,
-  "tv_somados": 3,
+  "tv_somados": 2,
   "tv_fechados": 26,
-  "tv_duplicados": 4,
+  "tv_duplicados": 5,
   "lista_altistas": [
     "Ouro"
   ],
   "lista_neutros": [
     "Topix 100",
+    "Dow Jones Futuros",
     "Prata",
-    "DXY (dolar)",
-    "Dow Jones"
+    "DXY (dolar)"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
@@ -28,6 +28,6 @@
     "Nikkei 225",
     "KOSPI 200"
   ],
-  "atualizado": "2026-10-15T00:09:19.682Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 3 | TV fechados fora: 26 | TV ja na carteira: 4."
+  "atualizado": "2026-10-15T00:10:19.765Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 2 | TV fechados fora: 26 | TV ja na carteira: 5."
 }
