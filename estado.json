@@ -1,14 +1,14 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -7,
+  "soma": -6,
   "altistas": 3,
   "neutros": 3,
-  "baixistas": 10,
-  "total": 16,
-  "fechados": 32,
-  "tv_somados": 3,
-  "tv_fechados": 22,
+  "baixistas": 9,
+  "total": 15,
+  "fechados": 33,
+  "tv_somados": 2,
+  "tv_fechados": 23,
   "tv_duplicados": 8,
   "lista_altistas": [
     "Prata",
@@ -29,9 +29,8 @@
     "Petróleo Brent",
     "Petróleo WTI",
     "DAX",
-    "China H (HSCEI)",
-    "Nikkei 225"
+    "China H (HSCEI)"
   ],
-  "atualizado": "2026-10-15T07:01:20.136Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 3 | TV fechados fora: 22 | TV ja na carteira: 8."
+  "atualizado": "2026-10-15T07:02:20.565Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 2 | TV fechados fora: 23 | TV ja na carteira: 8."
 }
