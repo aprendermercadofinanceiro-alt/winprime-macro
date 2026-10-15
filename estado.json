@@ -1,10 +1,10 @@
 {
   "estado": 1,
   "aberto": true,
-  "soma": -1,
+  "soma": 0,
   "altistas": 12,
-  "neutros": 11,
-  "baixistas": 13,
+  "neutros": 12,
+  "baixistas": 12,
   "total": 36,
   "fechados": 10,
   "tv_somados": 18,
@@ -32,6 +32,7 @@
     "Ibovespa",
     "Petróleo Brent",
     "ITUB4",
+    "BBDC4",
     "PETR3",
     "PETR4",
     "IFNC",
@@ -43,7 +44,6 @@
     "iShares MSCI Brazil Capped",
     "Morgan Stanley",
     "WEGE3",
-    "BBDC4",
     "BOVA11",
     "BBAS3",
     "VALE3",
@@ -52,6 +52,6 @@
     "DI Jan/33",
     "JP Morgan"
   ],
-  "atualizado": "2026-10-15T16:51:19.510Z",
+  "atualizado": "2026-10-15T16:52:19.622Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
