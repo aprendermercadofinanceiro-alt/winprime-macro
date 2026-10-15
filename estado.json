@@ -31,8 +31,8 @@
     "Euro Stoxx 50 Futuros",
     "Petróleo Brent",
     "PETR3",
-    "DI Jan/27",
-    "JP Morgan"
+    "IFNC",
+    "DI Jan/27"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
@@ -47,11 +47,11 @@
     "BBAS3",
     "PETR4",
     "VALE3",
-    "IFNC",
     "DI Jan/29",
     "DI Jan/31",
-    "DI Jan/33"
+    "DI Jan/33",
+    "JP Morgan"
   ],
-  "atualizado": "2026-10-15T16:58:19.599Z",
+  "atualizado": "2026-10-15T16:59:19.794Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
