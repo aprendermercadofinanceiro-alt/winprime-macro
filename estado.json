@@ -34,6 +34,6 @@
     "Hang Seng Futuros",
     "Mini Ibovespa Futuros"
   ],
-  "atualizado": "2026-10-19T23:06:19.730Z",
+  "atualizado": "2026-10-19T23:07:19.636Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 0 | TV fechados fora: 23 | TV ja na carteira: 10."
 }
