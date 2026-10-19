@@ -39,6 +39,6 @@
     "DAX",
     "Nikkei 225"
   ],
-  "atualizado": "2026-10-19T13:14:19.517Z",
+  "atualizado": "2026-10-19T13:15:19.737Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 17 | TV ja na carteira: 10."
 }
