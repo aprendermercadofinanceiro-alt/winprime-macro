@@ -1,14 +1,14 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -5,
+  "soma": -4,
   "altistas": 4,
   "neutros": 13,
-  "baixistas": 9,
-  "total": 26,
-  "fechados": 22,
-  "tv_somados": 8,
-  "tv_fechados": 15,
+  "baixistas": 8,
+  "total": 25,
+  "fechados": 23,
+  "tv_somados": 7,
+  "tv_fechados": 16,
   "tv_duplicados": 10,
   "lista_altistas": [
     "Nasdaq 100 Futuros",
@@ -39,9 +39,8 @@
     "Hang Seng Futuros",
     "Mini Ibovespa Futuros",
     "Nikkei 225",
-    "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-10-19T20:24:19.889Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 8 | TV fechados fora: 15 | TV ja na carteira: 10."
+  "atualizado": "2026-10-19T20:25:19.779Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 7 | TV fechados fora: 16 | TV ja na carteira: 10."
 }
