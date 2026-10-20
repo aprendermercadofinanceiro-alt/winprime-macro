@@ -16,7 +16,7 @@
     "Prata",
     "S&P 500 VIX Futuros",
     "DXY (dolar)",
-    "WEGE3",
+    "Nikkei 225",
     "ITUB4",
     "BBDC4",
     "BOVA11",
@@ -41,7 +41,7 @@
     "Ibovespa",
     "Ouro",
     "IBEX 35",
-    "Nikkei 225",
+    "WEGE3",
     "DI Jan/27"
   ],
   "lista_baixistas": [
@@ -54,6 +54,6 @@
     "FTSE 100",
     "VALE3"
   ],
-  "atualizado": "2026-10-20T14:22:19.673Z",
+  "atualizado": "2026-10-20T14:23:19.604Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 20 | TV fechados fora: 3 | TV ja na carteira: 10."
 }
