@@ -52,6 +52,6 @@
     "FTSE 100",
     "VALE3"
   ],
-  "atualizado": "2026-10-20T13:31:19.830Z",
+  "atualizado": "2026-10-20T13:32:19.587Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 5 | TV ja na carteira: 10."
 }
