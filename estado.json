@@ -1,9 +1,9 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 10,
-  "altistas": 18,
-  "neutros": 11,
+  "soma": 11,
+  "altistas": 19,
+  "neutros": 10,
   "baixistas": 8,
   "total": 37,
   "fechados": 11,
@@ -23,6 +23,7 @@
     "BOVA11",
     "BBAS3",
     "ABEV3",
+    "CXSE3",
     "IFNC",
     "DI Jan/29",
     "DI Jan/31",
@@ -39,7 +40,6 @@
     "Ibovespa",
     "Ouro",
     "DXY (dolar)",
-    "CXSE3",
     "VALE3",
     "DI Jan/27"
   ],
@@ -53,6 +53,6 @@
     "PETR3",
     "PETR4"
   ],
-  "atualizado": "2026-10-20T15:50:19.682Z",
+  "atualizado": "2026-10-20T15:51:19.689Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 4 | TV ja na carteira: 10."
 }
