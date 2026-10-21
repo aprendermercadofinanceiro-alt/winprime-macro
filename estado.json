@@ -19,7 +19,7 @@
     "S&P 500 VIX Futuros",
     "DAX",
     "Nikkei 225",
-    "ITUB4",
+    "BBDC4",
     "BBAS3",
     "PETR3",
     "IFNC",
@@ -35,7 +35,7 @@
     "Dow Jones Futuros",
     "Ibovespa",
     "DXY (dolar)",
-    "BBDC4",
+    "ITUB4",
     "BOVA11",
     "PETR4",
     "ABEV3",
@@ -53,6 +53,6 @@
     "CXSE3",
     "VALE3"
   ],
-  "atualizado": "2026-10-21T13:52:04.489Z",
+  "atualizado": "2026-10-21T13:52:34.419Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 3 | TV ja na carteira: 11."
 }
