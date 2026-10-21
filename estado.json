@@ -31,9 +31,9 @@
     "Ouro",
     "Dow Jones Futuros",
     "Mini S&P 500 VIX Futuros",
+    "Petróleo Brent",
     "S&P/ASX 200 Futuros",
     "Ibovespa",
-    "Petróleo Brent",
     "iShares MSCI Brazil Capped",
     "DXY (dolar)",
     "BBDC4",
@@ -53,6 +53,6 @@
     "VALE3",
     "JP Morgan"
   ],
-  "atualizado": "2026-10-21T15:41:42.409Z",
+  "atualizado": "2026-10-21T15:42:01.433Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 4 | TV ja na carteira: 10."
 }
