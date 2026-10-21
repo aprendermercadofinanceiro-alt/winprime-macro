@@ -1,9 +1,9 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 7,
-  "altistas": 15,
-  "neutros": 14,
+  "soma": 8,
+  "altistas": 16,
+  "neutros": 13,
   "baixistas": 8,
   "total": 37,
   "fechados": 9,
@@ -19,6 +19,7 @@
     "Ouro",
     "S&P 500 VIX Futuros",
     "DAX",
+    "Nikkei 225",
     "ITUB4",
     "PETR3",
     "CXSE3",
@@ -35,7 +36,6 @@
     "Petróleo Brent",
     "iShares MSCI Brazil Capped",
     "DXY (dolar)",
-    "Nikkei 225",
     "BBDC4",
     "BOVA11",
     "BBAS3",
@@ -53,6 +53,6 @@
     "VALE3",
     "JP Morgan"
   ],
-  "atualizado": "2026-10-21T15:38:19.799Z",
+  "atualizado": "2026-10-21T15:39:19.850Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 4 | TV ja na carteira: 10."
 }
