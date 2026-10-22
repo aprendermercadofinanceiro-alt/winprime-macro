@@ -1,10 +1,10 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -17,
+  "soma": -16,
   "altistas": 4,
-  "neutros": 8,
-  "baixistas": 21,
+  "neutros": 9,
+  "baixistas": 20,
   "total": 33,
   "fechados": 16,
   "tv_somados": 19,
@@ -24,7 +24,8 @@
     "Nikkei 225",
     "BBAS3",
     "ABEV3",
-    "DI Jan/27"
+    "DI Jan/27",
+    "DI Jan/33"
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
@@ -46,9 +47,8 @@
     "VALE3",
     "IFNC",
     "DI Jan/29",
-    "DI Jan/31",
-    "DI Jan/33"
+    "DI Jan/31"
   ],
-  "atualizado": "2026-10-22T13:28:19.579Z",
+  "atualizado": "2026-10-22T13:29:19.772Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 7 | TV ja na carteira: 7."
 }
