@@ -1,14 +1,14 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -12,
+  "soma": -13,
   "altistas": 0,
   "neutros": 6,
-  "baixistas": 12,
-  "total": 18,
-  "fechados": 33,
-  "tv_somados": 6,
-  "tv_fechados": 21,
+  "baixistas": 13,
+  "total": 19,
+  "fechados": 32,
+  "tv_somados": 7,
+  "tv_fechados": 20,
   "tv_duplicados": 6,
   "lista_altistas": [],
   "lista_neutros": [
@@ -30,9 +30,10 @@
     "Prata",
     "Euro Stoxx 50",
     "Nikkei 225",
+    "IBOV",
     "DI Jan/29",
     "DI Jan/31"
   ],
-  "atualizado": "2026-10-22T20:44:19.886Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 21 | TV ja na carteira: 6."
+  "atualizado": "2026-10-22T20:45:19.810Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 7 | TV fechados fora: 20 | TV ja na carteira: 6."
 }
