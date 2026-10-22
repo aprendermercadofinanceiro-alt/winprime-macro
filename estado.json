@@ -24,6 +24,6 @@
     "S&P 500 Futuros",
     "Nasdaq 100 Futuros"
   ],
-  "atualizado": "2026-10-22T21:51:19.669Z",
+  "atualizado": "2026-10-22T21:52:19.795Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 0 | TV fechados fora: 28 | TV ja na carteira: 5."
 }
