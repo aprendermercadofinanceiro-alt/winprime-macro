@@ -11,8 +11,8 @@
   "tv_fechados": 18,
   "tv_duplicados": 10,
   "lista_altistas": [
-    "Petróleo Brent",
-    "Petróleo WTI"
+    "Petróleo WTI",
+    "Petróleo Brent"
   ],
   "lista_neutros": [
     "DAX Futuros",
@@ -25,18 +25,18 @@
     "DI Jan/33"
   ],
   "lista_baixistas": [
-    "Euro Stoxx 50 Futuros",
-    "KOSPI 200 Futuros",
-    "Hang Seng Futuros",
     "S&P 500 VIX Futuros",
-    "IBEX 35 Futuros",
-    "FTSE 100",
-    "S&P 500 Futuros",
-    "Dow Jones Futuros",
     "Prata",
     "Ouro",
+    "KOSPI 200 Futuros",
+    "S&P 500 Futuros",
+    "Euro Stoxx 50 Futuros",
+    "FTSE 100",
+    "Hang Seng Futuros",
+    "IBEX 35 Futuros",
+    "Dow Jones Futuros",
     "Nikkei 225"
   ],
-  "atualizado": "2026-10-23T12:43:41.383Z",
+  "atualizado": "2026-10-23T12:44:11.791Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 5 | TV fechados fora: 18 | TV ja na carteira: 10."
 }
