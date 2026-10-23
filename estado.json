@@ -24,19 +24,19 @@
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
-    "Prata",
-    "Ouro",
-    "KOSPI 200 Futuros",
-    "S&P 500 Futuros",
-    "Euro Stoxx 50 Futuros",
-    "FTSE 100",
     "Nasdaq 100 Futuros",
     "Hang Seng Futuros",
+    "Ouro",
+    "S&P 500 Futuros",
+    "FTSE 100",
     "IBEX 35 Futuros",
     "Dow Jones Futuros",
+    "Euro Stoxx 50 Futuros",
+    "Prata",
+    "KOSPI 200 Futuros",
     "DAX",
     "Nikkei 225"
   ],
-  "atualizado": "2026-10-23T12:47:49.823Z",
+  "atualizado": "2026-10-23T12:48:12.040Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 18 | TV ja na carteira: 9."
 }
