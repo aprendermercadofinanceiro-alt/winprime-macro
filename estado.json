@@ -29,10 +29,10 @@
     "S&P/ASX 200 Futuros",
     "Euro Stoxx 50 Futuros",
     "DXY (dolar)",
+    "Nikkei 225",
     "BOVA11",
     "CXSE3",
     "DI Jan/27",
-    "DI Jan/31",
     "DI Jan/33"
   ],
   "lista_baixistas": [
@@ -42,16 +42,16 @@
     "Ouro",
     "Morgan Stanley",
     "Prata",
-    "Nikkei 225",
     "WEGE3",
     "ITUB4",
     "BBDC4",
     "ABEV3",
     "IFNC",
     "DI Jan/29",
+    "DI Jan/31",
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-10-23T16:49:19.652Z",
+  "atualizado": "2026-10-23T16:50:19.735Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
