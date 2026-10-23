@@ -25,8 +25,8 @@
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
-    "S&P 500 Futuros",
     "Hang Seng Futuros",
+    "S&P 500 Futuros",
     "Ouro",
     "FTSE 100",
     "IBEX 35 Futuros",
@@ -37,6 +37,6 @@
     "DAX",
     "Nikkei 225"
   ],
-  "atualizado": "2026-10-23T12:42:59.758Z",
+  "atualizado": "2026-10-23T12:43:01.516Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 18 | TV ja na carteira: 9."
 }
