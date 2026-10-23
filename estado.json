@@ -13,23 +13,23 @@
   "lista_altistas": [
     "Petróleo WTI",
     "Petróleo Brent",
-    "Mini Ibovespa Futuros",
     "iShares MSCI Brazil Capped",
+    "Mini Ibovespa Futuros",
     "BBAS3",
     "PETR3",
     "PETR4",
     "VALE3"
   ],
   "lista_neutros": [
+    "Prata",
     "Nasdaq 100 Futuros",
-    "Ibovespa",
+    "Ouro",
+    "Euro Stoxx 50 Futuros",
     "IBEX 35 Futuros",
     "DAX Futuros",
+    "Ibovespa",
     "Hang Seng Futuros",
     "S&P/ASX 200 Futuros",
-    "Euro Stoxx 50 Futuros",
-    "Ouro",
-    "Prata",
     "DXY (dolar)",
     "ITUB4",
     "BOVA11",
@@ -52,6 +52,6 @@
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-10-23T17:54:46.715Z",
+  "atualizado": "2026-10-23T17:55:11.678Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
