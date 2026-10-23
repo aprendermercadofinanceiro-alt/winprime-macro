@@ -1,10 +1,10 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -7,
+  "soma": -6,
   "altistas": 8,
-  "neutros": 13,
-  "baixistas": 15,
+  "neutros": 14,
+  "baixistas": 14,
   "total": 36,
   "fechados": 10,
   "tv_somados": 18,
@@ -31,6 +31,7 @@
     "Ouro",
     "Prata",
     "DXY (dolar)",
+    "ITUB4",
     "BOVA11",
     "CXSE3",
     "DI Jan/27"
@@ -42,7 +43,6 @@
     "Morgan Stanley",
     "Nikkei 225",
     "WEGE3",
-    "ITUB4",
     "BBDC4",
     "ABEV3",
     "IFNC",
@@ -52,6 +52,6 @@
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-10-23T17:52:19.771Z",
+  "atualizado": "2026-10-23T17:53:19.669Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
