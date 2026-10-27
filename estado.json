@@ -36,23 +36,23 @@
     "Mini S&P 500 VIX Futuros",
     "DAX Futuros",
     "Dow Jones Futuros",
+    "Petróleo Brent",
     "Petróleo WTI",
     "DXY (dolar)",
-    "BOVA11",
-    "BBAS3"
+    "BOVA11"
   ],
   "lista_baixistas": [
     "Prata",
     "Ibovespa",
     "Hang Seng Futuros",
-    "Petróleo Brent",
     "ITUB4",
     "BBDC4",
+    "BBAS3",
     "PETR3",
     "PETR4",
     "VALE3",
     "IFNC"
   ],
-  "atualizado": "2026-10-27T18:56:19.518Z",
+  "atualizado": "2026-10-27T18:57:19.574Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
