@@ -24,7 +24,7 @@
     "S&P/ASX 200 Futuros",
     "Euro Stoxx 50 Futuros",
     "FTSE 100",
-    "Dow Jones Futuros",
+    "Dow Jones Futuros\nDow Jones\n 52.458,00-121,00  (-0,23%)\n09:03:27 - Dados em Atraso\n22:00\n28/10\n02:00\n52,400.00\n52,600.00\n52,300.00\n52,500.00\n\nResumo Técnico\n\n5 min:\nVenda Forte\n15 min:\nVenda\n30 min:\nVenda Forte\nHora:\nVenda Forte\nDiário:\nNeutro\nMensal:\nCompra Forte",
     "Ouro",
     "DXY (dolar)"
   ],
@@ -33,6 +33,6 @@
     "IBEX 35 Futuros",
     "Nikkei 225"
   ],
-  "atualizado": "2026-10-28T12:14:48.200Z",
+  "atualizado": "2026-10-28T12:15:17.998Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 1 | TV fechados fora: 22 | TV ja na carteira: 10."
 }
