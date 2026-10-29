@@ -14,16 +14,16 @@
     "KOSPI 200 Futuros",
     "FTSE 100",
     "S&P/ASX 200 Futuros",
-    "S&P 500 VIX Futuros",
+    "Euro Stoxx 50 Futuros",
     "DAX",
     "DI Jan/29",
     "DI Jan/31",
     "DI Jan/33"
   ],
   "lista_neutros": [
-    "Euro Stoxx 50 Futuros",
     "Hang Seng Futuros",
     "IBEX 35 Futuros",
+    "S&P 500 VIX Futuros",
     "DXY (dolar)",
     "Nikkei 225",
     "DI Jan/27"
@@ -37,6 +37,6 @@
     "Nasdaq 100 Futuros",
     "Prata"
   ],
-  "atualizado": "2026-10-29T12:29:58.647Z",
+  "atualizado": "2026-10-29T12:30:58.564Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 18 | TV ja na carteira: 9."
 }
