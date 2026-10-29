@@ -14,8 +14,8 @@
     "Morgan Stanley",
     "Euro Stoxx 50 Futuros",
     "S&P/ASX 200 Futuros",
-    "FTSE 100",
     "Hang Seng Futuros",
+    "FTSE 100",
     "S&P 500 VIX Futuros",
     "DAX",
     "WEGE3",
@@ -29,16 +29,16 @@
     "DI Jan/27"
   ],
   "lista_baixistas": [
-    "Mini Ibovespa Futuros",
-    "Ibovespa",
     "Dow Jones Futuros",
     "S&P 500 Futuros",
     "Ouro",
-    "Petróleo Brent",
-    "iShares MSCI Brazil Capped",
+    "Mini Ibovespa Futuros",
+    "Ibovespa",
     "Nasdaq 100 Futuros",
-    "Petróleo WTI",
+    "iShares MSCI Brazil Capped",
+    "Petróleo Brent",
     "Prata",
+    "Petróleo WTI",
     "ITUB4",
     "BBDC4",
     "BOVA11",
@@ -53,6 +53,6 @@
     "DI Jan/31",
     "DI Jan/33"
   ],
-  "atualizado": "2026-10-29T15:17:34.278Z",
+  "atualizado": "2026-10-29T15:17:46.691Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 3 | TV ja na carteira: 11."
 }
