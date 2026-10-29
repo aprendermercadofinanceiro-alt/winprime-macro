@@ -24,7 +24,7 @@
     "Hang Seng Futuros",
     "Mini S&P 500 VIX Futuros",
     "DAX Futuros",
-    "Ouro",
+    "Petróleo WTI",
     "DXY (dolar)",
     "Nikkei 225",
     "PETR3",
@@ -34,12 +34,12 @@
   "lista_baixistas": [
     "S&P 500 Futuros",
     "Dow Jones Futuros",
+    "Ouro",
     "Mini Ibovespa Futuros",
     "Ibovespa",
     "Nasdaq 100 Futuros",
     "Petróleo Brent",
     "iShares MSCI Brazil Capped",
-    "Petróleo WTI",
     "Prata",
     "ITUB4",
     "BBDC4",
@@ -53,6 +53,6 @@
     "DI Jan/31",
     "DI Jan/33"
   ],
-  "atualizado": "2026-10-29T18:41:45.744Z",
+  "atualizado": "2026-10-29T18:42:45.539Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
