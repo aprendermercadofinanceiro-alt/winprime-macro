@@ -1,14 +1,14 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -19,
+  "soma": -21,
   "altistas": 6,
   "neutros": 4,
-  "baixistas": 25,
-  "total": 35,
-  "fechados": 9,
-  "tv_somados": 17,
-  "tv_fechados": 5,
+  "baixistas": 27,
+  "total": 37,
+  "fechados": 7,
+  "tv_somados": 19,
+  "tv_fechados": 3,
   "tv_duplicados": 11,
   "lista_altistas": [
     "Petróleo Brent",
@@ -49,8 +49,10 @@
     "IFNC",
     "DI Jan/29",
     "DI Jan/31",
-    "DI Jan/33"
+    "DI Jan/33",
+    "JP Morgan",
+    "UBS"
   ],
-  "atualizado": "2026-10-30T13:50:45.485Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 17 | TV fechados fora: 5 | TV ja na carteira: 11."
+  "atualizado": "2026-10-30T13:51:45.604Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 3 | TV ja na carteira: 11."
 }
