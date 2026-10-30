@@ -6,7 +6,7 @@
   "neutros": 4,
   "baixistas": 8,
   "total": 16,
-  "fechados": 33,
+  "fechados": 34,
   "tv_somados": 7,
   "tv_fechados": 22,
   "tv_duplicados": 4,
@@ -32,6 +32,6 @@
     "Nikkei 225",
     "KOSPI 200"
   ],
-  "atualizado": "2026-10-30T06:15:46.242Z",
+  "atualizado": "2026-10-30T06:16:46.423Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 7 | TV fechados fora: 22 | TV ja na carteira: 4."
 }
