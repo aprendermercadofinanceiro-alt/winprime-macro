@@ -32,13 +32,13 @@
   ],
   "lista_baixistas": [
     "S&P 500 VIX Futuros",
+    "Ibovespa",
     "S&P/ASX 200 Futuros",
     "Dow Jones Futuros",
-    "Ibovespa",
-    "Euro Stoxx 50 Futuros",
     "IBEX 35 Futuros",
-    "iShares MSCI Brazil Capped",
+    "Euro Stoxx 50 Futuros",
     "S&P 500 Futuros",
+    "iShares MSCI Brazil Capped",
     "Morgan Stanley",
     "Ouro",
     "Nasdaq 100 Futuros",
@@ -54,6 +54,6 @@
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-10-30T15:03:45.626Z",
+  "atualizado": "2026-10-30T15:03:59.868Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 3 | TV ja na carteira: 11."
 }
