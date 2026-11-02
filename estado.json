@@ -28,6 +28,6 @@
     "Topix 100",
     "Nasdaq"
   ],
-  "atualizado": "2026-11-02T21:37:45.719Z",
+  "atualizado": "2026-11-02T21:38:45.502Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 4 | TV fechados fora: 26 | TV ja na carteira: 3."
 }
