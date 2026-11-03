@@ -20,13 +20,12 @@
   "lista_neutros": [
     "Mini S&P 500 VIX Futuros",
     "DAX Futuros",
+    "Dow Jones Futuros",
     "DXY (dolar)",
     "Nikkei 225",
-    "WEGE3",
     "DI Jan/27"
   ],
   "lista_baixistas": [
-    "Dow Jones Futuros",
     "Euro Stoxx 50 Futuros",
     "S&P/ASX 200 Futuros",
     "Petróleo WTI",
@@ -37,6 +36,7 @@
     "Mini Ibovespa Futuros",
     "Prata",
     "Hang Seng",
+    "WEGE3",
     "ITUB4",
     "BBDC4",
     "BOVA11",
@@ -52,6 +52,6 @@
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-11-03T19:08:45.511Z",
+  "atualizado": "2026-11-03T19:09:45.911Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 5 | TV ja na carteira: 9."
 }
