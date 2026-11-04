@@ -15,21 +15,21 @@
     "DXY (dolar)"
   ],
   "lista_neutros": [
-    "S&P 500 Futuros",
     "S&P/ASX 200 Futuros",
     "Ouro",
+    "Prata",
     "KOSPI 200"
   ],
   "lista_baixistas": [
     "Nasdaq 100 Futuros",
+    "S&P 500 Futuros",
     "Dow Jones Futuros",
     "Euro Stoxx 50 Futuros",
     "Topix 100",
     "S&P 500 VIX Futuros",
-    "Prata",
     "DAX",
     "Nikkei 225"
   ],
-  "atualizado": "2026-11-04T01:11:45.774Z",
+  "atualizado": "2026-11-04T01:12:45.705Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 3 | TV fechados fora: 24 | TV ja na carteira: 6."
 }
