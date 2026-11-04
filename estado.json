@@ -1,10 +1,10 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 8,
+  "soma": 6,
   "altistas": 8,
-  "neutros": 6,
-  "baixistas": 0,
+  "neutros": 4,
+  "baixistas": 2,
   "total": 14,
   "fechados": 30,
   "tv_somados": 2,
@@ -21,14 +21,15 @@
     "China H (HSCEI)"
   ],
   "lista_neutros": [
-    "Nasdaq 100 Futuros",
     "S&P 500 Futuros",
     "Dow Jones Futuros",
-    "Euro Stoxx 50 Futuros",
     "IBEX 35 Futuros",
     "DAX"
   ],
-  "lista_baixistas": [],
-  "atualizado": "2026-11-04T07:04:45.552Z",
+  "lista_baixistas": [
+    "Nasdaq 100 Futuros",
+    "Euro Stoxx 50 Futuros"
+  ],
+  "atualizado": "2026-11-04T07:05:46.226Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 2 | TV fechados fora: 24 | TV ja na carteira: 7."
 }
