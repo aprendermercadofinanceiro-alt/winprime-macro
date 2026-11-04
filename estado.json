@@ -6,7 +6,7 @@
   "neutros": 2,
   "baixistas": 4,
   "total": 37,
-  "fechados": 9,
+  "fechados": 10,
   "tv_somados": 19,
   "tv_fechados": 4,
   "tv_duplicados": 10,
@@ -53,6 +53,6 @@
     "PETR3",
     "PETR4"
   ],
-  "atualizado": "2026-11-04T17:20:45.782Z",
+  "atualizado": "2026-11-04T17:21:45.485Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 4 | TV ja na carteira: 10."
 }
