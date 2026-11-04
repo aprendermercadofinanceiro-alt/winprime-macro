@@ -7,9 +7,9 @@
   "baixistas": 3,
   "total": 16,
   "fechados": 28,
-  "tv_somados": 3,
+  "tv_somados": 2,
   "tv_fechados": 22,
-  "tv_duplicados": 8,
+  "tv_duplicados": 9,
   "lista_altistas": [
     "Petróleo WTI",
     "Hang Seng Futuros",
@@ -30,8 +30,8 @@
   "lista_baixistas": [
     "Nasdaq 100 Futuros",
     "Ibovespa",
-    "Nikkei 225"
+    "iShares MSCI Brazil Capped"
   ],
-  "atualizado": "2026-11-04T07:01:45.730Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 3 | TV fechados fora: 22 | TV ja na carteira: 8."
+  "atualizado": "2026-11-04T07:02:45.730Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 2 | TV fechados fora: 22 | TV ja na carteira: 9."
 }
