@@ -14,15 +14,16 @@
     "Petróleo Brent",
     "Petróleo WTI",
     "Ouro",
-    "Hang Seng Futuros",
     "Prata",
     "ABEV3",
+    "CXSE3",
     "VALE3",
     "DI Jan/29",
     "DI Jan/31",
     "DI Jan/33"
   ],
   "lista_neutros": [
+    "Hang Seng Futuros",
     "S&P/ASX 200 Futuros",
     "Mini S&P 500 VIX Futuros",
     "DAX Futuros",
@@ -30,7 +31,6 @@
     "DXY (dolar)",
     "ITUB4",
     "BBAS3",
-    "CXSE3",
     "DI Jan/27"
   ],
   "lista_baixistas": [
@@ -53,6 +53,6 @@
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-11-05T17:25:45.629Z",
+  "atualizado": "2026-11-05T17:26:45.670Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
