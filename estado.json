@@ -2,13 +2,13 @@
   "estado": 0,
   "aberto": true,
   "soma": -10,
-  "altistas": 10,
-  "neutros": 6,
-  "baixistas": 20,
-  "total": 36,
-  "fechados": 13,
-  "tv_somados": 19,
-  "tv_fechados": 5,
+  "altistas": 9,
+  "neutros": 7,
+  "baixistas": 19,
+  "total": 35,
+  "fechados": 14,
+  "tv_somados": 18,
+  "tv_fechados": 6,
   "tv_duplicados": 9,
   "lista_altistas": [
     "Petróleo Brent",
@@ -16,7 +16,6 @@
     "Ouro",
     "Prata",
     "ABEV3",
-    "CXSE3",
     "VALE3",
     "DI Jan/29",
     "DI Jan/31",
@@ -28,6 +27,7 @@
     "DAX Futuros",
     "DXY (dolar)",
     "ITUB4",
+    "CXSE3",
     "DI Jan/27"
   ],
   "lista_baixistas": [
@@ -40,7 +40,6 @@
     "S&P 500 Futuros",
     "Nasdaq 100 Futuros",
     "Morgan Stanley",
-    "Hang Seng",
     "Nikkei 225",
     "WEGE3",
     "BBDC4",
@@ -52,6 +51,6 @@
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-11-05T19:16:45.831Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 5 | TV ja na carteira: 9."
+  "atualizado": "2026-11-05T19:17:45.634Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 6 | TV ja na carteira: 9."
 }
