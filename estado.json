@@ -16,8 +16,8 @@
     "Petróleo WTI",
     "Hang Seng Futuros",
     "IBEX 35 Futuros",
-    "Prata",
     "Dow Jones Futuros",
+    "Prata",
     "FTSE 100",
     "S&P/ASX 200 Futuros",
     "Euro Stoxx 50 Futuros",
@@ -33,10 +33,10 @@
     "DI Jan/33"
   ],
   "lista_baixistas": [
-    "S&P 500 VIX Futuros",
+    "S&P 500 VIX Futuros\nS&P 500 VIX\n 17,88+0,14  (+0,78%)\n09:24:02 - Dados derivados atuais\n05:00\n06:30\n08:30\n18.00\n17.70\n17.80\n17.90\n\nResumo Técnico\n\n5 min:\nVenda Forte\n15 min:\nNeutro\n30 min:\nVenda Forte\nHora:\nVenda Forte\nDiário:\nVenda Forte\nMensal:\nNeutro",
     "Nasdaq 100 Futuros",
     "KOSPI 200 Futuros"
   ],
-  "atualizado": "2026-11-05T12:28:45.475Z",
+  "atualizado": "2026-11-05T12:29:10.390Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 18 | TV ja na carteira: 9."
 }
