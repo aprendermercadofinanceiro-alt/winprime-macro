@@ -20,6 +20,6 @@
     "DXY (dolar)",
     "Dow Jones"
   ],
-  "atualizado": "2026-11-06T22:05:45.638Z",
+  "atualizado": "2026-11-06T22:06:45.889Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 3 | TV fechados fora: 30 | TV ja na carteira: 0."
 }
