@@ -14,15 +14,15 @@
     "S&P 500 VIX Futuros",
     "Petróleo Brent",
     "Petróleo WTI",
+    "S&P 500 Futuros",
     "Nasdaq 100 Futuros",
     "Nikkei 225",
-    "DI Jan/29",
-    "DI Jan/31"
+    "DI Jan/29"
   ],
   "lista_neutros": [
     "Hang Seng Futuros",
-    "S&P 500 Futuros",
     "DI Jan/27",
+    "DI Jan/31",
     "DI Jan/33"
   ],
   "lista_baixistas": [
@@ -36,6 +36,6 @@
     "DXY (dolar)",
     "DAX"
   ],
-  "atualizado": "2026-11-06T12:17:45.487Z",
+  "atualizado": "2026-11-06T12:18:45.774Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 19 | TV ja na carteira: 8."
 }
