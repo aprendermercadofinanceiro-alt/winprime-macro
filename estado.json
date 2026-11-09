@@ -30,6 +30,6 @@
     "S&P/ASX 200 Futuros",
     "Nasdaq"
   ],
-  "atualizado": "2026-11-09T00:51:46.081Z",
+  "atualizado": "2026-11-09T00:52:46.169Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 24 | TV ja na carteira: 3."
 }
