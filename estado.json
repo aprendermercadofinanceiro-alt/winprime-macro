@@ -37,12 +37,12 @@
     "S&P 500 VIX Futuros",
     "Hang Seng Futuros",
     "S&P 500 Futuros",
-    "Mini Ibovespa Futuros",
     "Ibovespa",
+    "Mini Ibovespa Futuros",
     "Dow Jones Futuros",
-    "iShares MSCI Brazil Capped",
     "Petróleo WTI",
     "Prata",
+    "iShares MSCI Brazil Capped",
     "Ouro",
     "Petróleo Brent",
     "DXY (dolar)",
@@ -55,6 +55,6 @@
     "DI Jan/31",
     "DI Jan/33"
   ],
-  "atualizado": "2026-11-10T15:11:18.693Z",
+  "atualizado": "2026-11-10T15:11:48.682Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 2 | TV ja na carteira: 13."
 }
