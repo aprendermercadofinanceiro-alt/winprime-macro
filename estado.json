@@ -29,6 +29,6 @@
     "Ouro",
     "DXY (dolar)"
   ],
-  "atualizado": "2026-11-11T22:32:06.680Z",
+  "atualizado": "2026-11-11T22:33:07.089Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 0 | TV fechados fora: 25 | TV ja na carteira: 8."
 }
