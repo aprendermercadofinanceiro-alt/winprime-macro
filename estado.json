@@ -39,20 +39,20 @@
     "IBEX 35 Futuros",
     "Mini S&P 500 VIX Futuros",
     "DAX Futuros",
-    "BBDC4",
     "BBAS3",
     "ABEV3",
+    "VALE3",
     "DI Jan/27"
   ],
   "lista_baixistas": [
     "Ouro",
     "Hang Seng Futuros",
     "DXY (dolar)",
+    "BBDC4",
     "PETR3",
     "PETR4",
-    "CXSE3",
-    "VALE3"
+    "CXSE3"
   ],
-  "atualizado": "2026-11-11T18:37:06.564Z",
+  "atualizado": "2026-11-11T18:38:07.084Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
