@@ -51,6 +51,6 @@
     "CXSE3",
     "VALE3"
   ],
-  "atualizado": "2026-11-11T19:34:06.756Z",
+  "atualizado": "2026-11-11T19:35:06.803Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 6 | TV ja na carteira: 9."
 }
