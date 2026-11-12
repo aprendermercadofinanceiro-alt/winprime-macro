@@ -29,6 +29,6 @@
     "DXY (dolar)",
     "KOSPI 200"
   ],
-  "atualizado": "2026-11-12T00:14:06.635Z",
+  "atualizado": "2026-11-12T00:15:06.620Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 1 | TV fechados fora: 26 | TV ja na carteira: 6."
 }
