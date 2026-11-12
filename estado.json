@@ -29,14 +29,13 @@
     "S&P/ASX 200 Futuros",
     "Mini S&P 500 VIX Futuros",
     "DAX Futuros",
+    "IBEX 35 Futuros",
     "ITUB4",
-    "ABEV3",
     "DI Jan/27"
   ],
   "lista_baixistas": [
     "Mini Ibovespa Futuros",
     "Ibovespa",
-    "IBEX 35 Futuros",
     "Hang Seng Futuros",
     "iShares MSCI Brazil Capped",
     "Ouro",
@@ -46,6 +45,7 @@
     "BBDC4",
     "BOVA11",
     "BBAS3",
+    "ABEV3",
     "CXSE3",
     "VALE3",
     "IFNC",
@@ -54,6 +54,6 @@
     "DI Jan/33",
     "UBS"
   ],
-  "atualizado": "2026-11-12T17:48:27.468Z",
+  "atualizado": "2026-11-12T17:49:27.492Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 3 | TV ja na carteira: 12."
 }
