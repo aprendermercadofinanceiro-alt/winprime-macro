@@ -15,16 +15,15 @@
     "S&P 500 Futuros",
     "Dow Jones Futuros",
     "Petróleo Brent",
+    "Mini Ibovespa Futuros",
     "Petróleo WTI",
     "S&P 500 VIX Futuros",
     "Nikkei 225",
     "ITUB4",
-    "PETR3",
-    "PETR4"
+    "PETR3"
   ],
   "lista_neutros": [
     "Nasdaq 100 Futuros",
-    "Mini Ibovespa Futuros",
     "Ibovespa",
     "FTSE 100",
     "IBEX 35 Futuros",
@@ -34,6 +33,7 @@
     "WEGE3",
     "BBDC4",
     "BOVA11",
+    "PETR4",
     "ABEV3",
     "VALE3",
     "DI Jan/27",
@@ -50,6 +50,6 @@
     "CXSE3",
     "IFNC"
   ],
-  "atualizado": "2026-11-13T14:08:27.509Z",
+  "atualizado": "2026-11-13T14:09:27.640Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 17 | TV fechados fora: 6 | TV ja na carteira: 10."
 }
