@@ -37,6 +37,6 @@
     "S&P/ASX 200 Futuros",
     "Hang Seng Futuros"
   ],
-  "atualizado": "2026-11-13T12:25:49.466Z",
+  "atualizado": "2026-11-13T12:26:19.437Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 18 | TV ja na carteira: 9."
 }
