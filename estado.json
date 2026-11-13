@@ -1,9 +1,9 @@
 {
   "estado": 1,
   "aberto": true,
-  "soma": -2,
-  "altistas": 12,
-  "neutros": 11,
+  "soma": -1,
+  "altistas": 13,
+  "neutros": 10,
   "baixistas": 14,
   "total": 37,
   "fechados": 10,
@@ -14,6 +14,7 @@
     "iShares MSCI Brazil Capped",
     "Mini Ibovespa Futuros",
     "Ibovespa",
+    "Morgan Stanley",
     "IBEX 35 Futuros",
     "ITUB4",
     "BBDC4",
@@ -27,7 +28,6 @@
   "lista_neutros": [
     "Petróleo Brent",
     "Ouro",
-    "Morgan Stanley",
     "Dow Jones Futuros",
     "Mini S&P 500 VIX Futuros",
     "DAX Futuros",
@@ -53,6 +53,6 @@
     "VALE3",
     "UBS"
   ],
-  "atualizado": "2026-11-13T17:19:27.946Z",
+  "atualizado": "2026-11-13T17:20:27.431Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 4 | TV ja na carteira: 11."
 }
