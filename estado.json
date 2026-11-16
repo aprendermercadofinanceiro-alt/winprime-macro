@@ -37,6 +37,6 @@
     "KOSPI 200 Futuros",
     "Prata"
   ],
-  "atualizado": "2026-11-16T13:04:27.397Z",
+  "atualizado": "2026-11-16T13:05:00.401Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 18 | TV ja na carteira: 9."
 }
