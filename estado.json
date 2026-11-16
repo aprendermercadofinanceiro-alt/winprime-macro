@@ -1,21 +1,22 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -31,
-  "altistas": 0,
-  "neutros": 7,
+  "soma": -30,
+  "altistas": 1,
+  "neutros": 6,
   "baixistas": 31,
   "total": 38,
   "fechados": 8,
   "tv_somados": 19,
   "tv_fechados": 3,
   "tv_duplicados": 11,
-  "lista_altistas": [],
+  "lista_altistas": [
+    "Nikkei 225"
+  ],
   "lista_neutros": [
     "Hang Seng Futuros",
     "Mini S&P 500 VIX Futuros",
     "DXY (dolar)",
-    "Nikkei 225",
     "ABEV3",
     "CXSE3",
     "DI Jan/27"
@@ -53,6 +54,6 @@
     "JP Morgan",
     "UBS"
   ],
-  "atualizado": "2026-11-16T17:08:27.527Z",
+  "atualizado": "2026-11-16T17:09:27.543Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 3 | TV ja na carteira: 11."
 }
