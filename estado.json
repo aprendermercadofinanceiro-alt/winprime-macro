@@ -18,8 +18,8 @@
     "DI Jan/33"
   ],
   "lista_neutros": [
-    "Dow Jones Futuros",
     "IBEX 35 Futuros",
+    "Dow Jones Futuros",
     "Euro Stoxx 50 Futuros",
     "S&P/ASX 200 Futuros",
     "DXY (dolar)",
@@ -37,6 +37,6 @@
     "Prata",
     "Nikkei 225"
   ],
-  "atualizado": "2026-11-16T12:51:50.480Z",
+  "atualizado": "2026-11-16T12:52:04.387Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 6 | TV fechados fora: 18 | TV ja na carteira: 9."
 }
