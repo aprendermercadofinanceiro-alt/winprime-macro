@@ -24,6 +24,6 @@
   "lista_baixistas": [
     "Euro Stoxx 50"
   ],
-  "atualizado": "2026-11-16T00:19:28.240Z",
+  "atualizado": "2026-11-16T00:20:27.515Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 7 | TV fechados fora: 26 | TV ja na carteira: 0."
 }
