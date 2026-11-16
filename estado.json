@@ -1,14 +1,14 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -12,
+  "soma": -13,
   "altistas": 0,
   "neutros": 3,
-  "baixistas": 12,
-  "total": 15,
-  "fechados": 35,
-  "tv_somados": 0,
-  "tv_fechados": 25,
+  "baixistas": 13,
+  "total": 16,
+  "fechados": 34,
+  "tv_somados": 1,
+  "tv_fechados": 24,
   "tv_duplicados": 8,
   "lista_altistas": [],
   "lista_neutros": [
@@ -28,8 +28,9 @@
     "iShares MSCI Brazil Capped",
     "Morgan Stanley",
     "Petróleo Brent",
-    "Prata"
+    "Prata",
+    "IBOV"
   ],
-  "atualizado": "2026-11-16T21:43:27.550Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 0 | TV fechados fora: 25 | TV ja na carteira: 8."
+  "atualizado": "2026-11-16T21:44:28.192Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 1 | TV fechados fora: 24 | TV ja na carteira: 8."
 }
