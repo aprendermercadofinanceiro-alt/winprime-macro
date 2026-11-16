@@ -26,6 +26,6 @@
     "TOPIX",
     "KOSPI 200"
   ],
-  "atualizado": "2026-11-16T05:02:27.836Z",
+  "atualizado": "2026-11-16T05:03:27.726Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 9 | TV fechados fora: 24 | TV ja na carteira: 0."
 }
