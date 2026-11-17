@@ -1,14 +1,14 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -15,
+  "soma": -17,
   "altistas": 0,
   "neutros": 3,
-  "baixistas": 15,
-  "total": 18,
-  "fechados": 32,
-  "tv_somados": 3,
-  "tv_fechados": 22,
+  "baixistas": 17,
+  "total": 20,
+  "fechados": 30,
+  "tv_somados": 5,
+  "tv_fechados": 20,
   "tv_duplicados": 8,
   "lista_altistas": [],
   "lista_neutros": [
@@ -29,10 +29,12 @@
     "Morgan Stanley",
     "Petróleo Brent",
     "Prata",
+    "China H (HSCEI)",
+    "Hang Seng",
     "Nikkei 225",
     "TOPIX",
     "KOSPI 200"
   ],
-  "atualizado": "2026-11-17T01:31:27.597Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 3 | TV fechados fora: 22 | TV ja na carteira: 8."
+  "atualizado": "2026-11-17T01:32:27.649Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 5 | TV fechados fora: 20 | TV ja na carteira: 8."
 }
