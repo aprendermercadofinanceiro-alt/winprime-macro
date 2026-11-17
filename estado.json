@@ -31,6 +31,6 @@
     "Euro Stoxx 50",
     "IFNC"
   ],
-  "atualizado": "2026-11-17T21:22:27.997Z",
+  "atualizado": "2026-11-17T21:23:27.547Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 3 | TV fechados fora: 24 | TV ja na carteira: 6."
 }
