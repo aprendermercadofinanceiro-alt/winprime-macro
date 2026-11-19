@@ -1,14 +1,14 @@
 {
   "estado": 0,
   "aberto": true,
-  "soma": -10,
+  "soma": -9,
   "altistas": 3,
   "neutros": 2,
-  "baixistas": 13,
-  "total": 18,
-  "fechados": 32,
-  "tv_somados": 4,
-  "tv_fechados": 21,
+  "baixistas": 12,
+  "total": 17,
+  "fechados": 33,
+  "tv_somados": 3,
+  "tv_fechados": 22,
   "tv_duplicados": 8,
   "lista_altistas": [
     "Petróleo WTI",
@@ -30,10 +30,9 @@
     "IBEX 35 Futuros",
     "Prata",
     "Euro Stoxx 50",
-    "Nikkei 225",
     "IBOV",
     "IFNC"
   ],
-  "atualizado": "2026-11-19T21:17:53.697Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 4 | TV fechados fora: 21 | TV ja na carteira: 8."
+  "atualizado": "2026-11-19T21:18:54.116Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 3 | TV fechados fora: 22 | TV ja na carteira: 8."
 }
