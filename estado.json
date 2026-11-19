@@ -1,10 +1,10 @@
 {
   "estado": 1,
   "aberto": true,
-  "soma": 1,
+  "soma": 0,
   "altistas": 11,
-  "neutros": 12,
-  "baixistas": 10,
+  "neutros": 11,
+  "baixistas": 11,
   "total": 33,
   "fechados": 15,
   "tv_somados": 18,
@@ -33,7 +33,6 @@
     "BBAS3",
     "PETR4",
     "ABEV3",
-    "CXSE3",
     "IFNC",
     "DI Jan/27"
   ],
@@ -45,10 +44,11 @@
     "Hang Seng Futuros",
     "KOSPI 200 Futuros",
     "PETR3",
+    "CXSE3",
     "DI Jan/29",
     "DI Jan/31",
     "DI Jan/33"
   ],
-  "atualizado": "2026-11-19T13:26:53.886Z",
+  "atualizado": "2026-11-19T13:27:53.791Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 6 | TV ja na carteira: 9."
 }
