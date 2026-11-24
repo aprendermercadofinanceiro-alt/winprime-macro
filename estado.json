@@ -17,9 +17,9 @@
     "Mini Ibovespa Futuros",
     "Ibovespa",
     "DXY (dolar)",
-    "WEGE3",
     "ITUB4",
     "BBDC4",
+    "BOVA11",
     "BBAS3",
     "ABEV3",
     "CXSE3",
@@ -30,7 +30,7 @@
   ],
   "lista_neutros": [
     "S&P/ASX 200 Futuros",
-    "PETR4",
+    "WEGE3",
     "DI Jan/27"
   ],
   "lista_baixistas": [
@@ -46,10 +46,10 @@
     "Prata",
     "DAX",
     "Nikkei 225",
-    "BOVA11",
     "PETR3",
+    "PETR4",
     "VALE3"
   ],
-  "atualizado": "2026-11-24T13:25:53.411Z",
+  "atualizado": "2026-11-24T13:26:53.720Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 17 | TV fechados fora: 6 | TV ja na carteira: 10."
 }
