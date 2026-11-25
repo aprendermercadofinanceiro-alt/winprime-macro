@@ -50,6 +50,6 @@
     "Prata",
     "ABEV3"
   ],
-  "atualizado": "2026-11-25T19:54:12.695Z",
+  "atualizado": "2026-11-25T19:55:12.845Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 6 | TV ja na carteira: 9."
 }
