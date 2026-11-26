@@ -1,14 +1,14 @@
 {
   "estado": 2,
   "aberto": true,
-  "soma": 25,
+  "soma": 26,
   "altistas": 26,
   "neutros": 3,
-  "baixistas": 1,
-  "total": 30,
-  "fechados": 19,
-  "tv_somados": 18,
-  "tv_fechados": 9,
+  "baixistas": 0,
+  "total": 29,
+  "fechados": 20,
+  "tv_somados": 17,
+  "tv_fechados": 10,
   "tv_duplicados": 6,
   "lista_altistas": [
     "Prata",
@@ -43,9 +43,7 @@
     "DXY (dolar)",
     "DI Jan/27"
   ],
-  "lista_baixistas": [
-    "Hang Seng"
-  ],
-  "atualizado": "2026-11-26T19:17:12.639Z",
-  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 18 | TV fechados fora: 9 | TV ja na carteira: 6."
+  "lista_baixistas": [],
+  "atualizado": "2026-11-26T19:18:12.578Z",
+  "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 17 | TV fechados fora: 10 | TV ja na carteira: 6."
 }
