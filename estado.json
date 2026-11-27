@@ -12,7 +12,6 @@
   "tv_duplicados": 11,
   "lista_altistas": [
     "Prata",
-    "Ibovespa",
     "Ouro",
     "iShares MSCI Brazil Capped",
     "Hang Seng Futuros",
@@ -27,6 +26,7 @@
     "S&P 500 VIX Futuros",
     "DAX",
     "ITUB4",
+    "BBDC4",
     "BBAS3",
     "IFNC",
     "DI Jan/29",
@@ -37,9 +37,9 @@
   ],
   "lista_neutros": [
     "Mini Ibovespa Futuros",
+    "Ibovespa",
     "DXY (dolar)",
     "Nikkei 225",
-    "BBDC4",
     "BOVA11",
     "DI Jan/27"
   ],
@@ -53,6 +53,6 @@
     "CXSE3",
     "VALE3"
   ],
-  "atualizado": "2026-11-27T16:21:12.703Z",
+  "atualizado": "2026-11-27T16:22:12.725Z",
   "obs": "So ativos ABERTOS (Investing relogio verde + TradingView status market). Regra +/-0,30% simetrica; VIX/DXY/DIs invertidos; 1 voto por ativo. Veredito por proporcao (descorrelacionado quando ~metade/metade). Carteira Investing + universo TradingView (WINPRIME). TV somados: 19 | TV fechados fora: 3 | TV ja na carteira: 11."
 }
